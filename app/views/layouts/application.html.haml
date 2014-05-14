@@ -11,12 +11,24 @@
       = yield
 
       :javascript
-          $(document).ready(function($) {
-            $(".primary-slider").royalSlider({
-                keyboardNavEnabled: true,
-                imageScalePadding: 0,
-                slidesSpacing:0,
-                fadeinLoadedSlide: true
-            });
-        });
-        
+        $(document).ready(function($) {
+          // initialize slider and save it's object
+          var slider = $('.primary-slider').royalSlider({
+            // options
+            keyboardNavEnabled: true,
+            imageScalePadding: 0,
+            slidesSpacing:0,
+            fadeinLoadedSlide: true,
+            addActiveClass: true,
+            arrowsNavAutoHide: false,
+            controlsInside: true
+          }).data('royalSlider');
+          //prev/next buttons
+          $('#slider-next').click(function() {
+            slider.next();
+          });
+          $('#slider-prev').click(function() {
+            slider.prev();
+          });
+        });  
+  
