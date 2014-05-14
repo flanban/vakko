@@ -1,6 +1,9 @@
 class StaticPagesController < ApplicationController
+
+  def index
+  end
+
   def home
-    @static_pages = StaticPagesController.action_methods
   end
 
   def collection

@@ -1,33 +1,33 @@
 Vakko::Application.routes.draw do
-  root to: 'StaticPages#home' 
+  root to: 'StaticPages#index' 
   
-  get "static_pages/home"
+  match '/home' => 'StaticPages#home'
 
-  get "static_pages/collection"
+  match '/collection' => 'StaticPages#collection'
 
-  get "static_pages/wedding"
+  match '/wedding' => 'StaticPages#wedding'
 
-  get "static_pages/cruise"
+  match "/cruise" => 'StaticPages#cruise'
 
-  get "static_pages/espace_by_sky"
+  match '/espace_by_sky' => 'StaticPages#espace_by_sky'
 
-  get "static_pages/perfume"
+  match '/perfume' => 'StaticPages#perfume'
 
-  get "static_pages/chocolate"
+  match '/chocolate' => 'StaticPages#chocolate'
 
-  get "static_pages/library"
+  match '/library' => 'StaticPages#library'
 
-  get "static_pages/heritage"
+  match '/heritage' => 'StaticPages#heritage'
 
-  get "static_pages/fashion_center"
+  match '/fashion_center' => 'StaticPages#fashion_center'
 
-  get "static_pages/vakkorama"
+  match '/vakkorama' => 'StaticPages#vakkorama'
 
-  get "static_pages/v2k"
+  match '/v2k' => 'StaticPages#v2k'
 
-  get "static_pages/wcollection"
- 
-  get "static_pages/power_fm"
+  match '/wcollection' => 'StaticPages#wcollection'
+
+  match '/power_fm' => 'StaticPages#power_fm'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
