@@ -1,6 +1,7 @@
 .primary-slider {
   width: 100%;
   height: 300px;
+  background:#121212;
   img.rsImg {
     max-width:100%;
   }
@@ -12,7 +13,7 @@ ul.entries {
     float:left;
     position:relative;
      
-    &:hover:not(:first-child) {
+    &:hover {
       .rollover {
         opacity:1;
       }
