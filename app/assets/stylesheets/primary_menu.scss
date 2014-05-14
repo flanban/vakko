@@ -1,0 +1,27 @@
+#primary-menu {
+  background:#231f20;
+  position:fixed;
+  height:100%;
+  width:320px;
+  text-align:center;
+  padding:75px 85px;
+  
+  @media(max-width:1023px) {
+
+  }
+  a {
+    color:#6a6a6a;
+    text-transform:uppercase;
+  }
+  h1 {
+    
+  }
+  ul {
+    font-size:12px;
+    li {
+      a {
+        padding:8px 0;
+      }
+    }
+  }
+}

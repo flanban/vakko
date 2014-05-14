@@ -1,0 +1,134 @@
+ul.entries {
+  width:100%;
+   > li {
+    width:50%;
+    float:left;
+    position:relative;
+     
+    &:hover:not(:first-child) {
+      .rollover {
+        opacity:1;
+      }
+      > a img {
+        opacity:.2;
+      }
+    }
+    a {
+      img {
+        width:100%;
+        height:auto;
+        -webkit-transition: opacity 0.3s ease;
+        -moz-transition: opacity 0.3s ease;
+        -o-transition: opacity 0.3s ease;
+        -ms-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
+      }
+    }
+    .rollover {
+      height:100%;
+      width:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      text-align:center;
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      .text {
+          height:56px;
+          top:50%;
+          position:relative;
+          margin-top:-30px;
+          color:white;
+          &.dark {
+            color:#3d3d3d;
+          }
+      }
+      .buttons {
+        position:absolute;
+        bottom:36px;
+        left:50%;
+        margin-left:-75px;
+        a {
+          display:inline-block;
+          margin-right:6px;
+          &:hover {
+            img {
+              opacity:.9;
+            }
+          }
+          img {
+            opacity:.3;
+            -webkit-transition: opacity 0.5s ease;
+            -moz-transition: opacity 0.5s ease;
+            -o-transition: opacity 0.5s ease;
+            -ms-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease;
+          }
+        }
+      }
+    }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &#collection {
+      width:100%;
+    }
+    &#wedding {
+      background-color:#f3e1d1;
+      &:hover {
+        > a img {
+          opacity:.4;
+        }
+      }
+    }
+    &#home {
+      background-color:#191919;
+    }
+    &#cruise {
+      background-color:#025078;
+    }
+    &#perfume {
+      background-color:#d89e8f;
+      float:right;
+    }
+    &#espace-by-sky {
+      background-color:#1c1614;
+    }
+    &#chocolate {
+      background-color:#1c1614;
+      clear:left;
+    }
+    &#library {
+      background-color:#1c1614;
+    }
+    &#heritage {
+      background-color:#1c1614;
+    }
+    &#fashion-center {
+      background-color:#1c1614;
+    }
+    &#vakkorama {
+      width:25%;
+      background-color:#444;
+    }
+    &#v2k {
+      width:25%;
+      background-color:#4c4c4c;
+    }
+    &#wcollection {
+      width:25%;
+      background-color:#555;
+    }
+    &#power-fm {
+      width:25%;
+      background-color:#5c5c5c;
+    }
+
+  }
+}

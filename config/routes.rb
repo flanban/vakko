@@ -1,4 +1,34 @@
 Vakko::Application.routes.draw do
+  root to: 'StaticPages#index' 
+  
+  match '/home' => 'StaticPages#home'
+
+  match '/collection' => 'StaticPages#collection'
+
+  match '/wedding' => 'StaticPages#wedding'
+
+  match "/cruise" => 'StaticPages#cruise'
+
+  match '/espace_by_sky' => 'StaticPages#espace_by_sky'
+
+  match '/perfume' => 'StaticPages#perfume'
+
+  match '/chocolate' => 'StaticPages#chocolate'
+
+  match '/library' => 'StaticPages#library'
+
+  match '/heritage' => 'StaticPages#heritage'
+
+  match '/fashion_center' => 'StaticPages#fashion_center'
+
+  match '/vakkorama' => 'StaticPages#vakkorama'
+
+  match '/v2k' => 'StaticPages#v2k'
+
+  match '/wcollection' => 'StaticPages#wcollection'
+
+  match '/power_fm' => 'StaticPages#power_fm'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
