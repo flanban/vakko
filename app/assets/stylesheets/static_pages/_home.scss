@@ -1,0 +1,68 @@
+ul.entries {
+  width:100%;
+  li {
+    width:50%;
+    float:left;
+    a {
+      img {
+        width:100%;
+        height:auto;
+      }
+    }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &#collection {
+      width:100%;
+    }
+    &#wedding {
+      background-color:#f3e1d1;
+    }
+    &#home {
+      background-color:#191919;
+    }
+    &#cruise {
+      background-color:#025078;
+    }
+    &#perfume {
+      background-color:#d89e8f;
+      float:right;
+    }
+    &#espace-by-sky {
+      background-color:#1c1614;
+    }
+    &#chocolate {
+      background-color:#1c1614;
+      clear:left;
+    }
+    &#library {
+      background-color:#1c1614;
+    }
+    &#heritage {
+      background-color:#1c1614;
+    }
+    &#fashion-center {
+      background-color:#1c1614;
+    }
+    &#vakkorama {
+      width:25%;
+      background-color:#444;
+    }
+    &#v2k {
+      width:25%;
+      background-color:#4c4c4c;
+    }
+    &#wcollection {
+      width:25%;
+      background-color:#555;
+    }
+    &#power-fm {
+      width:25%;
+      background-color:#5c5c5c;
+    }
+
+  }
+}

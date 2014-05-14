@@ -1,2 +1,20 @@
-%h1 StaticPages#home
-%p Find me in app/views/static_pages/home.html.haml
+- content_for :title, "WELCOME"
+
+%ul.entries.primary-grid
+  %li#collection.aspect-ratio-0=link_to image_tag('home-collection-1.jpg'), static_pages_collection_path
+  %li#wedding.aspect-ratio-1=link_to image_tag('home-wedding.jpg'), static_pages_wedding_path
+  %li#home.aspect-ratio-2=link_to image_tag('home-home.jpg'), static_pages_home_path
+  %li#cruise.aspect-ratio-2=link_to image_tag('home-cruise.jpg'), static_pages_cruise_path
+  %li#perfume.aspect-ratio-1=link_to image_tag('home-perfume.jpg'), static_pages_perfume_path
+  %li#espace-by-sky.aspect-ratio-2=link_to image_tag('home-espace.jpg'), static_pages_espace_by_sky_path
+  %li#chocolate.aspect-ratio-2=link_to image_tag('home-chocolate.jpg'), static_pages_chocolate_path
+  %li#quote.aspect-ratio-2
+    I'm a quote
+  %li#library.aspect-ratio-2=link_to image_tag('home-library.jpg'), static_pages_library_path
+  %li#heritage.aspect-ratio-1=link_to image_tag('home-heritage.jpg'), static_pages_heritage_path
+  %li#fashion-center.aspect-ratio-1=link_to image_tag('home-fashion-center.jpg'), static_pages_heritage_path
+  %li#vakkorama.aspect-ratio-3=link_to image_tag('home-vakkorama.jpg'), static_pages_vakkorama_path
+  %li#v2k.aspect-ratio-3=link_to image_tag('home-v2k.jpg'), static_pages_v2k_path
+  %li#wcollection.aspect-ratio-3=link_to image_tag('home-wcollection.jpg'), static_pages_wcollection_path
+  %li#power-fm.aspect-ratio-3=link_to image_tag('home-power-fm.jpg'), static_pages_power_fm_path
+  

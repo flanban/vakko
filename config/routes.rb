@@ -1,5 +1,33 @@
 Vakko::Application.routes.draw do
+  root to: 'StaticPages#home' 
+  
   get "static_pages/home"
+
+  get "static_pages/collection"
+
+  get "static_pages/wedding"
+
+  get "static_pages/cruise"
+
+  get "static_pages/espace_by_sky"
+
+  get "static_pages/perfume"
+
+  get "static_pages/chocolate"
+
+  get "static_pages/library"
+
+  get "static_pages/heritage"
+
+  get "static_pages/fashion_center"
+
+  get "static_pages/vakkorama"
+
+  get "static_pages/v2k"
+
+  get "static_pages/wcollection"
+ 
+  get "static_pages/power_fm"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
