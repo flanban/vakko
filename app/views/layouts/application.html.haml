@@ -11,7 +11,7 @@
       = yield
 
       :javascript
-        $( window ).load(function() {
+          $(document).ready(function($) {
             $(".primary-slider").royalSlider({
                 keyboardNavEnabled: true,
                 imageScalePadding: 0,
@@ -19,3 +19,4 @@
                 fadeinLoadedSlide: true
             });
         });
+        

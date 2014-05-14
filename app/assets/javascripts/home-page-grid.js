@@ -1,4 +1,5 @@
 $(function() {
+  
   //set width of river
   function setContentWidth() {
     viewportWidth =$( window ).width();
@@ -24,7 +25,7 @@ $(function() {
   }
   function setAspectRation3() {
     entryWidth = $('.aspect-ratio-3').width();
-    entryHeight = $('.aspect-ratio-3').width() / .37;//that weird number is the img's aspect ratio in decimal form
+    entryHeight = $('.aspect-ratio-3').width() / .425;//that weird number is the img's aspect ratio in decimal form
     $('.aspect-ratio-3').height(entryHeight -1);
   }
   function setAspectRatios() {

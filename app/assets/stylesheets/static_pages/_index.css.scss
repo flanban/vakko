@@ -5,6 +5,10 @@
   img.rsImg {
     max-width:100%;
   }
+  .next-slide {
+    position:relative;
+    z-index:200;
+  }
 }
 ul.entries {
   width:100%;
@@ -135,6 +139,22 @@ ul.entries {
       width:25%;
       background-color:#5c5c5c;
     }
-
+    // hover states for images that go from bw to color
+    &#vakkorama, &#v2k, &#wcollection, &#power-fm {
+      >a img {
+        width:100%;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+      &:hover {
+        > a:nth-of-type(1) img {
+          opacity:1;
+        }
+        > a:nth-of-type(2) img {
+          opacity:0;
+        }
+      }
+    }
   }
 }
