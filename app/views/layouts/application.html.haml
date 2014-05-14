@@ -9,3 +9,13 @@
     = render "shared/primary_menu"
     #content-area
       = yield
+
+    :javascript
+      $( window ).load(function() {
+          $(".primary-slider").royalSlider({
+              imageScaleMode:'fill',
+              keyboardNavEnabled: true,
+              imageAlignCenter: true,
+              numImagesToPreload: 2prim
+          });
+      });

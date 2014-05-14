@@ -1,7 +1,8 @@
 - content_for :title, "WELCOME"
 
 %ul.entries.primary-grid
-  %li#collection.aspect-ratio-0=link_to image_tag('home-collection-1.jpg'), collection_path
+  %li#collection.primary-slider.aspect-ratio-0
+    .rsImg=link_to image_tag('home-collection-1.jpg'), collection_path
   %li#wedding.aspect-ratio-1
     =link_to image_tag('home-wedding.jpg'), wedding_path
     .rollover.translucent
