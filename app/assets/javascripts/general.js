@@ -40,13 +40,8 @@ $(function() {
   // call functions
   setAspectRatios();
   //resize event
-
-  
-  var TO = false;
   $(window).resize(function(){
-   if(TO !== false)
-      clearTimeout(TO);
-   TO = setTimeout(setAspectRatios, 200); //200 is time in miliseconds
+    setAspectRatios();
   });
 
 });

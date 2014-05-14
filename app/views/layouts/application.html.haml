@@ -10,12 +10,12 @@
     #content-area
       = yield
 
-    :javascript
-      $( window ).load(function() {
-          $(".primary-slider").royalSlider({
-              imageScaleMode:'fill',
-              keyboardNavEnabled: true,
-              imageAlignCenter: true,
-              numImagesToPreload: 2prim
-          });
-      });
+      = javascript_include_tag "jquery.royalslider.min.js"
+      :javascript
+        $( window ).load(function() {
+            $(".primary-slider").royalSlider({
+                keyboardNavEnabled: true,
+                imageScalePadding: 0,
+
+            });
+        });
