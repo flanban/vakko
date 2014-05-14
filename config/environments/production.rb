@@ -1,8 +1,8 @@
 Vakko::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  config.middleware.insert_after(::Rack::Runtime, "::Rack::Auth::Basic", "Staging") do |u, p|
-     [u, p] == ['test', 'qu1n1n3']
+  config.middleware.insert_after(::Rack::Rake, "::Rack::Auth::Basic", "Staging") do |u, p|
+     [u, p] == ['vakko', 'qu1n1n3']
   end
 
   # Code is not reloaded between requests
