@@ -1,7 +1,7 @@
 Vakko::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  config.middleware.insert_after(::Rack::Rake, "::Rack::Auth::Basic", "Staging") do |u, p|
+  config.middleware.insert_after(::Rack::Lock, "::Rack::Auth::Basic", "Staging") do |u, p|
      [u, p] == ['vakko', 'qu1n1n3']
   end
 
