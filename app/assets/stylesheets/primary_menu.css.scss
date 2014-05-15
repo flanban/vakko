@@ -1,26 +1,81 @@
+@import "mixins/typography";
+
 #primary-menu {
+  // high-level menu layout
   background:#231f20;
   position:fixed;
   height:100%;
   width:320px;
   text-align:center;
-  padding:75px 85px;
+  padding:85px 75px 0 75px;
+  overflow: auto;
   
-  @media(max-width:1023px) {
+  // This is the site logo
+  > img {
+    margin-bottom:56px;
+  } 
+  
+  // dividers
+  .menu-divider {
+    width:21px;
+    height:1px;
+    margin:0 auto;
+    display:block;
+    background-color:#3f3a3b;
+  }
 
-  }
+  // set link style for the whole menu
   a {
-    color:#6a6a6a;
-    text-transform:uppercase;
+    @include primary-menu-items;
   }
-  h1 {
-    
-  }
+
+  // menu link lists
   ul {
     font-size:12px;
+    padding: 13px 0;
     li {
       a {
         padding:8px 0;
+      }
+    }
+  }
+  
+  // Shopping button
+  .shop-button {
+    width:130px;
+    border:1px solid #474545;
+    margin:30px auto;
+    padding:14px 20px;
+    letter-spacing:1px;
+    &:hover {
+      background:#474545;
+      color:#000;
+    }
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+  }
+  
+  .bottom-section {
+    margin-bottom:48px;
+    //utility links
+    ul {
+      li {
+        display:inline-block;
+        a {
+          font-size:9px;
+        }
+      }
+    }
+    //social icons
+    > a {
+      display:inline-block;
+      padding:0 12px;
+      border-right:1px solid #2c292a;
+      &:last-child {
+        border:none;
       }
     }
   }
