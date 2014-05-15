@@ -2,20 +2,27 @@
 
 
 
-#collections
-  #slider-controls
-    %a#slider-prev
-      %span.active
-    %a#slider-next
-      %span
-  .primary-slider.aspect-ratio-0
-    =image_tag('home-collection-1.jpg', :class => 'rsImg')
-    =image_tag('home-collection-2.jpg', :class => 'rsImg')
-
 
 %ul.entries.primary-grid
-  
-    
+  %li#collections
+    #slider-controls
+      %a#slider-prev
+        %span.active
+      %a#slider-next
+        %span
+    .primary-slider.aspect-ratio-0
+      .men
+        =link_to image_tag('home-collection-1.jpg', :class => 'rsImg'),'#'
+        .rollover.translucent
+          .text
+            %h2 vakko collection
+            %h6 men
+      .women
+        =link_to image_tag('home-collection-2.jpg', :class => 'rsImg'),'#'
+        .rollover.translucent
+          .text
+            %h2 vakko collection
+            %h6 women
   %li#wedding.aspect-ratio-1
     =link_to image_tag('home-wedding.jpg'), wedding_path
     .rollover.translucent

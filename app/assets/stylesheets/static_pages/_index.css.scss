@@ -1,5 +1,5 @@
 @import "mixins/typography";
-
+//slider styles START
 #collections {
   position:relative;
   #slider-controls {
@@ -56,18 +56,24 @@
     }
   }
 }
+//slider styles END
+
 ul.entries {
   width:100%;
    > li {
     width:50%;
     float:left;
     position:relative;
-     
+    // set the sliders width here
+    &:first-child {
+      width:100%;
+    }
     &:hover {
       .rollover {
         opacity:1;
       }
-      > a img {
+      //the additional -> .women & .men classes are to include the slider
+      > a img, .women img, .men img {
         opacity:.2;
       }
     }
