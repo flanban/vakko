@@ -47,3 +47,24 @@ $seventh-position:48px;
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+.quote {
+  position:relative;
+  top:50%;
+  margin-top:-65px;
+  text-align:center;
+  img {
+    margin-bottom:20px;
+  }
+  p {
+    @include didot64L;
+    font-size:$fourth-position;
+    line-height:1.2;
+    color:#767676;
+    letter-spacing:1px;
+    margin-bottom:25px;
+  }
+  h6 {
+    @include grid-subheadline;
+    color:#c1c1c1;
+  }
+}
