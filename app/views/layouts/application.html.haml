@@ -14,17 +14,28 @@
       :javascript
         $(document).ready(function($) {
           // initialize slider and save it's object
-          var slider = $('.primary-slider').royalSlider({
+          $('.primary-slider').royalSlider({
             // options
             keyboardNavEnabled: true,
             imageScalePadding: 0,
+            arrowsNav: false,
+            controlNavigation: 'bullets',
+
+            usePreloader: false,
             slidesSpacing:0,
             fadeinLoadedSlide: true,
             addActiveClass: true,
             arrowsNavAutoHide: false,
             controlsInside: true
-          }).data('royalSlider');
+          });
+          
+          var slider = $('.primary-slider').data('royalSlider');
+          
           //prev/next buttons
+          slider.ev.on('rsAfterSlideChange', function(event) {
+              // triggers after slide change
+            setActiveSliderNav();
+          });
           $('#slider-next').click(function() {
             slider.next();
           });

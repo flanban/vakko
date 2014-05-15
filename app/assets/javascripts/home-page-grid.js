@@ -1,5 +1,4 @@
 $(function() {
-  
   //set width of river
   function setContentWidth() {
     viewportWidth =$( window ).width();

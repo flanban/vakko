@@ -2,57 +2,12 @@
 //slider styles START
 #collections {
   position:relative;
-  #slider-controls {
-    position:absolute;
-    bottom:0px;
-    left:50%;
-    margin-left:-90px;
-    z-index:400;
-    #slider-prev, #slider-next {
-      padding:30px 7px;
-      display:inline-block;
-      cursor:pointer;
-      &:hover {
-        span {
-          opacity:1;
-        }
-      }
-      span {
-      opacity:.3;
-      width:75px;
-      height:3px;
-      background:#fff;
-      display:block;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
-      -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.5);
-      box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.5);
-      &.active {
-        opacity:1;
-      }
-      }
-    }
-    #slider-prev {
-    }
-  }
   .primary-slider {
     width: 100%;
     height: 300px;
     background:#121212;
-    .rsArrow {
-      display: block;
-      top: 0;
-      left: 0;
-      position: relative;
-      height: 20px;
-      width: 20px;
-      background: green;
-    }
     img.rsImg {
       max-width:100%;
-    }
-    .next-slide {
-      position:relative;
-      z-index:200;
     }
   }
 }
