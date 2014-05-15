@@ -1,3 +1,5 @@
+@import "mixins/typography";
+
 #collections {
   position:relative;
   #slider-controls {
@@ -93,6 +95,12 @@ ul.entries {
       -ms-transition: opacity 0.3s ease;
       transition: opacity 0.3s ease;
       .text {
+          h2 {
+            @include grid-headline;
+          }
+          h6 {
+            @include grid-subheadline;
+          }
           height:56px;
           top:50%;
           position:relative;

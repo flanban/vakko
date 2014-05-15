@@ -1,0 +1,49 @@
+// FONT SCALE 
+$first-position:10px;
+$second-position:13px;
+$third-position:18px;
+$fourth-position:24px;
+$fifth-position:32px;
+$sixth-position:36px;
+$seventh-position:48px;
+
+// PROJECT FONT MIXINS: START
+@mixin didot64L {
+    font-family:'Didot 64 A', 'Didot 64 B', baskerville, geargia, serif;
+    font-weight: 300;
+    font-style: italic;
+}
+@mixin proximaSB {
+    font-family:'proxima', helvetica, sans-serif;
+}
+// PROJECT FONT MIXINS: END
+
+// Main headline style
+@mixin grid-headline {
+  @include didot64L;
+  font-size:$fifth-position;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:12px;
+}
+@mixin grid-subheadline {
+  @include proximaSB;
+  letter-spacing:2px;
+  font-size:$first-position;
+  text-transform:uppercase;
+}
+@mixin primary-menu-items {
+  @include proximaSB;
+  letter-spacing:2px;
+  font-size:$first-position;
+  text-transform:uppercase;
+  color:#6a6a6a;
+  &:hover {
+    color:#a4a4a4;
+  }
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
