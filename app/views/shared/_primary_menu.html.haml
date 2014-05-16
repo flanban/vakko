@@ -1,39 +1,40 @@
 #primary-menu
-  =link_to image_tag('logo-vakko.png'), root_path
-  
+  =link_to image_tag('logo-vakko.png'), root_path, :class => 'main-logo'
+  %span#mobile-nav-toggle nav-toggle-img
   %span.menu-divider
   
-  %ul
-    %li=link_to 'collection', collection_path
-    %li=link_to 'wedding', wedding_path    
-    %li=link_to 'home', home_path
-    %li=link_to 'cruise', cruise_path
-    %li=link_to 'espace by sky', espace_by_sky_path
-    %li=link_to 'perfume', perfume_path
-    %li=link_to 'chocolate', chocolate_path
-
-  %span.menu-divider
-
-  %ul
-    %li=link_to 'Heritage', heritage_path
-    %li=link_to 'Vitali hakko creative industries library', fashion_center_path
-    %li=link_to 'headquarters', '#'
-    %li=link_to 'vakko corporate book', '#'
-    %li=link_to 'vakko group', '#'
-
-  %span.menu-divider
-
-  =link_to 'vakko shop', '#', :class => 'shop-button'
-  
-  .bottom-section
+  #nav-items
     %ul
-      %li=link_to 'press', '#'
-      %li=link_to 'contact', '#'
-      %li=link_to 'stores', '#'
-      %li=link_to 'newsletter', '#'
-      %li=link_to 'iphone app', '#'
-    // social links
-    =link_to image_tag('icon-menu-fb.png'), "#"
-    =link_to image_tag('icon-menu-twitter.png'), "#"
-    =link_to image_tag('icon-menu-instagram.png'), "#"
-    =link_to image_tag('icon-menu-pinterest.png'), "#"
+      %li=link_to 'collection', collection_path
+      %li=link_to 'wedding', wedding_path    
+      %li=link_to 'home', home_path
+      %li=link_to 'cruise', cruise_path
+      %li=link_to 'espace by sky', espace_by_sky_path
+      %li=link_to 'perfume', perfume_path
+      %li=link_to 'chocolate', chocolate_path
+
+    %span.menu-divider
+
+    %ul
+      %li=link_to 'Heritage', heritage_path
+      %li=link_to 'Vitali hakko creative industries library', fashion_center_path
+      %li=link_to 'headquarters', '#'
+      %li=link_to 'vakko corporate book', '#'
+      %li=link_to 'vakko group', '#'
+
+    %span.menu-divider
+
+    =link_to 'vakko shop', '#', :class => 'shop-button'
+  
+    .bottom-section
+      %ul
+        %li=link_to 'press', '#'
+        %li=link_to 'contact', '#'
+        %li=link_to 'stores', '#'
+        %li=link_to 'newsletter', '#'
+        %li=link_to 'iphone app', '#'
+      // social links
+      =link_to image_tag('icon-menu-fb.png'), "#"
+      =link_to image_tag('icon-menu-twitter.png'), "#"
+      =link_to image_tag('icon-menu-instagram.png'), "#"
+      =link_to image_tag('icon-menu-pinterest.png'), "#"
