@@ -75,7 +75,7 @@ html.mobile-nav-open body {
       overflow:scroll;
     }
     @media(min-width: $breakpoint-b1) {
-      // ensure nav reappears at larger screens sizes
+      // ensure nav reappears at larger screen sizes
       display:block!important;
     }
     // menu link lists
