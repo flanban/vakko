@@ -51,6 +51,10 @@ ul.entries {
         -o-transition: opacity 0.3s ease;
         -ms-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease;
+        @media(max-width: $breakpoint-b) {
+          height:320px;
+          display:none;
+        }
       }
     }
     .rollover {
