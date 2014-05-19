@@ -26,6 +26,9 @@ $seventh-position:48px;
   letter-spacing:1px;
   margin-bottom:12px;
   color:#fff;
+  @media(max-width: $breakpoint-b) {
+   font-size:24px;
+  }
 }
 @mixin grid-subheadline {
   @include proximaSB;

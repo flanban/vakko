@@ -74,17 +74,26 @@ ul.entries {
       transition: opacity 0.3s ease;
       
       .text {
+        height:56px;
+        top:50%;
+        position:relative;
+        margin-top:-30px;
+        color:#fff;
+        @media(max-width: $breakpoint-b) {
+         background:rgba(0,0,0,.8);
+         width:80%;
+         max-width:420px;
+         margin:0 auto;
+         margin-top:-50px;
+         padding:28px 0;
+         height:95px;
+        }
           h2 a {
             @include grid-headline;
           }
           h6 {
             @include grid-subheadline;
           }
-          height:56px;
-          top:50%;
-          position:relative;
-          margin-top:-30px;
-          color:#fff;
           &.dark {
             color:#3d3d3d;
             a {
