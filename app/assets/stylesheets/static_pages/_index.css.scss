@@ -84,6 +84,9 @@ ul.entries {
         bottom:36px;
         left:50%;
         margin-left:-75px;
+        @media(max-width: $breakpoint-b) {
+          display:none;
+        }
         a {
           display:inline-block;
           margin-right:6px;
