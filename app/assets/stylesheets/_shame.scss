@@ -1,8 +1,13 @@
+@import "mixins/breakpoints";
+
 // override bullet nav styles
 .primary-slider.rsDefault {
   .rsBullets {
     line-height:1;
     background:none;
+    @media(max-width: $breakpoint-b) {
+      display:none;
+    }
     .rsBullet {
     padding:43px 0;
     cursor:pointer;
