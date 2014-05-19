@@ -25,6 +25,11 @@ ul.entries {
     @media(min-width: $breakpoint-c) {
       width:50%;
     }
+    &.aspect-ratio-3 {
+      @media(max-width: $breakpoint-b) {
+        display:none;
+      }
+    }
     &:first-child {
       width:100%;
     }
