@@ -1,5 +1,15 @@
 @import "mixins/breakpoints";
 
+
+//hide the word VAKKO on small screens
+#fashion-center {
+  @media(max-width: $breakpoint-b) {
+    h2 a > span {
+      display:none;
+    }
+  }
+}
+
 // override bullet nav styles
 .primary-slider.rsDefault {
   .rsBullets {
