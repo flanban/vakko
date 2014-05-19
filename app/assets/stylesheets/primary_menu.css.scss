@@ -17,13 +17,14 @@ html.mobile-nav-open body {
   overflow: auto;
   @media(max-width: $breakpoint-b) {
     width:100%;
-    height:44px;
+    height:55px;
     position:relative;
+    padding:0;
   }
   #mobile-nav-toggle {
     position:absolute;
-    right:22px;
-    top:34px;
+    right:20px;
+    top:21px;
     color:pink;
     @media(min-width: $breakpoint-b) {
       display:none;
@@ -33,12 +34,13 @@ html.mobile-nav-open body {
   > a.main-logo {
      @media(max-width: $breakpoint-b) {
         //hiding this so i can show the mobile one above on the parent a tag
-        background:url(logo-vakko-mobile.png) no-repeat;
+        background:url(logo-vakko-mobile@2x.png) no-repeat;
+        background-size:32px 32px;
         height:46px;
         width:148px;
         position:absolute;
-        top:22px;
-        left:18px;
+        top:12px;
+        left:20px;
       }
     img {
       margin-bottom:56px;
@@ -66,7 +68,7 @@ html.mobile-nav-open body {
     @media(max-width: $breakpoint-b) {
       display:none;
       position:fixed;
-      top:85px;
+      top:55px;
       left:0;
       width:100%;
       background:#231f20;
