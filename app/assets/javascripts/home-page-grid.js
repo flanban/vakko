@@ -8,6 +8,7 @@ $(function() {
   }
 
 
+  
   function setAspectRation0() {
     entryWidth = $('.aspect-ratio-0').width();
     entryHeight = Math.round($('.aspect-ratio-0').width() / 1.6);//that weird number is the img's aspect ratio in decimal form
@@ -56,6 +57,7 @@ $(function() {
 
   // call functions
   setAspectRatios();
+  
   //resize event
   $(window).resize(function(){
     setAspectRatios();

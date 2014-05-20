@@ -7,19 +7,19 @@
   %li#collections
     .primary-slider.rsDefault.aspect-ratio-0
       .men
-        =link_to image_tag('home-collection-1.jpg', :class => 'rsImg'),'#'
+        =link_to image_tag('home-collection-1.jpg', :class => 'rsImg, grid-image'),'#'
         .rollover
           .text
             %h2=link_to 'vakko collection', collection_path
             %h6 men
       .women
-        =link_to image_tag('home-collection-2.jpg', :class => 'rsImg'),'#'
+        =link_to image_tag('home-collection-2.jpg', :class => 'rsImg grid-image'),'#'
         .rollover
           .text
             %h2=link_to 'vakko collection', collection_path
             %h6 women
   %li#wedding.aspect-ratio-1
-    =link_to image_tag('home-wedding.jpg'), wedding_path
+    =link_to image_tag('home-wedding.jpg', :class => 'grid-image desktop-image'), wedding_path
     .rollover
       .text.dark
         %h2=link_to 'vakko wedding', wedding_path
@@ -29,7 +29,7 @@
         =link_to image_tag('button-play.png'), '#'
         =link_to image_tag('button-info.png'), '#'
   %li#home.aspect-ratio-2
-    =link_to image_tag('home-home.jpg'), home_path
+    =link_to image_tag('home-home.jpg', :class => 'grid-image  desktop-image'), home_path
     .rollover
       .text
         %h2=link_to 'vakko home', home_path
@@ -39,7 +39,7 @@
         =link_to image_tag('button-white-play.png'), '#'
         =link_to image_tag('button-white-info.png'), '#'
   %li#cruise.aspect-ratio-2
-    =link_to image_tag('home-cruise.jpg'), cruise_path
+    =link_to image_tag('home-cruise.jpg', :class => 'grid-image'), cruise_path
     .rollover
       .text
         %h2=link_to 'vakko cruise', cruise_path
@@ -49,7 +49,7 @@
         =link_to image_tag('button-white-play.png'), '#'
         =link_to image_tag('button-white-info.png'), '#'
   %li#perfume.aspect-ratio-1
-    =link_to image_tag('home-perfume.jpg'), perfume_path
+    =link_to image_tag('home-perfume.jpg', :class => 'grid-image'), perfume_path
     .rollover
       .text
         %h2=link_to 'vakko perfume', perfume_path
@@ -59,7 +59,7 @@
         =link_to image_tag('button-white-play.png'), '#'
         =link_to image_tag('button-white-info.png'), '#'
   %li#espace-by-sky.aspect-ratio-2
-    =link_to image_tag('home-espace.jpg'), espace_by_sky_path
+    =link_to image_tag('home-espace.jpg', :class => 'grid-image'), espace_by_sky_path
     .rollover
       .text
         %h2=link_to 'vakko espace', espace_by_sky_path
@@ -69,7 +69,7 @@
         =link_to image_tag('button-white-play.png'), '#'
         =link_to image_tag('button-white-info.png'), '#'
   %li#chocolate.aspect-ratio-2
-    =link_to image_tag('home-chocolate.jpg'), chocolate_path
+    =link_to image_tag('home-chocolate.jpg', :class => 'grid-image'), chocolate_path
     .rollover
       .text
         %h2=link_to 'vakko chocolate', chocolate_path
@@ -86,7 +86,7 @@
       %h6
         Vitali hakko // 2000
   %li#library.aspect-ratio-2
-    =link_to image_tag('home-library.jpg'), library_path
+    =link_to image_tag('home-library.jpg', :class => 'grid-image'), library_path
     .rollover
       .text
         %h2=link_to 'vakko library', library_path
@@ -96,7 +96,7 @@
         =link_to image_tag('button-white-play.png'), '#'
         =link_to image_tag('button-white-info.png'), '#'
   %li#heritage.aspect-ratio-1
-    =link_to image_tag('home-heritage.jpg'), heritage_path
+    =link_to image_tag('home-heritage.jpg', :class => 'grid-image'), heritage_path
     .rollover
       .text
         %h2=link_to 'vakko heritage', heritage_path
@@ -106,7 +106,7 @@
         =link_to image_tag('button-white-play.png'), '#'
         =link_to image_tag('button-white-info.png'), '#'
   %li#fashion-center.aspect-ratio-1
-    =link_to image_tag('home-fashion-center.jpg'), heritage_path
+    =link_to image_tag('home-fashion-center.jpg', :class => 'grid-image'), heritage_path
     .rollover
       .text
         %h2
