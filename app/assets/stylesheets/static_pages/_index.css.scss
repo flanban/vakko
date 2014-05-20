@@ -65,20 +65,19 @@ ul.entries {
         }
       }
     }
-    a {
-      > img {
-        width:100%;
-        height:auto;
-        -webkit-transition: opacity 0.3s ease;
-        -moz-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        -ms-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
-        @media(max-width: $breakpoint-b) {
-          height:100%;
-          width:auto;
-          opacity:1;
-        }
+    a > img, > img {
+      width:100%;
+      display:block;
+      height:auto;
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      @media(max-width: $breakpoint-b) {
+        height:100%;
+        width:auto;
+        opacity:1;
       }
     }
     .rollover {
