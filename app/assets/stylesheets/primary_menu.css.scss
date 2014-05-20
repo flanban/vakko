@@ -1,16 +1,19 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
 
-html.mobile-nav-open body {
-  // freeze screen when mobile nav is open
-    position:fixed;
-    #primary-menu {
-      height:100%;
-      #nav-items {
+@media(max-width: $breakpoint-b) {
+  //set mobile nav behavior
+  html.mobile-nav-open body {
+    // freeze screen when mobile nav is open
+      position:fixed;
+      #primary-menu {
         height:100%;
-        overflow-y:scroll;
+        #nav-items {
+          height:100%;
+          overflow-y:scroll;
+        }
       }
-    }
+}
 }
 
 #primary-menu {
