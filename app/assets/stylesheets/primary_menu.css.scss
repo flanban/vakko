@@ -3,7 +3,14 @@
 
 html.mobile-nav-open body {
   // freeze screen when mobile nav is open
-    overflow:hidden;
+    position:fixed;
+    #primary-menu {
+      height:100%;
+      #nav-items {
+        height:100%;
+        overflow-y:scroll;
+      }
+    }
 }
 
 #primary-menu {
@@ -14,7 +21,6 @@ html.mobile-nav-open body {
   width:320px;
   text-align:center;
   padding:85px 75px 0 75px;
-  overflow: auto;
   @media(max-width: $breakpoint-b) {
     width:100%;
     height:55px;
@@ -58,6 +64,9 @@ html.mobile-nav-open body {
     margin:0 auto;
     display:block;
     background-color:#3f3a3b;
+    @media(max-width: $breakpoint-b) {
+      display:none;
+    }
   }
 
   // set link style for the whole menu
@@ -67,26 +76,37 @@ html.mobile-nav-open body {
   #nav-items {
     @media(max-width: $breakpoint-b) {
       display:none;
-      position:fixed;
+      position:absolute;
       top:55px;
       left:0;
       width:100%;
       background:#231f20;
-      border-top:1px solid #474545;
       z-index: 999;
-      overflow:scroll;
+      background-color:#292526;
+      padding:0 70px;
     }
     @media(min-width: $breakpoint-b1) {
       // ensure nav reappears at larger screen sizes
       display:block!important;
     }
     // menu link lists
+    @media(max-width: $breakpoint-b) {
+      .bottom-section {
+        margin-bottom: 100px;
+        ul li a {
+          padding:8px 0;
+        }
+      }
+    }
     ul {
       font-size:12px;
       padding: 21px 0;
       li {
         a {
           padding:8px 0;
+          @media(max-width: $breakpoint-b) {
+            padding:20px 0;
+          }
         }
       }
     }
@@ -98,6 +118,11 @@ html.mobile-nav-open body {
     margin:30px auto;
     padding:14px 20px;
     letter-spacing:1px;
+    @media(max-width: $breakpoint-b) {
+      padding:19px 0;
+      width:155px;
+      margin:16px auto 30px auto;
+    }
     &:hover {
       background:#474545;
       color:#000;

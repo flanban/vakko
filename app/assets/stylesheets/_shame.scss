@@ -10,6 +10,13 @@
   }
 }
 
+//force things with hiddden sibling to be visible
+@media(max-width: $breakpoint-b) {
+  .mobile-visible {
+    display:block!important;
+  }
+}
+
 // override bullet nav styles
 .primary-slider.rsDefault {
   .rsBullets {

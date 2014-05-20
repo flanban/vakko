@@ -28,7 +28,20 @@ ul.entries {
     position:relative;
     background-size:cover;
     background-repeat:no-repeat;
-    
+    @media(max-width: $breakpoint-b) {
+      .women, .men {
+        height:100%;
+        width:100%;
+        background-repeat:no-repeat;
+        background-size:cover;
+      }
+      .women {
+        background-image:url(../home-women-mobile@2x.jpg);
+      }
+      .men {
+        background-image:url(../home-men-mobile@2x.jpg);
+      }
+    }
     // set the sliders width here
     @media(min-width: $breakpoint-c) {
       width:50%;
@@ -91,12 +104,13 @@ ul.entries {
         margin-top:-30px;
         color:#fff;
         @media(max-width: $breakpoint-b) {
-         width:90%;
-         max-width:420px;
-         margin:0 auto;
-         margin-top:-50px;
-         padding:28px 0;
-         height:95px;
+          background-color:rgba(0,0,0,.8);
+          width:90%;
+          max-width:420px;
+          margin:0 auto;
+          margin-top:-50px;
+          padding:28px 0;
+          height:95px;
         }
           h2 a {
             @include grid-headline;
@@ -164,27 +178,27 @@ ul.entries {
       //swap images for s all screen devices
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-wedding-mobile@2x.jpg);
-      }
-      .text {
-        background-color:rgba(243,225,209,.6);
+        .text {
+          background-color:rgba(243,225,209,.6);
+        }
       }
     }
     &#home {
       background-color:#191919;
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-home-mobile@2x.jpg) ;
-      }
-      .text {
-        background-color:rgba(25,25,25,.8);
+        .text {
+          background-color:rgba(25,25,25,.8);
+        }
       }
     }
     &#cruise {
       background-color:#025078;
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-cruise-mobile@2x.jpg);
-      }
-      .text {
-        background-color:rgba(2,80,120,.8);
+        .text {
+          background-color:rgba(2,80,120,.8);
+        }
       }
     }
     &#perfume {
@@ -193,9 +207,9 @@ ul.entries {
       
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-perfume-mobile@2x.jpg) ;
-      }
-      .text {
-        background-color:rgba(240,211,203,.8);
+        .text {
+          background-color:rgba(240,211,203,.8);
+        }
       }
     }
     &#espace-by-sky {
@@ -203,9 +217,9 @@ ul.entries {
       
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-espace-mobile@2x.jpg) ;
-      }
-      .text {
-        background-color:rgba(50,30,40,.8);
+        .text {
+          background-color:rgba(50,30,40,.8);
+        }
       }
     }
     &#chocolate {
@@ -213,36 +227,36 @@ ul.entries {
       clear:left;
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-chocolate-mobile@2x.jpg) ;
-      }
-      .text {
-        background-color:rgba(53,34,19,.8);
+        .text {
+          background-color:rgba(53,34,19,.8);
+        }
       }
     }
     &#library {
       background-color:#1c1614;
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-library-mobile@2x.jpg) ;
-      }
-      .text {
-        background-color:rgba(109,69,25,.8);
+        .text {
+          background-color:rgba(109,69,25,.8);
+        }
       }
     }
     &#heritage {
       background-color:#34271c;
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-heritage-mobile@2x.jpg);
-      }
-      .text {
-        background-color:rgba(52,39,28,.8);
+        .text {
+          background-color:rgba(52,39,28,.8);
+        }
       }
     }
     &#fashion-center {
       background-color:#2e5d87;
       @media(max-width: $breakpoint-b) {
         background-image:url(../home-fashion-mobile@2x.jpg) ;
-      }
-      .text {
-        background-color:rgba(46,93,135,.8);
+        .text {
+          background-color:rgba(46,93,135,.8);
+        }
       }
     }
     &#vakkorama {
