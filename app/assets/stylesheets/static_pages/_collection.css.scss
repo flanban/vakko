@@ -1,6 +1,11 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
-
+html.slide-info-open {
+  .rsArrow {
+    //hide arrows when menu info is open
+    display:none!important;
+  }
+}
 .collection-slider {
   width:100%;
   height:100%;
@@ -29,7 +34,26 @@
       background:none;
     }
   }
-
+  .info-slideout {
+    background:#fff;
+    height:100%;
+    width:480px;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+    margin-right:-480px;// super important
+    -webkit-transition: margin 0.5s ease;
+    -moz-transition: margin 0.5s ease;
+    -o-transition: margin 0.5s ease;
+    -ms-transition: margin 0.5s ease;
+    transition: margin 0.5s ease;
+    .button-close {
+      position:absolute;
+      top:17px;
+      right:15px;
+    }
+  }
   .slide-title {
     height:56px;
     top:50%;
