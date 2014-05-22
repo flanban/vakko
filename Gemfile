@@ -9,7 +9,6 @@ gem 'pg'
 
 gem 'haml-rails', '>= 0.3.4'
 gem 'html2haml'
-gem 'coffee-rails', '~> 3.2.1'
 gem 'sass-rails',   '~> 3.2.3'
 
 
@@ -42,3 +41,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'rails_12factor', group: :production
+source "https://rubygems.org"
+ruby "1.9.3"

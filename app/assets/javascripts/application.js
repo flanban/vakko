@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require _collection
+//= require home-page-grid
+//= require jquery.royalslider.min.js
+//= require primary-menu
+
+
+
