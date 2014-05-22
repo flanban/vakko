@@ -1,3 +1,28 @@
 #heritage-page {
     height:100%;
+    .heritageslide {
+      > img {
+        width:100%;
+      }
+      .heritage-caption {
+        width:800px;
+        position:absolute;
+        bottom:50px;
+        left:50%;
+        margin-left:-400px;
+        background-color:#fff;
+        padding:30px;
+        .date, .caption {
+          display:inline-block;
+        }
+        .date {
+          width:250px;
+          font-size:40px;
+          
+        }
+        .caption {
+          width:470px;
+        }
+      }
+    }
 }
