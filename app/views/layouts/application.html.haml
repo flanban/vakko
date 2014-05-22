@@ -62,7 +62,7 @@
         var slideCountEl = $('<div class="rsSlideCount rsArrowIcn"></div>').appendTo( $('.rsArrowRight') );
         
         function updCount() {
-          slideCountEl.html( (sliderInstanceCollection.currSlideId+1) + ' of ' + sliderInstanceCollection.numSlides );
+          slideCountEl.html( (sliderInstanceCollection.currSlideId+1) + ' / ' + sliderInstanceCollection.numSlides );
         }
         sliderInstanceCollection.ev.on('rsAfterSlideChange', updCount);
         updCount();
