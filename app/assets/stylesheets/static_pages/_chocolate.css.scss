@@ -1,10 +1,74 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
 #chocolate {
   background-color:#f9f4ed;
   #module-top, #module-bottom {
+    position:relative;
     > img {
       width:100%;
       position:relative;
       display:block;
+    }
+    .slide-title {
+      height:56px;
+      margin-top:-20px;
+      color:#fff;
+      text-align:center;
+      h2 {
+        @include grid-headline;
+        font-size:$seventh-position;
+        color:#5a5550;
+      }
+      h6 {
+        @include grid-subheadline;
+        color:#5a5550;
+      }
+    }
+  }
+  #module-top {
+    .slide-title {
+      position:absolute;
+      top:50%;
+      width:60%;
+
+    }
+  }
+  #module-bottom {
+    > img {
+      position:absolute;
+    }
+    > p:nth-of-type(1) {
+      @include grid-subheadline;
+      line-height:2;
+      width:600px;
+      margin-left:-320px;
+      color:#fff;
+      font-weight:200;
+      font-size:20px;
+      text-align:center;
+      position:relative;
+      left:50%;
+    }
+    .chocolate-slider-a {
+      ul {
+        padding-top:70px;
+        background:#fff;
+        position:relative;
+        width:90%;
+        margin-left:5%;
+        max-width:1120px;
+        height:480px;
+        .slide-text {
+          h6 {
+            @include grid-subheadline;
+          }
+          width:470px;
+          position:absolute;
+          top:20px;
+          text-align:center;
+          left:530px;
+        }
+      }
     }
   }
 }
