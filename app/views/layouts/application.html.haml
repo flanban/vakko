@@ -43,6 +43,27 @@
           arrowsNavAutoHide: false,
           controlsInside: true
         });
-
-
+        var sliderCollection = $('.collection-slider').royalSlider({
+          // options
+          keyboardNavEnabled: true,
+          controlNavigation: 'none',
+          imageScalePadding: 0,
+          imageScaleMode: 'fill',
+          arrowsNav: true,
+          navigateByClick: false,
+          usePreloader: false,
+          slidesSpacing:0,
+          fadeinLoadedSlide: true,
+          addActiveClass: true,
+          arrowsNavAutoHide: false,
+          controlsInside: true
+        });
+        var sliderInstanceCollection = sliderCollection.data('royalSlider');
+        var slideCountEl = $('<div class="rsSlideCount rsArrowIcn"></div>').appendTo( $('.rsArrowRight') );
+        
+        function updCount() {
+          slideCountEl.html( (sliderInstanceCollection.currSlideId+1) + ' of ' + sliderInstanceCollection.numSlides );
+        }
+        sliderInstanceCollection.ev.on('rsAfterSlideChange', updCount);
+        updCount();
       });
