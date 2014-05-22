@@ -9,19 +9,19 @@
       .men
         =link_to image_tag('home-collection-1.jpg', :class => 'rsImg, grid-image'),'#'
         .rollover
-          .text
+          .slide-title
             %h2=link_to 'vakko collection', collection_path
             %h6 men
       .women
         =link_to image_tag('home-collection-2.jpg', :class => 'rsImg grid-image'),'#'
         .rollover
-          .text
+          .slide-title
             %h2=link_to 'vakko collection', collection_path
             %h6 women
   %li#wedding.aspect-ratio-1
     =link_to image_tag('home-wedding.jpg', :class => 'grid-image desktop-image'), wedding_path
     .rollover
-      .text.dark
+      .slide-title.dark
         %h2=link_to 'vakko wedding', wedding_path
         %h6 explore
       .buttons
@@ -31,7 +31,7 @@
   %li#home.aspect-ratio-2
     =link_to image_tag('home-home.jpg', :class => 'grid-image  desktop-image'), home_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko home', home_path
         %h6 explore
       .buttons
@@ -41,7 +41,7 @@
   %li#cruise.aspect-ratio-2
     =link_to image_tag('home-cruise.jpg', :class => 'grid-image'), cruise_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko cruise', cruise_path
         %h6 explore
       .buttons
@@ -51,7 +51,7 @@
   %li#perfume.aspect-ratio-1
     =link_to image_tag('home-perfume.jpg', :class => 'grid-image'), perfume_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko perfume', perfume_path
         %h6 explore
       .buttons
@@ -61,7 +61,7 @@
   %li#espace-by-sky.aspect-ratio-2
     =link_to image_tag('home-espace.jpg', :class => 'grid-image'), espace_by_sky_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko espace', espace_by_sky_path
         %h6 explore
       .buttons
@@ -71,7 +71,7 @@
   %li#chocolate.aspect-ratio-2
     =link_to image_tag('home-chocolate.jpg', :class => 'grid-image'), chocolate_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko chocolate', chocolate_path
         %h6 explore
       .buttons
@@ -88,7 +88,7 @@
   %li#library.aspect-ratio-2
     =link_to image_tag('home-library.jpg', :class => 'grid-image'), library_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko library', library_path
         %h6 explore
       .buttons
@@ -98,7 +98,7 @@
   %li#heritage.aspect-ratio-1
     =link_to image_tag('home-heritage.jpg', :class => 'grid-image'), heritage_path
     .rollover
-      .text
+      .slide-title
         %h2=link_to 'vakko heritage', heritage_path
         %h6 explore
       .buttons
@@ -108,7 +108,7 @@
   %li#fashion-center.aspect-ratio-1
     =link_to image_tag('home-fashion-center.jpg', :class => 'grid-image'), heritage_path
     .rollover
-      .text
+      .slide-title
         %h2
           =link_to fashion_center_path do
             %span
