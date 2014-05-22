@@ -32,16 +32,5 @@
         
         var slider = $('.primary-slider').data('royalSlider');
         
-        //prev/next buttons
-        slider.ev.on('rsAfterSlideChange', function(event) {
-            // triggers after slide change
-          setActiveSliderNav();
-        });
-        $('#slider-next').click(function() {
-          slider.next();
-        });
-        $('#slider-prev').click(function() {
-          slider.prev();
-        });
       });  
   
