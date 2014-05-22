@@ -16,6 +16,15 @@
     color:#fff;
     width:100%;
     text-align:center;
+    h2 {
+      @include grid-headline;
+      font-size:$seventh-position;
+      color:#5a5550;
+    }
+    h6 {
+      @include grid-subheadline;
+      color:#5a5550;
+    }
   }
   .buttons {
     position:absolute;
