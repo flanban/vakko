@@ -17,5 +17,25 @@
     width:100%;
     text-align:center;
   }
-
+  .buttons {
+    position:absolute;
+    top:17px;
+    right:15px;
+    display:inline-block;
+    a {
+      display:inline-block;
+      padding:0 4px;
+      img {
+        opacity:.3;
+        -webkit-transition: opacity 0.5s ease;
+        -moz-transition: opacity 0.5s ease;
+        -o-transition: opacity 0.5s ease;
+        -ms-transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease;
+        &:hover {
+          opacity:1;
+        }
+      }
+    }
+  }
 }
