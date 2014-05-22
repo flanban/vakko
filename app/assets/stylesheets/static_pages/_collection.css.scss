@@ -80,6 +80,7 @@ html.slide-info-open {
     a {
       display:inline-block;
       padding:0 4px;
+
       img {
         opacity:.3;
         -webkit-transition: opacity 0.5s ease;
@@ -91,6 +92,22 @@ html.slide-info-open {
           opacity:1;
         }
       }
+    }
+  }
+}
+.collection-grid {
+  background:#212121;
+  width:100%;
+  height:100%;
+  a {
+    //this is all a little weird to avoid gaps with inline-block. 
+    width:33.333%;
+    display:inline-block;
+    margin-right:-4px;
+    margin-bottom:-4px;
+    img {
+      width:100%;
+      display:block;
     }
   }
 }

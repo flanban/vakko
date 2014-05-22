@@ -5,6 +5,8 @@ Vakko::Application.routes.draw do
 
   match '/collection' => 'StaticPages#collection'
 
+  match '/collection-grid' => 'StaticPages#collection_grid', :as => 'collection_grid'
+
   match '/wedding' => 'StaticPages#wedding'
 
   match "/cruise" => 'StaticPages#cruise'

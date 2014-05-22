@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
 
   def collection
   end
+  
+  def collection_grid
+  end
 
   def wedding
   end
