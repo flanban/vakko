@@ -32,11 +32,15 @@ $seventh-position:48px;
    font-size:24px;
   }
 }
-@mixin large-body-copy {
+@mixin body-copy {
   @include proximaSB;
-  font-size:$third-position;
+  font-size:$second-position;
   line-height:1.8;
   font-weight:200;
+}
+@mixin large-body-copy {
+  @include body-copy;
+  font-size:$third-position;
 }
 @mixin grid-subheadline {
   @include proximaSB;
@@ -58,6 +62,13 @@ $seventh-position:48px;
   -o-transition: color 0.3s ease;
   -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+@mixin callout {
+  @include didot64L;
+  font-size:$fourth-position;
+  line-height:1.2;
+  color:#767676;
+  letter-spacing:1px;
 }
 .quote {
   position:relative;

@@ -37,17 +37,26 @@
     > img {
       position:absolute;
     }
-    > p:nth-of-type(1) {
+    > p:nth-of-type(-n+2) {
       @include grid-subheadline;
-      line-height:2;
+      line-height:1.9;
       width:600px;
       margin-left:-320px;
-      color:#fff;
+      padding-top:16px;
+      color:#f4eae5;
       font-weight:200;
       font-size:20px;
       text-align:center;
       position:relative;
       left:50%;
+    }
+    //just the first one
+    > p:nth-of-type(1) {
+      padding-top:100px;
+    }
+    //just the second one
+    > p:nth-of-type(2) {
+      margin-bottom:100px;
     }
     .chocolate-slider-a {
       ul {
@@ -58,15 +67,37 @@
         margin-left:5%;
         max-width:1120px;
         height:480px;
-        .slide-text {
-          h6 {
-            @include grid-subheadline;
+        li {
+          position:relative;
+          .slide-text {
+            h6 {
+              @include grid-subheadline;
+              margin-bottom:16px;
+            }
+            width:auto;
+            max-width:400px;
+            position:absolute;
+            top:20px;
+            text-align:center;
+            left:auto;
+            right:90px;
           }
-          width:470px;
-          position:absolute;
-          top:20px;
-          text-align:center;
-          left:530px;
+          p:nth-of-type(1) {
+            margin-bottom:65px;
+            @include body-copy;
+          }
+          p.callout {
+            @include callout;
+            font-size:22px;
+          }
+          .shop-chocolate {
+            text-align:center;
+            border:1px solid #8f8f8f;
+            width:220px;
+            height:38px;
+            padding:7px;
+            margin:auto;
+          }
         }
       }
     }
