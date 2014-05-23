@@ -42,6 +42,15 @@
         padding:15px;
         display:block;
         margin:auto;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color:#927253;
+          color:#f7f0ea;
+        }
       }
     }
   }
