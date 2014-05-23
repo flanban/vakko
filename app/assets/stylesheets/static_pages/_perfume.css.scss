@@ -1,3 +1,6 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
+
 #content-area {
   height:100%;
 }
@@ -5,4 +8,41 @@
   background:asset_url('perfume-bg.jpg', image) no-repeat;
   background-size:cover;
   height:100%;
+  position:relative;
+  .perfume-text-wrapper { //this extra div is for responsive centerring
+    width:50%;
+    left:0;
+    height:100%;
+    position:relative;
+    min-width:440px;
+    .perfume-text {
+      text-align:center;
+      width:380px;
+      top:50%;
+      left:60%;
+      margin-left:-190px;
+      position:absolute;
+      margin-top:-90px;
+      h5 {
+        @include grid-subheadline;
+        color:#d6bca2;
+        margin-bottom:19px;
+      }
+      p {
+        @include large-body-copy;
+        color:#927253;
+        margin-bottom:54px;
+      }
+      > a {
+        @include grid-subheadline;
+        color:#927253;
+        border:1px solid #baa48f;
+        height:45px;
+        width:220px;
+        padding:15px;
+        display:block;
+        margin:auto;
+      }
+    }
+  }
 }
