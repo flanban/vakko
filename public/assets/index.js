@@ -1,1 +1,0 @@
-$(".static_pages.index").length>0&&$(document).ready(function(a){a(".primary-slider").royalSlider({keyboardNavEnabled:!0,imageScalePadding:0,arrowsNav:!1,controlNavigation:"bullets",navigateByClick:!1,usePreloader:!1,slidesSpacing:0,fadeinLoadedSlide:!0,addActiveClass:!0,arrowsNavAutoHide:!1,controlsInside:!0})});
