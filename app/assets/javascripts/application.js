@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require home-page-grid
-//= require jquery.royalslider.min.js
-//= require primary-menu
+//= require vendor/jquery.royalslider.min.js
+//= require shared/page-grid
+//= require shared/primary-menu
 
 
 
