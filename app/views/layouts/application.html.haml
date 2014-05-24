@@ -43,7 +43,7 @@
           arrowsNavAutoHide: false,
           controlsInside: true
         });
-        $('.chocolate-slider-a > ul').royalSlider({
+        var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
           // options
           keyboardNavEnabled: true,
           imageScalePadding: 0,
@@ -56,7 +56,29 @@
           addActiveClass: true,
           arrowsNavAutoHide: false,
           controlsInside: true
+        }).data('royalSlider');
+        firstChocolateSlider.ev.on('rsAfterSlideChange', function(event) {
+
+          if(this.currSlideId == 0) {
+            $('.good-chocolate-link').addClass('choco-nav-active');
+            $('.art-of-tasting-link').removeClass('choco-nav-active')
+          } else {
+            $('.good-chocolate-link').removeClass('choco-nav-active');
+            $('.art-of-tasting-link').addClass('choco-nav-active')
+          }
         });
+        //direct link to choco slides
+        $('.good-chocolate-link').click(function(e) {
+          e.preventDefault();
+          firstChocolateSlider.goTo(0);
+          return false;
+        });
+        $('.art-of-tasting-link').click(function(e) {
+          e.preventDefault();
+          firstChocolateSlider.goTo(1);
+          return false;
+        });
+        
         var sliderCollection = $('.collection-slider').royalSlider({
           // options
           keyboardNavEnabled: true,

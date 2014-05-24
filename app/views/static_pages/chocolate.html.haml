@@ -1,4 +1,4 @@
-#chocolate
+#chocolate-page
   #module-top
     =image_tag('chocolate-top-bg.jpg')
     .slide-title
@@ -8,30 +8,35 @@
     =image_tag('chocolate-bottom-bg.jpg')
     %p Vakko Chocolate by Vakko, the first and only fashion brand in Turkey, producing chocolate using its own brand name…  
     %p Created based on the world's finest Swiss chocolate formula, Vakko Chocoalte invites Vakko friends to a world of flavors with its selection of 15 different product groups.
-    %ul
-      %li good chocolate
-      %li the art of tasting
     .chocolate-slider-a
+      .choco-slider-nav-a
+        =link_to 'good chocolate', '#', :class => "choco-nav-active good-chocolate-link"
+        |
+        =link_to 'the art of tasting', "#", :class => 'art-of-tasting-link'
       %ul
-        %li
-          =image_tag('chocolate-gallery-1.jpg')
-          .slide-text
-            %h6 good chocolate
-            %p Good chocolate manifests itself first with its smell, color, luster and velvety texture. And then with its perfect flavor... Neither too bitter, nor too sweet... A pinch of salt enhances the flavor. It should break in a straight line and the breaking sound must be heard. It is not easy to achieve a good chocolate or to forget it once found...
-            %p.callout It is not easy to achieve a good chocolate or to forget  it once found...
-          %p.shop-chocolate shop vakko chocolate
+        %li#good-chocolate
+          .image-holder
+            =image_tag('chocolate-gallery-1.jpg')
+          .text-holder
+            .slide-text
+              %h6 good chocolate
+              %p Good chocolate manifests itself first with its smell, color, luster and velvety texture. And then with its perfect flavor... Neither too bitter, nor too sweet... A pinch of salt enhances the flavor. It should break in a straight line and the breaking sound must be heard. It is not easy to achieve a good chocolate or to forget it once found...
+              %p.callout It is not easy to achieve a good chocolate or to forget  it once found...
+          =link_to 'shop vakko chocolate', '#', :class => "shop-chocolate"
             
-        %li
-          =image_tag('chocolate-gallery-2.jpg')
-          .slide-text
-            %h6 the art of tasting
-            %p Vakko Chocolate the intensity of select cocoas blending with various aromas… To better enjoy the basic flavors and initial aromas, let the chocolate melt after putting it in your mouth. Then chew a few times to break it into small pieces. Wait for the pieces to melt slowly. You will feel the aromas that make Vakko Chocolate unforgettable turning into a unique taste in your mouth…
-            %p.callout You will feel the aromas that makeVakko Chocolate unforgetable..
-          %p.shop-chocolate shop vakko chocolate
+        %li#art-of-tasting
+          .image-holder.image-holder-right
+            =image_tag('chocolate-gallery-2.jpg')
+          .text-holder.text-holder-left
+            .slide-text
+              %h6 the art of tasting
+              %p Vakko Chocolate the intensity of select cocoas blending with various aromas… To better enjoy the basic flavors and initial aromas, let the chocolate melt after putting it in your mouth. Then chew a few times to break it into small pieces. Wait for the pieces to melt slowly. You will feel the aromas that make Vakko Chocolate unforgettable turning into a unique taste in your mouth…
+              %p.callout You will feel the aromas that makeVakko Chocolate unforgetable..
+          =link_to 'shop vakko chocolate', '#', :class => "shop-chocolate"
       
-      .slide-title
-        %h2 the collection
-        %h6 15 UNIQUE CHOCOLATE PRODUCTS
+    .slide-title
+      %h2 the collection
+      %h6 15 UNIQUE CHOCOLATE PRODUCTS
 
       %ul
         %li
@@ -45,7 +50,7 @@
           %h6 vakko praline
           %p Liquor, hazelnut, almond  croquant, coffee, instant coffee, coconut , rum, corn flake, turkish delight and orange flavored pralines are hand made by Vakko chocolate chefs.
           %p.shop-praline shop vakko praline
-      
+
         
         
         
