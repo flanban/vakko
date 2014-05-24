@@ -1,16 +1,22 @@
 $(document).ready(function(){
-  $('.heritage-slider').royalSlider({
+  var heritageSlider = $('.heritage-slider').royalSlider({
     // options
     keyboardNavEnabled: true,
     imageScalePadding: 0,
     imageScaleMode: 'fill',
+    controlNavigation: 'none',
     arrowsNav: false,
     navigateByClick: false,
     usePreloader: false,
     slidesSpacing:0,
     fadeinLoadedSlide: true,
     addActiveClass: true,
-    arrowsNavAutoHide: false,
     controlsInside: true
+  }).data('royalSlider');
+  $('.rsArrowRight').click(function(e) {
+    heritageSlider.next();
+  });
+  $('.rsArrowLeft').click(function(e) {
+    heritageSlider.prev();
   });
 });
