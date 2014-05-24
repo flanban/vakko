@@ -23,7 +23,8 @@ html.slide-info-open {
   }
   .rsSlideCount {
     @include grid-subheadline;
-    left:-30px;
+    left:-10px;
+    letter-spacing:0px;
     opacity:1!important;
     color:#5a5550;
     font-size:11px;

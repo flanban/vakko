@@ -35,7 +35,7 @@ $(document).ready(function(){
     return false;
   });
   //second chocolate slider
-  $('.chocolate-slider-b > ul').royalSlider({
+  var bottomChocolateSlider = $('.chocolate-slider-b > ul').royalSlider({
     // options
     keyboardNavEnabled: true,
     imageScalePadding: 0,
@@ -47,4 +47,13 @@ $(document).ready(function(){
     slidesSpacing:0,
     fadeinLoadedSlide: true,
   });
+  
+  var sliderInstance = bottomChocolateSlider.data('royalSlider');
+  var slideCountEl = $('<div class="rsSlideCount"></div>').appendTo( $('.rsArrowRight') );
+
+  function updCount() {
+    slideCountEl.html( (sliderInstance.currSlideId+1) + ' / ' + sliderInstance.numSlides );
+  }
+  sliderInstance.ev.on('rsAfterSlideChange', updCount);
+  updCount();
 });
