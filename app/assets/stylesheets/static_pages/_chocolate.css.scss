@@ -34,7 +34,7 @@
   }
   #module-bottom {
     .chocolate-slider-b.chocolate-arrows {
-      height:660px;
+      height:708px;
       width:100%;
       .rsArrow {
         height: 100%;
@@ -44,17 +44,19 @@
         cursor: pointer;
         z-index: 21;
         .rsSlideCount {
-          right: 34px;
+          right: 22px;
           position: absolute;
-          top: 29%;
+          top: 26%;
           width: 40px;
+          padding-top:2px;
+          font-weight:600;
           @include grid-subheadline;
           letter-spacing:0px;
         }
         .rsArrowIcn {
           width: 32px;
           height: 32px;
-          top: 30%;
+          top: 27%;
           left: 50%;
           margin-top:-16px; 
           margin-left: -16px;
@@ -103,7 +105,8 @@
             margin-top:55px;
             display:inline-block;
             border:rgba(71,71,88,.6) 1px solid;
-            padding:10px 20px;
+            padding:13px 30px;
+            margin-bottom:48px;
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
