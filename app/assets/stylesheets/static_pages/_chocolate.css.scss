@@ -46,7 +46,7 @@
         .rsArrowIcn {
           width: 32px;
           height: 32px;
-          top: 50%;
+          top: 30%;
           left: 50%;
           margin-top:-16px; 
           margin-left: -16px;
@@ -62,14 +62,14 @@
         }
         &.rsArrowLeft {
           top:0;
-          left:0;
+          left:60px;
           .rsArrowIcn { 
             background-position: -64px -32px;
           }
         }
         &.rsArrowRight {
           top:0;
-          right:0;
+          right:60px;
           .rsArrowIcn { background-position: -64px -64px; }
         }
       }
@@ -79,9 +79,37 @@
         li {
           text-align:center;
           padding:0 5%;
+          h6 {
+            @include grid-subheadline;
+            margin-bottom:10px;
+          }
+          p {
+            margin:auto;
+            @include body-copy;
+            max-width:520px;
+          }
+          // another button i need to refactor
+          > a {
+            @include grid-subheadline;
+            color:#231f20;
+            margin-top:55px;
+            display:inline-block;
+            border:rgba(71,71,88,.6) 1px solid;
+            padding:10px 20px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color:#231f20;
+              color:#f8f3ed;
+            }
+          }
         }
       }
     }
+    // not actually in a slide. its above the bottom slider
     .slide-title {
       position:relative;
       margin-top:300px;
@@ -114,7 +142,6 @@
     > p:nth-of-type(2) {
       margin-bottom:100px;
     }
-
     .chocolate-slider-a {
       width:90%;
       position:relative;
@@ -214,6 +241,15 @@
             bottom:50px;
             left:50%;
             margin-left:-110px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color:#371b1d;
+              color:#fff;
+            }
           }
         }
       }

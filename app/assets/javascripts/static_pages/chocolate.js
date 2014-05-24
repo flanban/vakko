@@ -1,4 +1,5 @@
-var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
+$(document).ready(function(){
+  var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
     // options
     keyboardNavEnabled: true,
     imageScalePadding: 0,
@@ -33,7 +34,6 @@ var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
     firstChocolateSlider.goTo(1);
     return false;
   });
-
   //second chocolate slider
   $('.chocolate-slider-b > ul').royalSlider({
     // options
@@ -46,4 +46,5 @@ var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
     usePreloader: false,
     slidesSpacing:0,
     fadeinLoadedSlide: true,
+  });
 });

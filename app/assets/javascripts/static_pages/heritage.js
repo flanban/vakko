@@ -1,18 +1,16 @@
-if ($('.static_pages.heritage').length > 0) {
-  $(document).ready(function(){
-    $('.heritage-slider').royalSlider({
-      // options
-      keyboardNavEnabled: true,
-      imageScalePadding: 0,
-      imageScaleMode: 'fill',
-      arrowsNav: false,
-      navigateByClick: false,
-      usePreloader: false,
-      slidesSpacing:0,
-      fadeinLoadedSlide: true,
-      addActiveClass: true,
-      arrowsNavAutoHide: false,
-      controlsInside: true
-    });
+$(document).ready(function(){
+  $('.heritage-slider').royalSlider({
+    // options
+    keyboardNavEnabled: true,
+    imageScalePadding: 0,
+    imageScaleMode: 'fill',
+    arrowsNav: false,
+    navigateByClick: false,
+    usePreloader: false,
+    slidesSpacing:0,
+    fadeinLoadedSlide: true,
+    addActiveClass: true,
+    arrowsNavAutoHide: false,
+    controlsInside: true
   });
-}
+});
