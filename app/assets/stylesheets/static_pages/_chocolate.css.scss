@@ -33,18 +33,52 @@
     }
   }
   #module-bottom {
-    .chocolate-slider-b {
+    .chocolate-slider-b.chocolate-arrows {
       height:660px;
       width:100%;
+      .rsArrow {
+        height: 100%;
+        width: 44px;
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        z-index: 21;
+        .rsArrowIcn {
+          width: 32px;
+          height: 32px;
+          top: 50%;
+          left: 50%;
+          margin-top:-16px; 
+          margin-left: -16px;
+
+          position: absolute; 
+          cursor: pointer;  
+          background: asset_url('rs-default.png', image);
+
+          border-radius: 2px;
+        }
+        &.rsArrowDisabled {
+          opacity:.3;
+        }
+        &.rsArrowLeft {
+          top:0;
+          left:0;
+          .rsArrowIcn { 
+            background-position: -64px -32px;
+          }
+        }
+        &.rsArrowRight {
+          top:0;
+          right:0;
+          .rsArrowIcn { background-position: -64px -64px; }
+        }
+      }
       > ul {
         width:100%;
         height:100%;
         li {
           text-align:center;
           padding:0 5%;
-          img {
-            
-          }
         }
       }
     }
