@@ -18,6 +18,12 @@ Vakko::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
+  #precompile page specific js
+  config.assets.precompile += %w( collection.js )
+  config.assets.precompile += %w( heritage.js )
+  config.assets.precompile += %w( index.js )
+  config.assets.precompile += %w( chocolate.js )
+  
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
