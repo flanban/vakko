@@ -30,13 +30,31 @@
       position:absolute;
       top:50%;
       width:60%;
-
     }
   }
   #module-bottom {
+    .chocolate-slider-b {
+      height:660px;
+      width:100%;
+      > ul {
+        width:100%;
+        height:100%;
+        li {
+          text-align:center;
+          padding:0 5%;
+          img {
+            
+          }
+        }
+      }
+    }
     .slide-title {
       position:relative;
       margin-top:300px;
+      margin-bottom:60px;
+      h2, h6 {
+        color:#684739;
+      }
     }
     > img {
       position:absolute;
@@ -74,9 +92,7 @@
         max-width:1120px;
         margin:auto;
         color:#d2c1bd;
-        
         a {
-          
           @include grid-subheadline;
           display:inline-block;
           padding-top:40px;
@@ -88,6 +104,11 @@
           &:hover {
             color:#4f3933;
           }
+          -webkit-transition: color 0.3s ease;
+          -moz-transition: color 0.3s ease;
+          -o-transition: color 0.3s ease;
+          -ms-transition: color 0.3s ease;
+          transition: color 0.3s ease;
         }
       }
       ul {
@@ -146,8 +167,6 @@
               }
             }
           }
-
-
           .shop-chocolate {
             @include grid-subheadline;
             text-align:center;

@@ -7,105 +7,13 @@
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-  %body
+  %body{:class => "#{controller_name} #{action_name}"}
     = render "shared/primary_menu"
     #content-area
       = yield
 
-    :javascript
-      $(document).ready(function($) {
-        // initialize slider and save it's object
-        $('.primary-slider').royalSlider({
-          // options
-          keyboardNavEnabled: true,
-          imageScalePadding: 0,
-          arrowsNav: false,
-          controlNavigation: 'bullets',
-          navigateByClick: false,
-          usePreloader: false,
-          slidesSpacing:0,
-          fadeinLoadedSlide: true,
-          addActiveClass: true,
-          arrowsNavAutoHide: false,
-          controlsInside: true
-        });
-        $('.heritage-slider').royalSlider({
-          // options
-          keyboardNavEnabled: true,
-          imageScalePadding: 0,
-          imageScaleMode: 'fill',
-          arrowsNav: false,
-          navigateByClick: false,
-          usePreloader: false,
-          slidesSpacing:0,
-          fadeinLoadedSlide: true,
-          addActiveClass: true,
-          arrowsNavAutoHide: false,
-          controlsInside: true
-        });
-        var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
-          // options
-          keyboardNavEnabled: true,
-          imageScalePadding: 0,
-          imageScaleMode: 'fill',
-          arrowsNav: false,
-          navigateByClick: false,
-          usePreloader: false,
-          slidesSpacing:0,
-          fadeinLoadedSlide: true,
-          addActiveClass: true,
-          arrowsNavAutoHide: false,
-          controlsInside: true
-        }).data('royalSlider');
-        firstChocolateSlider.ev.on('rsAfterSlideChange', function(event) {
-
-          if(this.currSlideId == 0) {
-            $('.good-chocolate-link').addClass('choco-nav-active');
-            $('.art-of-tasting-link').removeClass('choco-nav-active')
-          } else {
-            $('.good-chocolate-link').removeClass('choco-nav-active');
-            $('.art-of-tasting-link').addClass('choco-nav-active')
-          }
-        });
-        //direct link to choco slides
-        $('.good-chocolate-link').click(function(e) {
-          e.preventDefault();
-          firstChocolateSlider.goTo(0);
-          return false;
-        });
-        $('.art-of-tasting-link').click(function(e) {
-          e.preventDefault();
-          firstChocolateSlider.goTo(1);
-          return false;
-        });
-        
-        var sliderCollection = $('.collection-slider').royalSlider({
-          // options
-          keyboardNavEnabled: true,
-          controlNavigation: 'none',
-          imageScalePadding: 0,
-          imageScaleMode: 'fill',
-          arrowsNav: true,
-          navigateByClick: false,
-          usePreloader: false,
-          slidesSpacing:0,
-          fadeinLoadedSlide: true,
-          addActiveClass: true,
-          arrowsNavAutoHide: false,
-          deeplinking: {
-            enabled: true,
-            change: true,
-            prefix: '-'
-          },
-          controlsInside: true
-        });
-        var sliderInstanceCollection = sliderCollection.data('royalSlider');
-        var slideCountEl = $('<div class="rsSlideCount rsArrowIcn"></div>').appendTo( $('.rsArrowRight') );
-        
-        function updCount() {
-          slideCountEl.html( (sliderInstanceCollection.currSlideId+1) + ' / ' + sliderInstanceCollection.numSlides );
-        }
-        sliderInstanceCollection.ev.on('rsAfterSlideChange', updCount);
-        updCount();
-      });
+    = javascript_include_tag "index"
+    = javascript_include_tag "heritage"
+    = javascript_include_tag "collection"
+    = javascript_include_tag "chocolate"
       

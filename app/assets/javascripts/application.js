@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require _collection
 //= require home-page-grid
 //= require jquery.royalslider.min.js
 //= require primary-menu
