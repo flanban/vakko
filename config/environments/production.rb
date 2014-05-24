@@ -19,10 +19,10 @@ Vakko::Application.configure do
   config.assets.compress = true
 
   #precompile page specific js
-  config.assets.precompile += %w( collection.js )
-  config.assets.precompile += %w( heritage.js )
-  config.assets.precompile += %w( index.js )
-  config.assets.precompile += %w( chocolate.js )
+  config.assets.precompile += %w( static_pages/collection.js )
+  config.assets.precompile += %w( static_pages/heritage.js )
+  config.assets.precompile += %w( static_pages/index.js )
+  config.assets.precompile += %w( static_pages/chocolate.js )
   
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false

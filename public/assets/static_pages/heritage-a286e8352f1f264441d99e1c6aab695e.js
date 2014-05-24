@@ -1,0 +1,1 @@
+$(".static_pages.heritage").length>0&&$(document).ready(function(){$(".heritage-slider").royalSlider({keyboardNavEnabled:!0,imageScalePadding:0,imageScaleMode:"fill",arrowsNav:!1,navigateByClick:!1,usePreloader:!1,slidesSpacing:0,fadeinLoadedSlide:!0,addActiveClass:!0,arrowsNavAutoHide:!1,controlsInside:!0})});
