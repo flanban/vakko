@@ -63,6 +63,8 @@
     @include grid-subheadline;
     width:25%;
     line-height:1;
+    height:100%;
+    overflow:scroll;
     li {
       margin-bottom:12px;
     }
