@@ -19,7 +19,7 @@ Vakko::Application.configure do
   config.assets.compress = true
 
   #precompile page specific js
-  config.assets.precompile += %w( static_pages/collection.js )
+  config.assets.precompile += %w( static_pages/lookbook.js )
   config.assets.precompile += %w( static_pages/heritage.js )
   config.assets.precompile += %w( static_pages/index.js )
   config.assets.precompile += %w( static_pages/chocolate.js )

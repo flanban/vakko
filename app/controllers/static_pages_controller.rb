@@ -12,6 +12,9 @@ class StaticPagesController < ApplicationController
   def collection_grid
   end
 
+  def lookbook_b
+  end
+
   def wedding
   end
 
