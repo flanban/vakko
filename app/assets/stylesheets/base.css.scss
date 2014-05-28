@@ -15,6 +15,18 @@ a {
   text-decoration:none;
   display:block;
 }
+
+//clearfix
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
 #content-area {
   position:absolute;
   top:0;

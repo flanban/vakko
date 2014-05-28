@@ -1,16 +1,25 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
 .lookbook-b.bottom {
+  background:#fff;
   width:100%;
   > * {
     float:left;
   }
   .image-holder {
-    width:80%;
+    width:75%;
     img {
       width:100%;
       display:block;
     }
   }
   .menu {
-    width:20%;
+    padding:40px;
+    @include grid-subheadline;
+    width:25%;
+    line-height:1;
+    li {
+      margin-bottom:12px;
+    }
   }
 }
