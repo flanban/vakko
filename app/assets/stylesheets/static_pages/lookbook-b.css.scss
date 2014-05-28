@@ -1,5 +1,26 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
+
+.lookbook-b.lookbook-slider {
+
+  .rsArrow.rsArrowDisabled {
+    .rsArrowIcn { 
+      opacity:.4;
+    }
+  }
+  .rsArrowIcn { 
+    background: asset_url('rs-default-gold.png', image);  
+  }
+
+  .rsSlideCount {
+    background:none;
+     color:#cdbc92;
+  }
+
+  .slide-title {
+    h2, h6 { color:#cdbc92;}
+  }
+}
 .lookbook-b.bottom {
   background:#fff;
   width:100%;
