@@ -1,0 +1,16 @@
+.lookbook-b.bottom {
+  width:100%;
+  > * {
+    float:left;
+  }
+  .image-holder {
+    width:80%;
+    img {
+      width:100%;
+      display:block;
+    }
+  }
+  .menu {
+    width:20%;
+  }
+}

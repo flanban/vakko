@@ -18,7 +18,7 @@ $(document).ready(function(){
   }, 16);
 
 //slider stuff
-  var sliderCollection = $('.collection-slider').royalSlider({
+  var lookbookSlider = $('.lookbook-slider').royalSlider({
     // options
     keyboardNavEnabled: true,
     controlNavigation: 'none',
@@ -38,12 +38,12 @@ $(document).ready(function(){
     },
     controlsInside: true
   });
-  var sliderInstanceCollection = sliderCollection.data('royalSlider');
+  var sliderInstanceLookbook = lookbookSlider.data('royalSlider');
   var slideCountEl = $('<div class="rsSlideCount rsArrowIcn"></div>').appendTo( $('.rsArrowRight') );
 
   function updCount() {
-    slideCountEl.html( (sliderInstanceCollection.currSlideId+1) + ' / ' + sliderInstanceCollection.numSlides );
+    slideCountEl.html( (sliderInstanceLookbook.currSlideId+1) + ' / ' + sliderInstanceLookbook.numSlides );
   }
-  sliderInstanceCollection.ev.on('rsAfterSlideChange', updCount);
+  sliderInstanceLookbook.ev.on('rsAfterSlideChange', updCount);
   updCount();
 });
