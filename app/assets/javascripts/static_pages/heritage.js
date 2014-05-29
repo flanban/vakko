@@ -16,10 +16,15 @@ $(document).ready(function(){
   
   
   function updateCaptionInfo() {
+    
+    $('.caption').hide();
+    
     var caption = $('.rsActiveSlide .rsContent').attr('data-heritage-caption');
     var heritageDate = $('.rsActiveSlide .rsContent').attr('data-date');
-    $('.caption').text(caption)
-    $('.date span').text(heritageDate)
+
+    $('.caption').text(caption);
+    $('.date span').text(heritageDate);
+    $('.caption').fadeIn('slow');
   }
   updateCaptionInfo();
   
