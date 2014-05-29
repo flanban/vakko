@@ -87,6 +87,11 @@
       letter-spacing:1px;
       padding:9px 0;
       display:block;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      transition: color 0.3s ease;
       &.date-active {
         color:#FFF;
       }
