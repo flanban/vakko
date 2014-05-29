@@ -15,6 +15,6 @@
 //= require vendor/jquery.royalslider.min.js
 //= require shared/page-grid
 //= require shared/primary-menu
-
+//= require static_pages/lookbook_subnav
 
 

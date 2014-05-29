@@ -1,11 +1,12 @@
 #primary-menu
   =link_to image_tag('logo-vakko.png'), root_path, :class => 'main-logo'
   =link_to image_tag('toggle-menu.png', size: "20x14"), root_path, :id => 'mobile-nav-toggle'
+  
   %span.menu-divider
   
   #nav-items
     %ul
-      %li=link_to 'collection', collection_path
+      %li.collection.has-subnav=link_to 'collection', collection_path
       %li=link_to 'wedding', wedding_path    
       %li=link_to 'home', home_path
       %li=link_to 'cruise', cruise_path

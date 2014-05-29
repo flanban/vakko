@@ -9,8 +9,10 @@
     = csrf_meta_tags
   %body{:class => "#{controller_name} #{action_name}"}
     = render "shared/primary_menu"
+    
     #content-area
       = yield
-
+      = render "shared/subnav"
+      
     = yield :page_js
       

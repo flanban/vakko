@@ -16,6 +16,53 @@
 }
 }
 
+#subnav-menu {
+  background:#fff;
+  width:160px;
+  height:100%;  
+  position:absolute;
+  left:0px;
+  top:0;
+  z-index:40;
+  visibility:hidden;
+  opacity:0;
+  text-align:center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  &.hover {
+    visibility:visible;
+    opacity:1;
+  }
+  &.active {
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  #marker {
+    position:absolute;
+    top:270px;
+    left:-8px;
+    z-index:1000;
+  }
+  ul {
+    
+    padding:40px 0px;
+    li {
+      @include grid-subheadline;
+      letter-spacing:1px;
+      color:#000;
+      padding:8px 20px;
+      
+      a {
+        color:#999;
+      }
+    }
+  }
+}
+
+
 #primary-menu {
   // high-level menu layout
   background:#231f20;
