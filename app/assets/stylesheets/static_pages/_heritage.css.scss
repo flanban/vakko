@@ -80,8 +80,10 @@
     background:#121212;
     text-align:center;
     overflow:scroll;
+    background-color:#231f20;
     span {
       @include grid-subheadline;
+      color:#3b3a3a;
       letter-spacing:1px;
       padding:9px 0;
       display:block;
