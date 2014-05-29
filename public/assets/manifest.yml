@@ -175,6 +175,8 @@ static_pages/index.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
 static_pages.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
 static_pages/lookbook.js: static_pages/lookbook-f4e2d179e016f484c9d2ba624648a22c.js
 static_pages/lookbook/index.js: static_pages/lookbook-f4e2d179e016f484c9d2ba624648a22c.js
+static_pages/lookbook_b.js: static_pages/lookbook_b-e6b93a20e9f672691d83333565e60503.js
+static_pages/lookbook_b/index.js: static_pages/lookbook_b-e6b93a20e9f672691d83333565e60503.js
 static_pages/lookbook_subnav.js: static_pages/lookbook_subnav-df45c33075a0febf2971a46ed1b5730b.js
 static_pages/lookbook_subnav/index.js: static_pages/lookbook_subnav-df45c33075a0febf2971a46ed1b5730b.js
 application.css: application-376fef3e221849b7b8e281507c3f7035.css
