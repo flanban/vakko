@@ -18,13 +18,23 @@ $(document).ready(function(){
   function updateCaptionInfo() {
     
     $('.caption').hide();
-    
     var caption = $('.rsActiveSlide .rsContent').attr('data-heritage-caption');
     var heritageDate = $('.rsActiveSlide .rsContent').attr('data-date');
-
     $('.caption').text(caption);
     $('.date span').text(heritageDate);
     $('.caption').fadeIn('slow');
+    
+    //update vertical menu
+    $('.vertical-date-menu span').each(function() {
+       if (heritageDate == $(this).text()) {
+         $('.vertical-date-menu span').removeClass('date-active')
+         $(this).addClass('date-active')
+       }
+    });
+    
+    if (heritageDate == $('.vertical-date-menu span').text) {
+      alert(1)
+    }
   }
   updateCaptionInfo();
   

@@ -87,6 +87,9 @@
       letter-spacing:1px;
       padding:9px 0;
       display:block;
+      &.date-active {
+        color:#FFF;
+      }
     }
   }
 }
