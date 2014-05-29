@@ -60,23 +60,31 @@
         opacity:.3;
       }
       &.rsArrowLeft {
-        left:20px;
+        left:28px;
         .rsArrowIcn { 
           background-position: -64px -32px;
         }
       }
       &.rsArrowRight {
-        right:20px;
+        right:28px;
         .rsArrowIcn { background-position: -64px -64px; }
       }
     }
   }
   .vertical-date-menu {
     height:100%;
-    width:40px;
+    width:43px;
     position:absolute;
     top:0;
     right:0;
     background:#121212;
+    text-align:center;
+    overflow:scroll;
+    span {
+      @include grid-subheadline;
+      letter-spacing:1px;
+      padding:9px 0;
+      display:block;
+    }
   }
 }
