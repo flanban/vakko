@@ -2,7 +2,7 @@
   = javascript_include_tag 'static_pages/chocolate'
 
 #chocolate-page
-  #module-top
+  #module-top.aspect-ratio-0
     =image_tag('chocolate-top-bg.jpg')
     .slide-title
       %h2 vakko chocolate
@@ -15,7 +15,8 @@
       =image_tag('chocolate-bottom-bg.jpg', :id => 'choco-btm-bg')
       .choco-slider-nav-a
         =link_to 'good chocolate', '#', :class => "choco-nav-active good-chocolate-link"
-        |
+        %span 
+          |
         =link_to 'the art of tasting', "#", :class => 'art-of-tasting-link'
       %ul
         %li#good-chocolate

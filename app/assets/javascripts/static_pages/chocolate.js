@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  // set aspect ratio
+  
+  
+  
+  //sliders
   var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
     // options
     keyboardNavEnabled: true,

@@ -10,27 +10,40 @@
       width:100%;
       position:relative;
       display:block;
+      @media(max-width: $breakpoint-b) {
+        display:none;
+      }
     }
+
     .slide-title {
       height:56px;
       text-align:center;
       h2 {
         @include grid-headline;
         font-size:$seventh-position;
-        color:#5a5550;
+        color:#653e31;
       }
       h6 {
         @include grid-subheadline;
-        color:#5a5550;
+        color:#653e31;
       }
     }
+    
   }
   #module-top {
+    @media(max-width: $breakpoint-b) {
+      background:asset_url('chocolate-top-bg-mobile.jpg', image);
+      background-size:cover;
+    }
     .slide-title {
       margin-top:-20px;
       position:absolute;
       top:50%;
       width:60%;
+      @media(max-width: $breakpoint-b) {
+        text-align:left;
+        padding-left:15px;
+      }
     }
   }
   #module-bottom {
@@ -90,6 +103,11 @@
         li {
           text-align:center;
           padding:0 5%;
+          > img {
+            @media(max-width: $breakpoint-b) {
+              width:100%;
+            }
+          }
           h6 {
             @include grid-subheadline;
             margin-bottom:10px;
@@ -142,23 +160,40 @@
       > p:nth-of-type(-n+2) {
         @include grid-subheadline;
         line-height:1.9;
-        width:600px;
-        margin-left:-320px;
         padding-top:16px;
         color:#f4eae5;
         font-weight:200;
-        font-size:20px;
         text-align:center;
         position:relative;
-        left:50%;
+        @media(min-width: $breakpoint-b1) {
+          width:600px;
+          margin-left:-320px;
+          left:50%;
+          font-size:20px;
+        }
+        @media(max-width: $breakpoint-b) {
+          width:100%;
+          font-size:14px;
+        }
       }
       //just the first one
       > p:nth-of-type(1) {
-        padding-top:100px;
+        @media(min-width: $breakpoint-b1) {
+          padding-top:100px;
+        }
+        @media(max-width: $breakpoint-b) {
+          padding:0 15px;
+          padding-top:50px;
+        }
       }
       //just the second one
       > p:nth-of-type(2) {
-        margin-bottom:100px;
+        @media(min-width: $breakpoint-b1) {
+          padding-bottom:100px;
+        }
+        @media(max-width: $breakpoint-b) {
+          padding-bottom:52px;
+        }
       }
     }
     .chocolate-slider-a {
@@ -170,6 +205,12 @@
         bottom:-260px;
         width:112%;
         margin-left:-6%;
+        @media(max-width: $breakpoint-b) {
+          position: absolute;
+          bottom: -130px;
+          width: 192%;
+          margin-left: -76%;
+        }
       }
       .choco-slider-nav-a {
         position:relative;
@@ -178,6 +219,13 @@
         max-width:1120px;
         margin:auto;
         color:#d2c1bd;
+        @media(max-width: $breakpoint-b) {
+          display:none;
+        }
+        span {
+          top: 2px;
+          position: relative;
+        }
         a {
           @include grid-subheadline;
           display:inline-block;
@@ -208,11 +256,18 @@
           padding-top:70px;
           position:relative;
           height:100%;
+          @media(max-width: $breakpoint-b) {
+            padding-top:40px;
+          }
           img {
             width:100%;
           }
           .image-holder {
             width:50%;
+            @media(max-width: $breakpoint-b) {
+              width: 70%;
+              margin: auto;
+            }
             &.image-holder-right {
               position:absolute;
               right:0;
@@ -225,6 +280,12 @@
             top:90px;
             left:auto;
             right:0px;
+            @media(max-width: $breakpoint-b) {
+              position:relative;
+              width:80%;
+              margin:auto;
+              top:30px;
+            }
             &.text-holder-left {
               left:0;
             }
@@ -233,9 +294,11 @@
               max-width:400px;
               position:absolute;
               text-align:center;
-              left:50%;
-              margin-left:-200px;
 
+              @media(min-width: $breakpoint-b1) {
+                left:50%;
+                margin-left:-200px;
+              }
               h6 {
                 @include grid-subheadline;
                 margin-bottom:16px;
@@ -245,6 +308,10 @@
                 margin-bottom:65px;
                 @include body-copy;
                 color:#8e6552;
+                @media(max-width: $breakpoint-b) {
+                  margin-bottom:20px;
+                }
+                
               }
               p.callout {
                 @include callout;
