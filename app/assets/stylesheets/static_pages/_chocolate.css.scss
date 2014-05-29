@@ -3,6 +3,7 @@
 #chocolate-page {
   background-color:#f9f4ed;
   background:asset_url('chocolate-bg-noise.gif', image);
+  overflow-x:hidden;
   #module-top, #module-bottom {
     position:relative;
     > img {
@@ -132,31 +133,44 @@
     > img {
       position:absolute;
     }
-    > p:nth-of-type(-n+2) {
-      @include grid-subheadline;
-      line-height:1.9;
-      width:600px;
-      margin-left:-320px;
-      padding-top:16px;
-      color:#f4eae5;
-      font-weight:200;
-      font-size:20px;
-      text-align:center;
-      position:relative;
-      left:50%;
-    }
-    //just the first one
-    > p:nth-of-type(1) {
-      padding-top:100px;
-    }
-    //just the second one
-    > p:nth-of-type(2) {
-      margin-bottom:100px;
+
+
+    #chocolate-message {
+      background: asset_url('chocolate-noise.gif', image);
+      position: relative;
+      z-index: 3;
+      > p:nth-of-type(-n+2) {
+        @include grid-subheadline;
+        line-height:1.9;
+        width:600px;
+        margin-left:-320px;
+        padding-top:16px;
+        color:#f4eae5;
+        font-weight:200;
+        font-size:20px;
+        text-align:center;
+        position:relative;
+        left:50%;
+      }
+      //just the first one
+      > p:nth-of-type(1) {
+        padding-top:100px;
+      }
+      //just the second one
+      > p:nth-of-type(2) {
+        margin-bottom:100px;
+      }
     }
     .chocolate-slider-a {
       width:90%;
       position:relative;
       margin:auto;
+      #choco-btm-bg {
+        position:absolute;
+        bottom:-260px;
+        width:112%;
+        margin-left:-6%;
+      }
       .choco-slider-nav-a {
         position:relative;
         text-align:center;

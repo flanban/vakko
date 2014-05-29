@@ -8,10 +8,11 @@
       %h2 vakko chocolate
       %h6 the first and only fashion brand in turkey
   #module-bottom
-    =image_tag('chocolate-bottom-bg.jpg')
-    %p Vakko Chocolate by Vakko, the first and only fashion brand in Turkey, producing chocolate using its own brand name…  
-    %p Created based on the world's finest Swiss chocolate formula, Vakko Chocoalte invites Vakko friends to a world of flavors with its selection of 15 different product groups.
+    #chocolate-message
+      %p Vakko Chocolate by Vakko, the first and only fashion brand in Turkey, producing chocolate using its own brand name…  
+      %p Created based on the world's finest Swiss chocolate formula, Vakko Chocoalte invites Vakko friends to a world of flavors with its selection of 15 different product groups.
     .chocolate-slider-a
+      =image_tag('chocolate-bottom-bg.jpg', :id => 'choco-btm-bg')
       .choco-slider-nav-a
         =link_to 'good chocolate', '#', :class => "choco-nav-active good-chocolate-link"
         |
