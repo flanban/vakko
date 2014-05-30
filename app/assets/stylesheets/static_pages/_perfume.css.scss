@@ -6,6 +6,17 @@
 }
 #perfume-page {
   background:asset_url('perfume-bg.jpg', image) no-repeat;
+  @media(max-width: $breakpoint-a) {
+    background-image:none;
+    background-color:#fff;
+  }
+  > img {
+    display:none;
+    @media(max-width: $breakpoint-a) {
+      width:100%;
+      display:block;
+    }
+  }
   background-size:cover;
   height:100%;
   position:relative;
@@ -15,6 +26,13 @@
     height:100%;
     position:relative;
     min-width:440px;
+    @media(max-width: $breakpoint-a) {
+      height:auto;
+      width: 100%;
+      background: #fff;
+      min-width:0px;
+      padding-bottom:50px;
+    }
     .perfume-text {
       text-align:center;
       width:380px;
@@ -23,6 +41,16 @@
       margin-left:-190px;
       position:absolute;
       margin-top:-90px;
+      @media(max-width: $breakpoint-a) {
+        top:10px;
+        margin-top:25px;
+        position:relative;
+        background: #fff;
+        width:100%;
+        left: 0;
+        margin-left: 0;
+        padding:0 40px;
+      }
       h5 {
         @include grid-subheadline;
         color:#d6bca2;
