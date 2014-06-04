@@ -1,11 +1,29 @@
 @import "mixins/breakpoints";
+@import "mixins/typography";
 
 
-//hide the word VAKKO on small screens
 #fashion-center {
+  //hide the word VAKKO on small screens
   @media(max-width: $breakpoint-b) {
     h2 a > span {
       display:none;
+    }
+  }
+  //not really a quote, but I'm using the class anywqay
+  .quote {
+    padding:0 44px;
+    h4 {
+      @include grid-headline;
+      font-size:$seventh-position;
+      color:#434343;
+      font-size:32px;
+    }
+    p {
+      @include body-copy;
+      color:#9e9e9e;
+      font-style:initial;
+      max-width:440px;
+      margin:auto;
     }
   }
 }
