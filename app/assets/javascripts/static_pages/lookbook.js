@@ -39,7 +39,7 @@ $(document).ready(function(){
     controlsInside: true
   });
   var sliderInstance = lookbookSlider.data('royalSlider');
-  var slideCountEl = $('<div class="rsSlideCount rsArrowIcn"></div>').appendTo( $('.rsArrowRight') );
+  var slideCountEl = $('<div class="rsSlideCount"></div>').appendTo( $('.rsArrowRight') );
 
   function updCount() {
       slideCountEl.html( (sliderInstance.currSlideId+1) + ' / ' + sliderInstance.numSlides );
