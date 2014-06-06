@@ -28,14 +28,13 @@
     =image_tag('couture-bottom-1.jpg', :class => 'rsImg')
   .menu
     %ul
-      %li BADGLEY MISHCKA COLLECTION
-      %li BADGLEY MISHKA COUTURE
-      %li ELIE SAAB
-      %li GABRIELA CADENA
-      %li GEORGES HOBEIKA
-      %li JAY AHR
-      %li JENNY PACKHAM
-      %li KAUFMANFRANCO
+      %li=link_to 'BADGLEY MISHCKA COLLECTION', { :controller => "couture", :action => "badgley_mishcka" }, :remote => true
+      %li=link_to 'elie saab', { :controller => "couture", :action => "elie_saab" }, :remote => true
+      %li=link_to 'gabriela cadena', { :controller => "couture", :action => "gabriela_cadena" }, :remote => true
+      %li=link_to 'georges hobeika', { :controller => "couture", :action => "georges_hobeika" }, :remote => true
+      %li=link_to 'jay ahr', { :controller => "couture", :action => "jay_ahr" }, :remote => true
+      %li=link_to 'jenny packham', { :controller => "couture", :action => "jenny_packham" }, :remote => true
+      %li=link_to 'kaufmanfranco', { :controller => "couture", :action => "kaufmanfranco" }, :remote => true
       %li LEONARD
       %li LORENA SARBU
       %li MARCHESA COUTURE
@@ -56,7 +55,6 @@
       %li GEMY MAALOUF
       %li GH BY GEORGES HOBEIKA
       %li HALSTON HERITAGE
-      %li HERVE LEGER
       %li HERVE LEGER
       %li MARCHESA NOTTE
       %li THEIA

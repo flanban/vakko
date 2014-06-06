@@ -1,6 +1,67 @@
 Vakko::Application.routes.draw do
   root to: 'StaticPages#index' 
   
+  get "couture/elie_saab"
+
+  get "couture/gabriela_cadena"
+
+  get "couture/georges_hobeika"
+
+  get "couture/jay_ahr"
+
+  get "couture/jenny_packham"
+
+  get "couture/kaufmanfranco"
+
+  get "couture/leonard"
+
+  get "couture/lorena_sarbu"
+
+  get "couture/marchesa_couture"
+
+  get "couture/monique_lhuillier"
+
+  get "couture/naeem_khan"
+
+  get "couture/paule_ka"
+
+  get "couture/romona_kaveza"
+
+  get "couture/temperley"
+
+  get "couture/vera_wang"
+
+  get "couture/zac_posen"
+
+  get "couture/alberto_makali"
+
+  get "couture/alexis"
+
+  get "couture/alice_by_temperley"
+
+  get "couture/basiz"
+
+  get "couture/camilla"
+
+  get "couture/carmen_marc_valvo"
+
+  get "couture/david_meister"
+
+  get "couture/gemy_maalouf"
+
+  get "couture/gh_by_georges_hobeika"
+
+  get "couture/halston_heritage"
+
+  get "couture/herve_leger"
+
+  get "couture/marchessa_notte"
+
+  get "couture/theia"
+
+  get "couture/badgley_mishcka"
+
+  
   match '/home' => 'StaticPages#home'
 
   match '/collection' => 'StaticPages#collection'
@@ -32,6 +93,7 @@ Vakko::Application.routes.draw do
   match '/wcollection' => 'StaticPages#wcollection'
 
   match '/power_fm' => 'StaticPages#power_fm'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

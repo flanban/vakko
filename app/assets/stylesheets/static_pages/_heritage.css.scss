@@ -1,6 +1,9 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
-
+body.heritage #content-area {
+  overflow:hidden;
+  height:100%;
+}
 #heritage-page {
   height:100%;
   .heritage-slider {

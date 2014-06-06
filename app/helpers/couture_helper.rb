@@ -1,0 +1,2 @@
+module CoutureHelper
+end

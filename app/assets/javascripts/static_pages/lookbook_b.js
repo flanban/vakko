@@ -19,7 +19,5 @@ $(function(){
   
   $('.menu > ul > li').click(function(i) {
     var coutureUrl = $.trim($(this).text().toLowerCase().split(" ").join("-")) + ".html"; 
-    alert(coutureUrl)
   });
-
 });

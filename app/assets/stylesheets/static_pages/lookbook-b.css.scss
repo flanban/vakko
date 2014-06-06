@@ -1,9 +1,11 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
 
-
+body.lookbook_b #content-area {
+  height:100%;
+}
 .lookbook-b.lookbook-slider {
-
+  height:100%;
   .rsArrow.rsArrowDisabled {
     .rsArrowIcn { 
       opacity:.4;
@@ -12,10 +14,39 @@
   .rsArrowIcn { 
     background: asset_url('rs-default-gold.png', image);  
   }
+  .rsArrowRight {
+    margin-right:64px;
+  }
+  .rsArrowLeft {
+    margin-left:64px;
+  }
+
+
 
   .rsSlideCount {
-    background:none;
-     color:#cdbc92;
+    @include grid-subheadline;
+    letter-spacing:0px;
+    position: absolute;
+    cursor: pointer;
+    color:#cdbc92;
+    @media(min-width: $breakpoint-b1) {
+      top: 50%;
+      left: 50%;
+      margin-top: -16px;
+      margin-left: -38px;
+      color:#cdbc92;
+      font-size:11px;
+      width: 32px;
+      height: 32px;
+      padding-top: 10px;
+    }
+    @media(max-width: $breakpoint-b) {
+      top: 140px;
+      right: 13px;
+      font-size:18px;
+      width:inherit;
+      position:fixed;
+    }
   }
 
   .slide-title {
@@ -67,7 +98,9 @@
     height:100%;
     overflow:scroll;
     li {
-      margin-bottom:12px;
+      a {
+        padding:6px 0;
+      }
     }
   }
 }
