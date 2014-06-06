@@ -8,8 +8,42 @@
       width:100%;
     }
   }
+
 }
 .designer-left {
+  position:relative;
+  .slide-title {
+    
+  }
   width:50%;
+    .rsArrow {
+      height: 100%;
+      width: 44px;
+      display: block;
+      cursor: pointer;
   
-}
+      .rsArrowIcn {
+        width: 32px;
+        height: 32px;
+        top: 27%;
+        left: 5%;
+        cursor: pointer;  
+        background: asset_url('rs-default.png', image);
+
+        border-radius: 2px;
+      }
+      &.rsArrowDisabled {
+        opacity:.3;
+      }
+      &.rsArrowLeft {
+        left:28px;
+        .rsArrowIcn { 
+          background-position: -64px -32px;
+        }
+      }
+      &.rsArrowRight {
+        right:28px;
+        .rsArrowIcn { background-position: -64px -64px; }
+      }
+    }
+  }
