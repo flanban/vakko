@@ -33,6 +33,7 @@ a {
   position:absolute;
   top:0;
   left:320px;
+  overflow:hidden;
   @media(max-width: $breakpoint-b) {
     width:100%!important;
     left:0;

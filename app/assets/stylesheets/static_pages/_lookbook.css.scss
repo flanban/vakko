@@ -8,7 +8,7 @@
   .buttons {
      position:absolute;
      top:17px;
-     right:15px;
+     right:19px;
      display:inline-block;
      z-index:22;
      @media(max-width: $breakpoint-b) {
@@ -31,15 +31,30 @@
        }
      }
      a {
+       display:inline-block;
+    //   padding:0 4px;
+       width:46px;
+       height:46px;
+       margin-left:8px;
+       position:relative;
+       &:nth-child(2) {
+         @media(max-width: $breakpoint-b) {
+           background-image: asset_url('button-grid-white.png', image);
+         }
+       }
        &:nth-child(3) {
          @media(max-width: $breakpoint-b) {
            display:none;
          }
        }
-
-       display:inline-block;
-       padding:0 4px;
-
+       &:nth-child(4) {
+         @media(max-width: $breakpoint-b) {
+           background-image: asset_url('button-info-white.png', image);
+         }
+       }
+       @media(max-width: $breakpoint-b) {
+         opacity:.3;
+       }
        img {
          opacity:.3;
          -webkit-transition: opacity 0.5s ease;
@@ -49,6 +64,9 @@
          transition: opacity 0.5s ease;
          &:hover {
            opacity:1;
+         }
+         @media(max-width: $breakpoint-b) {
+           display:none;
          }
        }
      }
