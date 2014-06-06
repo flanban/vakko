@@ -55,6 +55,8 @@ $(document).ready(function(){
   
   var sliderInstance = bottomChocolateSlider.data('royalSlider');
   var slideCountEl = $('<div class="rsSlideCount"></div>').appendTo( $('.rsArrowRight') );
+  var slideCountMobileEl = $('<div class="rsSlideCount mobile"></div>').appendTo( $('.buttons') );
+
 
   function updCount() {
     slideCountEl.html( (sliderInstance.currSlideId+1) + ' / ' + sliderInstance.numSlides );

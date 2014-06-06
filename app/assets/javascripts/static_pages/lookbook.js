@@ -38,12 +38,12 @@ $(document).ready(function(){
     },
     controlsInside: true
   });
-  var sliderInstanceLookbook = lookbookSlider.data('royalSlider');
+  var sliderInstance = lookbookSlider.data('royalSlider');
   var slideCountEl = $('<div class="rsSlideCount rsArrowIcn"></div>').appendTo( $('.rsArrowRight') );
 
   function updCount() {
-    slideCountEl.html( (sliderInstanceLookbook.currSlideId+1) + ' / ' + sliderInstanceLookbook.numSlides );
+      slideCountEl.html( (sliderInstance.currSlideId+1) + ' / ' + sliderInstance.numSlides );
   }
-  sliderInstanceLookbook.ev.on('rsAfterSlideChange', updCount);
+  sliderInstance.ev.on('rsAfterSlideChange', updCount);
   updCount();
 });
