@@ -1,1 +1,0 @@
-$(document).ready(function(){function t(){var t=$(".image-holder").width(),o=t/1.299;$(".lookbook-b.bottom").css("height",o)}t(),$(window).resize(function(){t()})}),$(function(){$(".menu > ul > li").click(function(){var t=$.trim($(this).text().toLowerCase().split(" ").join("-"))+".html";alert(t)})});
