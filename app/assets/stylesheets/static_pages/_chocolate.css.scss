@@ -17,14 +17,11 @@
 
     .slide-title {
       height:56px;
-      text-align:center;
       h2 {
-        @include grid-headline;
         font-size:$seventh-position;
         color:#653e31;
       }
       h6 {
-        @include grid-subheadline;
         color:#653e31;
       }
     }

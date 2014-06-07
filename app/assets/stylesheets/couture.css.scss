@@ -1,21 +1,61 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
 .designer-right {
-  width:50%;
+  width:65%;
   position:absolute;
-  left:50%;
+  left:35%;
+  top:0;
+  padding:5% 0;
+  height:100%;
+  
   .designer-slider {
     width:80%;
+    height:100%;
+    position:relative;
+    left:30px;
     img {
-      width:100%;
+      &.couture-image {
+        width:85%;
+        margin-left:10%;
+        margin-top:5%;
+        position:absolute;
+        z-index:2;
+        top:0;
+      }
+      &#couture-frame {
+        position:absolute;
+        z-index:1;
+        width:100%;
+        top:0;
+        margin-top:0%;
+      }
     }
   }
 
 }
+.image-holder {
+  height:100%;
+}
 .designer-left {
+  height:100%;
   position:relative;
+  width:35%;
+  padding:20px;
   .slide-title {
-    
+    text-align:left;
+    min-width:325px;
+    max-width:375px;
+    margin:auto;
+    top:50%;
+    position:relative;
+    margin-top:-96px;
+    h2 {
+      color:#585858;
+    }
   }
-  width:50%;
+    .slideCount {
+      @include big-date;
+    }
     .rsArrow {
       height: 100%;
       width: 44px;

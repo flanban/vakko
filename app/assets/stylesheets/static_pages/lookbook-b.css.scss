@@ -31,7 +31,7 @@ body.lookbook_b #content-area {
     color:#cdbc92;
     @media(min-width: $breakpoint-b1) {
       top: 50%;
-      left: 50%;
+      left: 16px;
       margin-top: -16px;
       margin-left: -38px;
       color:#cdbc92;
@@ -62,6 +62,9 @@ body.lookbook_b #content-area {
   .image-holder {
     width:75%;
     position:relative;
+    -webkit-box-shadow: inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow:    inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
+    box-shadow:         inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
     &#couture-menu
       .text {
         position:absolute;

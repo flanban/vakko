@@ -46,4 +46,6 @@ $(document).ready(function(){
   }
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
   updCount();
+  
+
 });

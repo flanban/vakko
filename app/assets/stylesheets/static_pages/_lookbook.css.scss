@@ -124,7 +124,7 @@ body.collection #content-area {
       cursor: pointer;
       @media(min-width: $breakpoint-b1) {
         top: 50%;
-        left: 50%;
+        left: 16px;
         margin-top: -16px;
         margin-left: -38px;
         color:#5a5550;
