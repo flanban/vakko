@@ -5,7 +5,13 @@
     %meta{:content => "initial-scale=1, maximum-scale=1", :name => "viewport"}
     = stylesheet_link_tag    "//cloud.typography.com/7210072/723564/css/fonts.css", :media => "all"
     = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag ""
     = javascript_include_tag "application"
+
+    // typekit stuff
+    %script{:src => "//use.typekit.net/lha6ojt.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}
     = csrf_meta_tags
   %body{:class => "#{controller_name} #{action_name}"}
     = render "shared/primary_menu"
@@ -15,4 +21,4 @@
       = render "shared/subnav"
       
     = yield :page_js
-      
+    
