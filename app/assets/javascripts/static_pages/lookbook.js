@@ -1,7 +1,7 @@
 $(function() {
   $('.button-close').click(function(e) {
     e.preventDefault();
-    infoWidth = $('.info-slideout').height()
+    infoWidth = $('.info-slideout').outerWidth()
     $('.info-slideout').css('margin-right', -infoWidth);
     $('html').removeClass('slide-info-open');
   });

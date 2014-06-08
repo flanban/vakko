@@ -79,12 +79,15 @@ body.collection #content-area {
    .info-slideout {
      background:#fff;
      height:100%;
-     width:480px;
+     padding:132px 78px;
      position:absolute;
      right:0;
      top:0;
      z-index:23;
+     width:480px;
+     max-width:480px;
      margin-right:-480px;// super important
+     overflow:hidden;
      -webkit-transition: margin 0.5s ease;
      -moz-transition: margin 0.5s ease;
      -o-transition: margin 0.5s ease;
@@ -92,8 +95,27 @@ body.collection #content-area {
      transition: margin 0.5s ease;
      .button-close {
        position:absolute;
-       top:17px;
-       right:15px;
+       top:21px;
+       right:20px;
+     }
+     h2 {
+       @include grid-headline;
+       color:#5b5b5b;
+       margin-bottom:66px;
+     }
+     h6 {
+       @include grid-subheadline;
+       font-size:11px;
+       letter-spacing:1px;
+       font-weight:600;
+       color:#535353;
+       margin-bottom:14px;
+     }
+     p {
+       @include proximaSB;
+       font-size:13px;
+       font-weight:500;
+       color:#9e9e9e;
      }
    }
   .lookbook-slider {
