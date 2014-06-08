@@ -86,7 +86,7 @@ class CoutureController < ApplicationController
   def herve_leger
   end
 
-  def marchessa_notte
+  def marchesa_notte
   end
 
   def theia

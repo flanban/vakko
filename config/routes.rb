@@ -55,7 +55,7 @@ Vakko::Application.routes.draw do
 
   get "couture/herve_leger"
 
-  get "couture/marchessa_notte"
+  get "couture/marchesa_notte"
 
   get "couture/theia"
 

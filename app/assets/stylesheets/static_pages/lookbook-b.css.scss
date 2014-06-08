@@ -95,13 +95,20 @@ body.lookbook_b #content-area {
   }
   .menu {
     padding:40px;
-    @include grid-subheadline;
     width:25%;
     line-height:1;
     height:100%;
     overflow:scroll;
     li {
+      @include subnav-item;
+      font-size:10px;
+      color:#cdcdcd;
+      font-weight:500;
       a {
+        @include subnav-item;
+        font-size:10px;
+        color:#cdcdcd;
+        font-weight:500;
         padding:6px 0;
       }
     }
