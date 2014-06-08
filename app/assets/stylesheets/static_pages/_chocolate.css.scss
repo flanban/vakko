@@ -23,6 +23,7 @@
       }
       h6 {
         color:#653e31;
+        font-size:12px;
       }
     }
     
@@ -107,6 +108,9 @@
           }
           h6 {
             @include grid-subheadline;
+            font-size:11px;
+            font-weight:600;
+            letter-spacing:1px;
             margin-bottom:10px;
           }
           p {
@@ -116,7 +120,7 @@
           }
           // another button i need to refactor
           > a {
-            @include grid-subheadline;
+            @include button-type;
             color:#231f20;
             margin-top:55px;
             display:inline-block;
@@ -222,12 +226,17 @@
         span {
           top: 2px;
           position: relative;
+          display:inline-block;
         }
         a {
           @include grid-subheadline;
+          font-size:12px;
+          letter-spacing:3px;
+          font-weight:600;
           display:inline-block;
           padding-top:40px;
           padding-bottom:12px;
+          padding:40px 18px 12px 18px;
           color:#d2c1bd;
           &.choco-nav-active {
             color:#4f3933;
@@ -298,6 +307,8 @@
               }
               h6 {
                 @include grid-subheadline;
+                font-weight:700;
+                font-size:12px;
                 margin-bottom:16px;
                 color:#4f3933;
               }
@@ -305,6 +316,7 @@
                 margin-bottom:65px;
                 @include body-copy;
                 color:#8e6552;
+                font-size:16px;
                 @media(max-width: $breakpoint-b) {
                   margin-bottom:20px;
                 }
@@ -318,7 +330,7 @@
             }
           }
           .shop-chocolate {
-            @include grid-subheadline;
+            @include button-type;
             text-align:center;
             border:1px solid #8f8f8f;
             width:220px;

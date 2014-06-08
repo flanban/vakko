@@ -52,7 +52,7 @@ $seventh-position:48px;
   @include proximaSB;
   letter-spacing:2px;
   font-size:$second-position;
-  font-weight:600;
+  font-weight:500;
   text-transform:uppercase;
 }
 @mixin subnav-item {
@@ -60,6 +60,13 @@ $seventh-position:48px;
   letter-spacing:2px;
   font-size:9px;
   font-weight:700;
+  text-transform:uppercase;
+}
+@mixin button-type {
+  @include proximaSB;
+  letter-spacing:1px;
+  font-size:10px;
+  font-weight:500;
   text-transform:uppercase;
 }
 @mixin quote-signature {
