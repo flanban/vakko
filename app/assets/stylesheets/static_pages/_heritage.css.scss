@@ -86,6 +86,8 @@ body.heritage #content-area {
     background-color:#231f20;
     span {
       @include grid-subheadline;
+      font-size:11px;
+      font-weight:100;
       color:#3b3a3a;
       letter-spacing:1px;
       padding:9px 0;

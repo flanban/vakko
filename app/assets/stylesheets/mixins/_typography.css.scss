@@ -41,7 +41,7 @@ $seventh-position:48px;
 @mixin big-date {
   @include proximaSB;
   font-size:42px;
-  font-weight:200;
+  font-weight:100;
   color:#b2b2b2;
 }
 @mixin large-body-copy {
