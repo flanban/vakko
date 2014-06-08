@@ -167,7 +167,7 @@
   .shop-button {
     width:130px;
     border:1px solid #474545;
-    margin:30px auto;
+    margin:30px auto 100px auto;
     padding:14px 20px;
     letter-spacing:1px;
     @media(max-width: $breakpoint-b) {
@@ -195,7 +195,11 @@
       li {
         display:inline-block;
         a {
-          font-size:9px;
+          color:#424242;
+          padding:3px 0!important;
+          &:hover {
+            color:#a4a4a4;
+          }
         }
       }
     }

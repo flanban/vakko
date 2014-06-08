@@ -51,12 +51,21 @@ $seventh-position:48px;
 @mixin grid-subheadline {
   @include proximaSB;
   letter-spacing:2px;
-  font-size:$first-position;
+  font-size:$second-position;
+  font-weight:600;
+  text-transform:uppercase;
+}
+@mixin quote-signature {
+  @include proximaSB;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:600;
   text-transform:uppercase;
 }
 @mixin primary-menu-items {
   @include proximaSB;
   letter-spacing:2px;
+  font-weight:700;
   font-size:$first-position;
   text-transform:uppercase;
   color:#6a6a6a;
@@ -96,7 +105,7 @@ $seventh-position:48px;
     }
   }
   h6 {
-    @include grid-subheadline;
+    @include quote-signature;
     color:#c1c1c1;
   }
 }
