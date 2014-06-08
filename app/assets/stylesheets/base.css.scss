@@ -64,3 +64,14 @@ a {
     @include grid-subheadline;
   }
 }
+// dividers
+.menu-divider {
+  width:21px;
+  height:1px;
+  margin:0 auto;
+  display:block;
+  background-color:#3f3a3b;
+  @media(max-width: $breakpoint-b) {
+    display:none;
+  }
+}

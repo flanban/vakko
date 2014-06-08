@@ -49,14 +49,23 @@
   ul {
     
     padding:40px 0px;
-    li {
-      @include grid-subheadline;
-      letter-spacing:1px;
+    li { 
+      @include subnav-item;
       color:#000;
-      padding:8px 20px;
-      
       a {
+        padding:8px 20px;
         color:#999;
+        &.black-type {
+          color:#000;
+        }
+        &:hover {
+          color:#000;
+        }
+        -webkit-transition: color 0.3s ease;
+        -moz-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+        -ms-transition: color 0.3s ease;
+        transition: color 0.3s ease;
       }
     }
   }
@@ -109,17 +118,6 @@
     }
   } 
   
-  // dividers
-  .menu-divider {
-    width:21px;
-    height:1px;
-    margin:0 auto;
-    display:block;
-    background-color:#3f3a3b;
-    @media(max-width: $breakpoint-b) {
-      display:none;
-    }
-  }
 
   // set link style for the whole menu
   a {
