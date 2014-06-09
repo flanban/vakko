@@ -68,7 +68,9 @@ Vakko::Application.routes.draw do
 
   match '/collection-grid' => 'StaticPages#collection_grid', :as => 'collection_grid'
   
-    match '/lookbook_b' => 'StaticPages#lookbook_b', :as => 'lookbook_b'
+  match '/lookbook_b' => 'StaticPages#lookbook_b', :as => 'lookbook_b'
+
+  match '/womens-collection' => 'StaticPages#womens_collection'
 
   match '/wedding' => 'StaticPages#wedding'
 

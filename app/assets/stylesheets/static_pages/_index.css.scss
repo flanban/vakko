@@ -29,6 +29,9 @@ ul.entries {
     position:relative;
     background-size:cover;
     background-repeat:no-repeat;
+    &.quarter-width {
+      width:25%;
+    }
     @media(max-width: $breakpoint-b) {
       .women, .men {
         height:100%;
