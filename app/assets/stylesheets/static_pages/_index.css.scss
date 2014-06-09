@@ -64,8 +64,11 @@ ul.entries {
       }
       @media(min-width: $breakpoint-b1) {
         //the additional -> .women & .men classes are to include the slider
-        > a img, .women img, .men img {
+        > a img, .grid-image {
           opacity:.2;
+        }
+        .light-fade {
+          opacity:.4;
         }
       }
     }
@@ -170,14 +173,6 @@ ul.entries {
     
     &#wedding {
       background-color:#f3e1d1;
-      // most of the images are .2 this one is special
-      @media(min-width: $breakpoint-b1) {
-        &:hover {
-          > a img {
-            opacity:.4;
-          }
-        }
-      }
       //swap images for s all screen devices
       @media(max-width: $breakpoint-b) {
         background-image: asset_url('home-wedding-mobile@2x.jpg', image);
