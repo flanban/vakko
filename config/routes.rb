@@ -70,7 +70,7 @@ Vakko::Application.routes.draw do
   
   match '/lookbook_b' => 'StaticPages#lookbook_b', :as => 'lookbook_b'
 
-  match '/womens-collection' => 'StaticPages#womens_collection'
+  match '/womens-collection' => 'StaticPages#womens_collection', :as => 'womens_collection'
 
   match '/wedding' => 'StaticPages#wedding'
 

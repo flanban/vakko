@@ -1,8 +1,17 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
+
 #womens-collection {
   ul {
     > li {
       &:nth-child(1) {
         background-color:#cc6715;
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('womens-collection-1@2x.jpg', image);
+          .slide-title {
+            background-color:rgba(243,225,209,.6);
+          }
+        }
       }
       &:nth-child(2) {
         background-color:#f3e1d1;
