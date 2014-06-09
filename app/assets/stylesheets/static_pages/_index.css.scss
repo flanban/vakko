@@ -30,7 +30,9 @@ ul.entries {
     background-size:cover;
     background-repeat:no-repeat;
     &.quarter-width {
-      width:25%;
+      @media(min-width: $breakpoint-b1) {
+        width:25%;
+      }
     }
     @media(max-width: $breakpoint-b) {
       .women, .men {

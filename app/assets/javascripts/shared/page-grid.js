@@ -45,12 +45,24 @@ $(function() {
     entryHeight = Math.round($('.aspect-ratio-3').width() / .425);//that weird number is the img's aspect ratio in decimal form
     $('.aspect-ratio-3').height(entryHeight -1);
   }
+  function setAspectRatio4() {
+    entryWidth = $('.aspect-ratio-4').width();
+    entryHeight = Math.round($('.aspect-ratio-4').width() / .85);//that weird number is the img's aspect ratio in decimal form
+    entryHeightMobile = Math.round($('.aspect-ratio-4').width() / 1);//that weird number is the img's aspect ratio in decimal form
+
+    if($(window).width()<768){
+      $('.aspect-ratio-4').height(entryHeightMobile);
+    } else {
+      $('.aspect-ratio-4').height(entryHeight -1);
+    }
+  }
   function setAspectRatios() {
     setContentWidth();
     setAspectRatio0();
     setAspectRatio1();
     setAspectRatio2();
     setAspectRatio3();
+    setAspectRatio4()
   }
 
   // call functions
