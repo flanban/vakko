@@ -79,6 +79,8 @@ fashion-6.jpg: fashion-6-7167ff30379af3aa0dacaa8607af9b64.jpg
 fashion-6/index.jpg: fashion-6-7167ff30379af3aa0dacaa8607af9b64.jpg
 fashion-7.jpg: fashion-7-547b0984e69edd1a259f2aac0770bdfc.jpg
 fashion-7/index.jpg: fashion-7-547b0984e69edd1a259f2aac0770bdfc.jpg
+heritage-1-mobile@2x.jpg: heritage-1-mobile@2x-bdd05942631bff237083207bfbb9559e.jpg
+heritage-1-mobile@2x/index.jpg: heritage-1-mobile@2x-bdd05942631bff237083207bfbb9559e.jpg
 heritage-1.jpg: heritage-1-bd20b6c3eabb8c64a32abaab33e76486.jpg
 heritage-1/index.jpg: heritage-1-bd20b6c3eabb8c64a32abaab33e76486.jpg
 home-chocolate-mobile@2x.jpg: home-chocolate-mobile@2x-bba9a744830aed5255785193eeba7e5e.jpg
@@ -215,8 +217,8 @@ application.js: application-df3cec109ca8a460ed9a802099c55b21.js
 application/index.js: application-df3cec109ca8a460ed9a802099c55b21.js
 static_pages/chocolate.js: static_pages/chocolate-83dddcd76895a3f6fc5bd5a5c90293b8.js
 static_pages/chocolate/index.js: static_pages/chocolate-83dddcd76895a3f6fc5bd5a5c90293b8.js
-static_pages/heritage.js: static_pages/heritage-5054b54b7405129bbbe2072ba363323c.js
-static_pages/heritage/index.js: static_pages/heritage-5054b54b7405129bbbe2072ba363323c.js
+static_pages/heritage.js: static_pages/heritage-1a4ebbb780437194dbbc38fcfabedb83.js
+static_pages/heritage/index.js: static_pages/heritage-1a4ebbb780437194dbbc38fcfabedb83.js
 static_pages/index.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
 static_pages.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
 static_pages/lookbook.js: static_pages/lookbook-8245da7185f13c6390fca467f369ce98.js
@@ -225,7 +227,7 @@ static_pages/lookbook_b.js: static_pages/lookbook_b-ac4082a4d1b654129955333fe0f8
 static_pages/lookbook_b/index.js: static_pages/lookbook_b-ac4082a4d1b654129955333fe0f8bb8e.js
 static_pages/lookbook_subnav.js: static_pages/lookbook_subnav-b5eb2fb8c00d5c4222693033195aff91.js
 static_pages/lookbook_subnav/index.js: static_pages/lookbook_subnav-b5eb2fb8c00d5c4222693033195aff91.js
-application.css: application-aa62afe1147fe7ac6b18312b2a49b900.css
-application/index.css: application-aa62afe1147fe7ac6b18312b2a49b900.css
+application.css: application-787e26a2c07c33bd639b93a6ba6fb598.css
+application/index.css: application-787e26a2c07c33bd639b93a6ba6fb598.css
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map

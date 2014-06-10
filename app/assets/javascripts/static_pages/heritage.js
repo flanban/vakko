@@ -6,7 +6,7 @@ $(document).ready(function(){
     imageScaleMode: 'fill',
     controlNavigation: 'none',
     arrowsNav: false,
-    navigateByClick: false,
+    navigateByClick: true,
     usePreloader: false,
     slidesSpacing:0,
     fadeinLoadedSlide: true,

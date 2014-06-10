@@ -1,8 +1,13 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
 body.heritage #content-area {
-  overflow:hidden;
-  height:100%;
+  @media(min-width: $breakpoint-b1) {
+    height:100%;
+    overflow:hidden;
+  }
+  @media(max-width: $breakpoint-b) {
+    background:#fff;
+  }  
 }
 #heritage-page {
   height:100%;
@@ -10,31 +15,54 @@ body.heritage #content-area {
     height:100%;
   }
   .heritage-caption {
-    width:800px;
-    height:136px;
-    position:absolute;
-    bottom:50px;
-    left:50%;
-    margin-left:-400px;
     background-color:#fff;
-    padding:30px;
-    z-index:22;
+    @media(min-width: $breakpoint-b1) {
+      width:800px;
+      height:136px;
+      position:absolute;
+      bottom:50px;
+      left:50%;
+      margin-left:-400px;
+      z-index:22;
+      padding:30px;
+    }
+    @media(max-width: $breakpoint-b) {
+      width:100%;
+      left:0;
+      top:0;
+      margin-left:0;
+      position:relative;
+      padding:24px;
+    }
     .date, .caption {
       display:inline-block;
     }
     .date {
-      @include big-date;
       width:250px;
+      display:block;
+      margin:auto;
+      @media(max-width: $breakpoint-b) {
+        position:relative;
+        margin-bottom:20px;
+      }
+      @media(min-width: $breakpoint-b1) {
+        position:absolute;
+        top:48px;        
+      }
+      @include big-date;
       font-size:40px;
-      position:absolute;
       text-align:center;
-      top:48px;
     }
     .caption {
       @include body-copy;
-      width:470px;
       position:relative;
-      left:250px;
+      @media(max-width: $breakpoint-b) {
+        text-align:center;
+      }
+      @media(min-width: $breakpoint-b1) {
+        left:250px;
+        width:470px;
+      }
     }
     .rsArrow {
       height: 100%;
@@ -44,7 +72,6 @@ body.heritage #content-area {
       cursor: pointer;
       z-index: 21;
       top:8px;
-
       .rsArrowIcn {
         width: 32px;
         height: 32px;
@@ -52,25 +79,35 @@ body.heritage #content-area {
         left: 50%;
         margin-top:-16px; 
         margin-left: -16px;
-
         position: absolute; 
         cursor: pointer;  
-        background: asset_url('rs-default.png', image);
-
+        background: asset_url('rs-default-large.png', image);
         border-radius: 2px;
       }
       &.rsArrowDisabled {
         opacity:.3;
       }
       &.rsArrowLeft {
-        left:28px;
+        @media(max-width: $breakpoint-b) {
+          left:28px;
+        }
+        @media(min-width: $breakpoint-b1) {
+          left:28px;
+        }
         .rsArrowIcn { 
-          background-position: -64px -32px;
+          background-position:  -78px -171px;
         }
       }
       &.rsArrowRight {
-        right:28px;
-        .rsArrowIcn { background-position: -64px -64px; }
+        @media(max-width: $breakpoint-b) {
+          left:174px;
+        }
+        @media(min-width: $breakpoint-b1) {
+          right:28px;
+        }
+        .rsArrowIcn { 
+          background-position:  -84px -99px;
+        }
       }
     }
   }
@@ -84,6 +121,9 @@ body.heritage #content-area {
     text-align:center;
     overflow:scroll;
     background-color:#231f20;
+    @media(max-width: $breakpoint-b) {
+      display:none;
+    }
     span {
       @include grid-subheadline;
       font-size:11px;
