@@ -3,13 +3,6 @@
 //slider styles START
 #collections {
   position:relative;
-  .slide-title h2 a {
-    font-size:$seventh-position;
-    margin-bottom:20px;
-    @media(max-width: $breakpoint-b) {
-     font-size:24px;
-    }
-  }
   .primary-slider {
     width: 100%;
     height: 300px;
@@ -120,18 +113,25 @@ ul.entries {
           padding:28px 0;
           height:95px;
         }
-          h2 a {
-            @include grid-headline;
+        h2 a {
+          @include grid-headline;
+        }
+        h6 {
+          @include grid-subheadline;
+        }
+        &.big-title h2 a {
+          font-size:$seventh-position;
+          margin-bottom:20px;
+          @media(max-width: $breakpoint-b) {
+           font-size:24px;
           }
-          h6 {
-            @include grid-subheadline;
-          }
-          &.dark {
+        }
+        &.dark {
+          color:#3d3d3d;
+          a {
             color:#3d3d3d;
-            a {
-              color:#3d3d3d;
-            }
           }
+        }
       }
       .buttons {
         position:absolute;
