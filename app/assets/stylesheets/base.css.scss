@@ -74,3 +74,30 @@ a {
     display:none;
   }
 }
+//chrome's scrollbars
+
+::-webkit-scrollbar {
+    display:none;
+  }
+/*
+::-webkit-scrollbar {
+
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255,255,255, 0);
+    -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar:hover {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255, 0.1);
+    -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active  {
+    background: #fabae1;
+}
+*/
