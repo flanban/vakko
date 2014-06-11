@@ -258,8 +258,10 @@
         position:relative;
         width:100%;
         max-width:1120px;
-        height:580px;
         margin:auto;
+        @media(min-width: $breakpoint-b1) {
+          height:580px;
+        }
         li {
           padding-top:70px;
           position:relative;
@@ -275,6 +277,7 @@
             @media(max-width: $breakpoint-b) {
               width: 70%;
               margin: auto;
+              height: initial;
             }
             &.image-holder-right {
               position:absolute;
