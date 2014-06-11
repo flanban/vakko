@@ -20,6 +20,9 @@
       h2 {
         font-size:$seventh-position;
         color:#653e31;
+        @media(max-width: $breakpoint-b) {
+          font-size:30px;
+        }
       }
       h6 {
         color:#653e31;
@@ -56,6 +59,9 @@
         display: block;
         cursor: pointer;
         z-index: 21;
+        @media(max-width: $breakpoint-b) {
+          visibility:hidden;
+        }
         .rsSlideCount {
           right: 22px;
           position: absolute;
@@ -146,6 +152,9 @@
       position:relative;
       margin-top:300px;
       margin-bottom:60px;
+      @media(max-width: $breakpoint-a) {
+        margin-top:160px;
+      }
       h2, h6 {
         color:#684739;
       }
@@ -156,7 +165,7 @@
 
 
     #chocolate-message {
-      padding:0 20px;
+      padding:0 10px;
       background: asset_url('chocolate-noise.gif', image);
       position: relative;
       z-index: 3;
@@ -165,7 +174,9 @@
         line-height:1.9;
         padding-top:16px;
         color:#f4eae5;
-        font-weight:200;
+        @media(min-width: $breakpoint-b1) {
+          font-weight:200;
+        }
         text-align:center;
         position:relative;
         @media(min-width: $breakpoint-b1) {
@@ -200,9 +211,12 @@
       }
     }
     .chocolate-slider-a {
-      width:90%;
+      width:100%;
+      padding:0 5%;
       position:relative;
-      margin:auto;
+      @media(max-width: $breakpoint-b) {
+        background: asset_url('chocolate-noise.gif', image);
+      }
       #choco-btm-bg {
         position:absolute;
         bottom:-260px;
@@ -261,6 +275,13 @@
         margin:auto;
         @media(min-width: $breakpoint-b1) {
           height:580px;
+          min-width:820px;
+        }
+        @media(max-width: $breakpoint-b) {
+          height:720px;
+        }
+        @media(max-width: $breakpoint-b) {
+          height:760px;
         }
         li {
           padding-top:70px;
@@ -280,17 +301,21 @@
               height: initial;
             }
             &.image-holder-right {
-              position:absolute;
-              right:0;
+              @media(min-width: $breakpoint-b1) {
+                position:absolute;
+                right:0;
+              }
             }
           }
           .text-holder {
-            min-height:420px;
-            width:50%;
-            position:absolute;
-            top:90px;
-            left:auto;
-            right:0px;
+            @media(min-width: $breakpoint-b1) {
+              min-height:420px;
+              width:50%;
+              position:absolute;
+              top:90px;
+              left:auto;
+              right:0px;
+            }
             @media(max-width: $breakpoint-b) {
               position:relative;
               width:80%;
@@ -303,10 +328,11 @@
             .slide-text {
               width:100%;
               max-width:400px;
-              position:absolute;
               text-align:center;
-
+              position:relative;
+              margin:auto;
               @media(min-width: $breakpoint-b1) {
+                position:absolute;
                 left:50%;
                 margin-left:-200px;
               }
@@ -331,6 +357,9 @@
                 @include callout;
                 font-size:22px;
                 color:#6c4439;
+                @media(max-width: $breakpoint-b) {
+                  font-size:16px;
+                }
               }
             }
           }
@@ -343,15 +372,22 @@
             padding:13px;
             color:#000;
             margin:auto;
-            position:absolute;
-            bottom:50px;
-            left:50%;
-            margin-left:-110px;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            -ms-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+            display:block;
+            @media(max-width: $breakpoint-b) {
+              top:60px;
+              position:relative;
+            }
+            @media(min-width: $breakpoint-b1) {
+              position:absolute;
+              bottom:50px;
+              left:50%;
+              margin-left:-110px;
+              -webkit-transition: all 0.3s ease;
+              -moz-transition: all 0.3s ease;
+              -o-transition: all 0.3s ease;
+              -ms-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+            }
             &:hover {
               background-color:#371b1d;
               color:#fff;
