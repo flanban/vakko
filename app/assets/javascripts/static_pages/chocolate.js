@@ -1,14 +1,40 @@
 $(document).ready(function(){
-  // set aspect ratio
-  
-  
-  
+  // set slider-a height
+  function positionBullets() {
+    var bulletPosition = $('.chocolate-slider-b.chocolate-arrows > ul li > img').height() + 10
+    $('.chocolate-slider-b .rsNav.rsBullets').css('top', bulletPosition);
+  }
+  function setSliderAHeight() {
+    if($(window).width()<768){
+      var bulletHeight = 45;
+      var sliderHeight = $('#art-of-tasting').outerHeight() + bulletHeight;
+      $('.chocolate-slider-a > ul').outerHeight(sliderHeight);
+    }
+  }
+  function setSliderBHeight() {
+    if($(window).width()<768){
+      var sliderHeight = $('.chocolate-slider-b li:first-child').outerHeight();
+      $('.chocolate-slider-b').outerHeight(sliderHeight);
+    }
+  }
+  function setSliderHeights() {
+    setSliderAHeight();
+    setSliderBHeight();
+    positionBullets()
+  }
+
+  setSliderHeights();
+  $(window).resize(function(){
+    setSliderHeights()
+  });
+
   //sliders
   var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({
     // options
     keyboardNavEnabled: true,
     imageScalePadding: 0,
     imageScaleMode: 'fill',
+    controlNavigation: 'bullets',
     arrowsNav: false,
     navigateByClick: false,
     usePreloader: false,
@@ -44,12 +70,12 @@ $(document).ready(function(){
     // options
     keyboardNavEnabled: true,
     imageScalePadding: 0,
-    arrowsNav: true,
+    arrowsNav: false,
     controlsInside: true,
-    controlNavigation: 'none',
     navigateByClick: false,
     usePreloader: false,
     slidesSpacing:0,
+    //controlNavigation: 'bullets',
     fadeinLoadedSlide: true,
   });
   

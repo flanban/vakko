@@ -215,8 +215,8 @@ womens_collection_7@2x.jpg: womens_collection_7@2x-9c0f21c51c563434bd7dbb93a6a51
 womens_collection_7@2x/index.jpg: womens_collection_7@2x-9c0f21c51c563434bd7dbb93a6a51906.jpg
 application.js: application-df3cec109ca8a460ed9a802099c55b21.js
 application/index.js: application-df3cec109ca8a460ed9a802099c55b21.js
-static_pages/chocolate.js: static_pages/chocolate-83dddcd76895a3f6fc5bd5a5c90293b8.js
-static_pages/chocolate/index.js: static_pages/chocolate-83dddcd76895a3f6fc5bd5a5c90293b8.js
+static_pages/chocolate.js: static_pages/chocolate-00be3af11c01a1d5ab0343e21003d4d1.js
+static_pages/chocolate/index.js: static_pages/chocolate-00be3af11c01a1d5ab0343e21003d4d1.js
 static_pages/heritage.js: static_pages/heritage-1a4ebbb780437194dbbc38fcfabedb83.js
 static_pages/heritage/index.js: static_pages/heritage-1a4ebbb780437194dbbc38fcfabedb83.js
 static_pages/index.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
@@ -227,7 +227,7 @@ static_pages/lookbook_b.js: static_pages/lookbook_b-ac4082a4d1b654129955333fe0f8
 static_pages/lookbook_b/index.js: static_pages/lookbook_b-ac4082a4d1b654129955333fe0f8bb8e.js
 static_pages/lookbook_subnav.js: static_pages/lookbook_subnav-b5eb2fb8c00d5c4222693033195aff91.js
 static_pages/lookbook_subnav/index.js: static_pages/lookbook_subnav-b5eb2fb8c00d5c4222693033195aff91.js
-application.css: application-ec735c9ff485828b776cab59e45a4b53.css
-application/index.css: application-ec735c9ff485828b776cab59e45a4b53.css
+application.css: application-7ab08ad7c371870870e5e01a49b8b76c.css
+application/index.css: application-7ab08ad7c371870870e5e01a49b8b76c.css
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map

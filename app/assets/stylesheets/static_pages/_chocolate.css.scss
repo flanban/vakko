@@ -52,6 +52,9 @@
     .chocolate-slider-b.chocolate-arrows {
       height:708px;
       width:100%;
+      @media(max-width: $breakpoint-b) {
+        height:620px;
+      }
       .rsArrow {
         height: 100%;
         width: 44px;
@@ -105,12 +108,14 @@
       > ul {
         width:100%;
         height:100%;
+        position:relative;
         li {
           text-align:center;
           padding:0 5%;
           > img {
             @media(max-width: $breakpoint-b) {
-              width:100%;
+              width: 130%;
+              margin-left: -5%;
             }
           }
           h6 {
@@ -119,11 +124,16 @@
             font-weight:600;
             letter-spacing:1px;
             margin-bottom:10px;
+            color:#625a5b;
+            @media(max-width: $breakpoint-b) {
+              margin-top:50px;
+            }
           }
           p {
             margin:auto;
             @include body-copy;
             max-width:520px;
+            color:#625a5b;
           }
           // another button i need to refactor
           > a {
@@ -154,6 +164,7 @@
       margin-bottom:60px;
       @media(max-width: $breakpoint-a) {
         margin-top:160px;
+        margin-bottom:13px;
       }
       h2, h6 {
         color:#684739;
@@ -210,6 +221,24 @@
         }
       }
     }
+     .rsNav.rsBullets {
+        bottom:10px;
+        background:transparent;
+        .rsBullet {
+          display:inline-table;
+          span {
+            background:rgba(25,25,25,.3);
+          }
+          &.rsNavSelected {
+            span {
+              background:rgba(25,25,25,.9);
+            }
+          }
+        }
+        @media(min-width: $breakpoint-b1) {
+          display:none;
+        }
+      }
     .chocolate-slider-a {
       width:100%;
       padding:0 5%;
@@ -280,15 +309,19 @@
         @media(max-width: $breakpoint-b) {
           height:720px;
         }
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-a) {
           height:760px;
         }
         li {
           padding-top:70px;
           position:relative;
-          height:100%;
+          @media(min-width: $breakpoint-b1) {
+            height:100%;
+          }
           @media(max-width: $breakpoint-b) {
-            padding-top:40px;
+            .image-holder {
+              top:40px;
+            }
           }
           img {
             width:100%;
@@ -374,8 +407,9 @@
             margin:auto;
             display:block;
             @media(max-width: $breakpoint-b) {
-              top:60px;
+              margin-top:60px;
               position:relative;
+              display:block;
             }
             @media(min-width: $breakpoint-b1) {
               position:absolute;
