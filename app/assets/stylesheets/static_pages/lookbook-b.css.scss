@@ -3,8 +3,11 @@
 
 body.lookbook_b #content-area {
   height:100%;
+  @media(max-width: $breakpoint-b) {
+    overflow:hidden;
+  }
 }
-.lookbook-b.lookbook-slider {
+.lookbook-b.lookbook-b-slider {
   height:100%;
   .rsArrow.rsArrowDisabled {
     .rsArrowIcn { 
@@ -12,7 +15,10 @@ body.lookbook_b #content-area {
     }
   }
   .rsArrowIcn { 
-    background: asset_url('rs-default-gold.png', image);  
+    background: asset_url('rs-default-gold.png', image);
+    @media(max-width: $breakpoint-b) {
+      visibility:hidden;
+    }
   }
   .rsArrowRight {
     margin-right:64px;
@@ -56,8 +62,36 @@ body.lookbook_b #content-area {
 .lookbook-b.bottom {
   background:#fff;
   width:100%;
+  @media(max-width: $breakpoint-b) {
+    position:absolute;
+    height:100%;
+    bottom:-100%;
+    &.view-designers-active {
+      bottom:initial;
+      top:0;
+      #button-view-designers {
+       margin-top:0;
+      }
+    }
+  }
   > * {
     float:left;
+  }
+  #button-view-designers {
+    background:#fff;
+    height:55px;
+    margin-top:-55px;
+    width:100%;
+    text-align:center;
+    cursor:pointer;
+    @media(min-width: $breakpoint-b1) {
+      display:none;
+    }
+    p {
+      @include grid-subheadline;
+      font-size:14px;
+      padding:22px;
+    }
   }
   .image-holder {
     width:75%;
@@ -65,6 +99,9 @@ body.lookbook_b #content-area {
     -webkit-box-shadow: inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
     -moz-box-shadow:    inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
     box-shadow:         inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
+    @media(max-width: $breakpoint-b) {
+      display:none;
+    }
     &#couture-menu
       .text {
         position:absolute;

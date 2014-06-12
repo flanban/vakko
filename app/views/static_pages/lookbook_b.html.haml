@@ -1,9 +1,9 @@
 - content_for :page_js do
-  = javascript_include_tag 'static_pages/lookbook'
   = javascript_include_tag 'static_pages/lookbook_b'
 
 
-.lookbook-slider.lookbook-b.rsDefault
+.lookbook-b-slider.lookbook-b.rsDefault
+
   .rsContent
     =image_tag('couture-1.jpg', :class => 'rsImg')
     .slide-title
@@ -21,6 +21,8 @@
 
 
 .lookbook-b.bottom.clearfix
+  #button-view-designers
+    %p view designers
   #couture-menu.image-holder
     .text
       %h6 vakko couture
