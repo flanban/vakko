@@ -20,12 +20,12 @@ $(document).ready(function(){
       $('.lookbook-b-slider, #content-area').height(heightWithNav)
     }
   }
-  setMobilePageHeight();
+//  setMobilePageHeight();
   setBottomSectionRatio();
   
   $(window).resize(function(){
     setBottomSectionRatio();
-    setMobilePageHeight();
+  //  setMobilePageHeight();
   });
 });
 $(function(){
