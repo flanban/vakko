@@ -1,16 +1,31 @@
 $(document).ready(function(){
+  // view designers button
+  $('#button-view-designers').click(function() {
+    $('.lookbook-b.bottom').toggleClass('view-designers-active')
+  });
+  
   function setBottomSectionRatio() {
     if($(window).width()>768){
       var lookbookBottomImageWidth =  $('.image-holder').width();
       var lookbookBottomHeight =  lookbookBottomImageWidth / 1.299;
       $('.lookbook-b.bottom').css('height', lookbookBottomHeight)
+    } else {
+      $('.lookbook-b.bottom').css('height', '100%')
     }
   }
-  
+  function setMobilePageHeight() {
+    if($(window).width()<768){
+      navHeight = $('#primary-menu').height()
+      heightWithNav = $(window).height() - navHeight
+      $('.lookbook-b-slider, #content-area').height(heightWithNav)
+    }
+  }
+  setMobilePageHeight();
   setBottomSectionRatio();
   
   $(window).resize(function(){
     setBottomSectionRatio();
+    setMobilePageHeight();
   });
 });
 $(function(){

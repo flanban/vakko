@@ -62,15 +62,22 @@ body.lookbook_b #content-area {
 .lookbook-b.bottom {
   background:#fff;
   width:100%;
+  z-index:30;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   @media(max-width: $breakpoint-b) {
     position:absolute;
     height:100%;
     bottom:-100%;
     &.view-designers-active {
-      bottom:initial;
-      top:0;
+      bottom:0;
       #button-view-designers {
-       margin-top:0;
+        margin-top:0;
+        padding-top:30px;
+        height:auto;
       }
     }
   }
@@ -89,7 +96,8 @@ body.lookbook_b #content-area {
     }
     p {
       @include grid-subheadline;
-      font-size:14px;
+      font-weight:600;
+      font-size:11px;
       padding:22px;
     }
   }
@@ -136,6 +144,11 @@ body.lookbook_b #content-area {
     line-height:1;
     height:100%;
     overflow:scroll;
+    @media(max-width: $breakpoint-b) {
+    width:100%;
+    text-align:center;
+    padding:0 40px;
+    }
     li {
       @include subnav-item;
       font-size:10px;
@@ -147,6 +160,9 @@ body.lookbook_b #content-area {
         color:#cdcdcd;
         font-weight:500;
         padding:6px 0;
+        @media(max-width: $breakpoint-b) {
+          padding:19px 0;
+        }
       }
     }
   }
