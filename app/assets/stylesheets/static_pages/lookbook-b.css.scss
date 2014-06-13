@@ -6,9 +6,25 @@ body.lookbook_b #content-area {
   @media(max-width: $breakpoint-b) {
     overflow:hidden;
   }
+  .triangle-bg {
+    @media(max-width: $breakpoint-b) {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100px 100px 0;
+      border-color: transparent rgba(25, 25, 25, 0.5) transparent transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right:0;
+      z-index:1;
+    }
+  }
 }
 .lookbook-b.lookbook-b-slider {
   height:100%;
+
+  
   .rsArrow.rsArrowDisabled {
     .rsArrowIcn { 
       opacity:.4;
@@ -47,11 +63,11 @@ body.lookbook_b #content-area {
       padding-top: 10px;
     }
     @media(max-width: $breakpoint-b) {
-      top: 140px;
-      right: 13px;
+      top: 22px;
+      right: -55px;
       font-size:18px;
       width:inherit;
-      position:fixed;
+      position:absolute;
     }
   }
 
@@ -68,16 +84,39 @@ body.lookbook_b #content-area {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  .back-button {
+    display:none;
+    @media(max-width: $breakpoint-b) {
+      display:block;
+      background: asset_url('back-button.gif', image);
+      background-position:center;
+      background-repeat:no-repeat;
+      display:block;
+      position:absolute;
+      top:20px;
+      left:25px;
+      width:7px;
+      height:13px;
+      opacity:.5;
+    }
+  }
   @media(max-width: $breakpoint-b) {
+    
     position:absolute;
     height:100%;
     bottom:-100%;
+
     &.view-designers-active {
       bottom:0;
       #button-view-designers {
         margin-top:0;
         padding-top:30px;
         height:auto;
+      }
+    }
+    &.view-individual-designer-active {
+      .image-holder {
+        bottom:0;
       }
     }
   }
@@ -91,6 +130,12 @@ body.lookbook_b #content-area {
     width:100%;
     text-align:center;
     cursor:pointer;
+    position:relative;
+    .back-button {
+      top:48px;
+      z-index:2;
+      position:absolute;
+    }
     @media(min-width: $breakpoint-b1) {
       display:none;
     }
@@ -107,8 +152,16 @@ body.lookbook_b #content-area {
     -webkit-box-shadow: inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
     -moz-box-shadow:    inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
     box-shadow:         inset -36px 0px 30px -38px rgba(50, 50, 50, 0.15);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     @media(max-width: $breakpoint-b) {
-      display:none;
+      position:absolute;
+      height:100%;
+      bottom:-100%;
+      width:100%;
     }
     &#couture-menu
       .text {
@@ -136,6 +189,9 @@ body.lookbook_b #content-area {
         position:relative;
         width:100%;
         display:block;
+        @media(max-width: $breakpoint-b) {
+          display:none;
+        }
       }
   }
   .menu {

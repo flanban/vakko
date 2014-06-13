@@ -1,4 +1,8 @@
 ---
+back-button.gif: back-button-96cc67d7b6a469e82180519d208677d1.gif
+back-button/index.gif: back-button-96cc67d7b6a469e82180519d208677d1.gif
+back-button.jpg: back-button-a9d378cf5a65d4c530211ad966e3fd6b.jpg
+back-button/index.jpg: back-button-a9d378cf5a65d4c530211ad966e3fd6b.jpg
 badgley-mishcka-1.jpg: badgley-mishcka-1-abc7fbdcfd3edbdc2e349f54b1bcadf1.jpg
 badgley-mishcka-1/index.jpg: badgley-mishcka-1-abc7fbdcfd3edbdc2e349f54b1bcadf1.jpg
 button-close.png: button-close-21bf280e722a0042ca05360b088dca07.png
@@ -225,11 +229,11 @@ static_pages/index.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
 static_pages.js: static_pages/index-f895869151330b65cfad70d49c988f01.js
 static_pages/lookbook.js: static_pages/lookbook-8245da7185f13c6390fca467f369ce98.js
 static_pages/lookbook/index.js: static_pages/lookbook-8245da7185f13c6390fca467f369ce98.js
-static_pages/lookbook_b.js: static_pages/lookbook_b-c3e66ec204492501af5d9fb3293c5966.js
-static_pages/lookbook_b/index.js: static_pages/lookbook_b-c3e66ec204492501af5d9fb3293c5966.js
+static_pages/lookbook_b.js: static_pages/lookbook_b-547ce8f01c37d920720de037a670596c.js
+static_pages/lookbook_b/index.js: static_pages/lookbook_b-547ce8f01c37d920720de037a670596c.js
 static_pages/lookbook_subnav.js: static_pages/lookbook_subnav-b5eb2fb8c00d5c4222693033195aff91.js
 static_pages/lookbook_subnav/index.js: static_pages/lookbook_subnav-b5eb2fb8c00d5c4222693033195aff91.js
-application.css: application-f1b1a00db1c0d11f63dea3013fc57bf9.css
-application/index.css: application-f1b1a00db1c0d11f63dea3013fc57bf9.css
+application.css: application-165df62c503a8cc235673e3071fafd8b.css
+application/index.css: application-165df62c503a8cc235673e3071fafd8b.css
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map

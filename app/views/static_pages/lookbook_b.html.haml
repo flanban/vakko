@@ -1,9 +1,8 @@
 - content_for :page_js do
   = javascript_include_tag 'static_pages/lookbook_b'
 
-
+.triangle-bg
 .lookbook-b-slider.lookbook-b.rsDefault
-
   .rsContent
     =image_tag('couture-1.jpg', :class => 'rsImg')
     .slide-title
@@ -22,6 +21,7 @@
 
 .lookbook-b.bottom.clearfix
   #button-view-designers
+    =image_tag('back-button.gif', :class => 'back-button', :id => 'designer-back')
     %p view designers
   #couture-menu.image-holder
     .text

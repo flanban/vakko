@@ -7,12 +7,22 @@
   top:0;
   padding:5% 0;
   height:100%;
-  
+  @media(max-width: $breakpoint-b) {
+    width:100%;
+    left:0;
+    padding:0;
+    top:55px;
+    background:#fff;
+  }
   .designer-slider {
     width:80%;
     height:100%;
     position:relative;
     left:30px;
+    @media(max-width: $breakpoint-b) {
+      width:100%;
+      left:0;
+    }
     img {
       &.couture-image {
         width:85%;
@@ -21,6 +31,11 @@
         position:absolute;
         z-index:2;
         top:0;
+        @media(max-width: $breakpoint-b) {
+          width:100%;
+          margin-left:0;
+          margin-top:0;
+        }
       }
       &#couture-frame {
         position:absolute;
@@ -35,41 +50,93 @@
 }
 .image-holder {
   height:100%;
+
 }
 .designer-left {
   height:100%;
   position:relative;
   width:35%;
   padding:20px;
+  @media(max-width: $breakpoint-b) {
+    width:100%;
+    left:0;
+    padding:0;
+    position:absolute;
+    z-index:60;
+    height:55px;
+    background:#fff;
+  }
   .slide-title {
     text-align:left;
-    min-width:325px;
-    max-width:375px;
+
     margin:auto;
     top:50%;
     position:relative;
     margin-top:-96px;
+    @media(min-width: $breakpoint-b) {
+      min-width:325px;
+      max-width:375px;
+    }
+    @media(max-width: $breakpoint-b) {
+      width:100%;
+      left:0;
+      top:0;
+      padding:0;
+      margin-top:0;
+      .triangle-bg {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 100px 100px 0;
+        border-color: transparent rgba(25, 25, 25, 0.3) transparent transparent;
+        position: absolute;
+        top: 55px!important;
+        right: 0;
+        margin-right:0;
+      }
+    }
+
     h2 {
       color:#585858;
       margin-bottom:62px;
       font-size:37px;
+      @media(max-width: $breakpoint-b) {
+        @include grid-subheadline;
+        color:#bfbfbf;
+        font-style:normal;
+        text-align:center;
+        position:relative;
+        top:22px;
+        font-size:11px;
+      }
     }
     > div {
       margin-right:40px;
     }
   }
-    .slideCount {
+    div.slideCount {
       @include big-date;
       font-size:72px; 
       color:#585858;
       letter-spacing:10px;
+      @media(max-width: $breakpoint-b) {
+        position:absolute;
+        @include grid-subheadline;
+        font-size:11px;
+        right: 22px;
+        top: 80px;
+        margin-right:0;
+        color:#e4e4e4;
+      }
     }
     .rsArrow {
       height: 100%;
       width: 44px;
       display: block;
       cursor: pointer;
-  
+      @media(max-width: $breakpoint-b) {
+        display:none;
+      }
       .rsArrowIcn {
         width: 38px;
         height: 72px;

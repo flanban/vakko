@@ -3,6 +3,16 @@ $(document).ready(function(){
   $('#button-view-designers').click(function() {
     $('.lookbook-b.bottom').toggleClass('view-designers-active')
   });
+  // handle specific designer links
+  $('.menu ul li').click(function() {
+    $('.lookbook-b.bottom').addClass('view-individual-designer-active')
+  });
+  // handle specific designer links
+
+  $(document).delegate(".designer-left","click",function(e){
+    $('.lookbook-b.bottom').removeClass('view-individual-designer-active')
+   });
+  
   
   function setBottomSectionRatio() {
     if($(window).width()>768){
