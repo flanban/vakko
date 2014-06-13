@@ -23,7 +23,7 @@ ul.entries {
     background-size:cover;
     background-repeat:no-repeat;
     &.quarter-width {
-      @media(min-width: $breakpoint-b1) {
+      @media(min-width: $breakpoint-d1) {
         width:25%;
       }
     }
@@ -42,7 +42,7 @@ ul.entries {
       }
     }
     // set the sliders width here
-    @media(min-width: $breakpoint-c) {
+    @media(min-width: $breakpoint-d1) {
       width:50%;
     }
     &.aspect-ratio-3 {

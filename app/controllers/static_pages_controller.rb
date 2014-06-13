@@ -56,4 +56,7 @@ class StaticPagesController < ApplicationController
   
   def power_fm
   end
+  
+  def templates
+  end
 end

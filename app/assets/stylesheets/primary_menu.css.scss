@@ -6,6 +6,7 @@
   html.mobile-nav-open body {
     // freeze screen when mobile nav is open
       position:fixed;
+      width:100%;
       #primary-menu {
         height:100%;
         #nav-items {
@@ -93,7 +94,7 @@
     right:20px;
     top:21px;
     color:pink;
-    @media(min-width: $breakpoint-b) {
+    @media(min-width: $breakpoint-b1) {
       display:none;
      }
   }

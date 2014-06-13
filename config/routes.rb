@@ -98,6 +98,7 @@ Vakko::Application.routes.draw do
 
   match '/power_fm' => 'StaticPages#power_fm'
 
+  match '/templates' => 'StaticPages#templates', :as => 'templates'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
