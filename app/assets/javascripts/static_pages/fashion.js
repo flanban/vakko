@@ -32,4 +32,23 @@ $(function() {
   $(window).resize(function(){//resize event
     fashionRatios();
   });
+  window.onorientationchange = function(){
+      var orientation = window.orientation;
+      // Look at the value of window.orientation:
+      if (orientation === 0){
+          // iPad is in Portrait mode.
+          fashionRatios();
+          
+      }
+      else if (orientation === 90){
+          // iPad is in Landscape mode. The screen is turned to the left.
+          fashionRatios();
+          
+      }
+      else if (orientation === -90){
+          // iPad is in Landscape mode. The screen is turned to the right.
+          fashionRatios();
+          
+      }
+  }
 });
