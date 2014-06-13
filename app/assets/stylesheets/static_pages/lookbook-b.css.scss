@@ -113,6 +113,9 @@ body.lookbook_b #content-area {
         padding-top:30px;
         height:auto;
       }
+      img#designer-back {
+        display:block;
+      }
     }
     &.view-individual-designer-active {
       .image-holder {
@@ -132,6 +135,7 @@ body.lookbook_b #content-area {
     cursor:pointer;
     position:relative;
     .back-button {
+      display:none;
       top:48px;
       z-index:2;
       position:absolute;

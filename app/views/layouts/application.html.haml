@@ -2,7 +2,7 @@
 %html{:class => "#{controller_name} #{action_name}"}
   %head
     %title= yield(:title) + " - VAKKO"
-    %meta{:content => "initial-scale=1, maximum-scale=1", :name => "viewport"}
+    %meta{:content => "initial-scale=1, content='width=320', maximum-scale=1", :name => "viewport"}
     = stylesheet_link_tag    "//cloud.typography.com/7210072/723564/css/fonts.css", :media => "all"
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
