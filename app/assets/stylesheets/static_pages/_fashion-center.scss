@@ -1,6 +1,8 @@
 @import "mixins/breakpoints";
 @import "mixins/typography";
-
+html.fashion_center {
+  background:#fff;
+}
 #fashion-center {
   //hide the word VAKKO on small screens
   @media(max-width: $breakpoint-b) {
@@ -10,10 +12,18 @@
   }
   ul.entries {
     > li {
+      @media(max-width: $breakpoint-d) {
+        width:100%;
+      }
       > a > img, > img {
         @media(max-width: $breakpoint-b) {
           width:100%;
           opacity:1;
+        }
+      }
+      .quote {
+        &.long-quote {
+          top:40%;
         }
       }
     }
@@ -23,9 +33,11 @@
     padding:0 44px;
     h4 {
       @include grid-headline;
-      font-size:$seventh-position;
       color:#434343;
       font-size:32px;
+      @media(max-width: $breakpoint-a) {
+        font-size:20px;
+      }
     }
     p {
       @include body-copy;
@@ -33,6 +45,8 @@
       font-style:initial;
       max-width:440px;
       margin:auto;
+      font-size:12px;
+      margin-bottom:30px;
     }
   }
 }

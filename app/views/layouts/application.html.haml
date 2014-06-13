@@ -1,5 +1,5 @@
 !!!
-%html
+%html{:class => "#{controller_name} #{action_name}"}
   %head
     %title= yield(:title) + " - VAKKO"
     %meta{:content => "initial-scale=1, maximum-scale=1", :name => "viewport"}

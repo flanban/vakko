@@ -1,5 +1,4 @@
 $(function() {
-
   function fashionRatio0() {
     entryWidth = $('.fashion-ratio-0').width();
     entryHeight = Math.round($('.fashion-ratio-0').width() / 1.6);//that weird number is the img's fashion ratio in decimal form
@@ -18,31 +17,19 @@ $(function() {
     entryWidth = $('.fashion-ratio-2').width();
     entryHeight = Math.round($('.fashion-ratio-2').width() / 1.7);//that weird number is the img's fashion ratio in decimal form
     entryHeightMobile = Math.round($('.fashion-ratio-2').width() / 1.6);//that weird number is the img's fashion ratio in decimal form
-
     if($(window).width()<768){
       $('.fashion-ratio-2').height(entryHeightMobile);
     } else {
       $('.fashion-ratio-2').height(entryHeight -1);
     }
   }
-  function fashionRatio3() {
-    entryWidth = $('.fashion-ratio-3').width();
-    entryHeight = Math.round($('.fashion-ratio-3').width() / .425);//that weird number is the img's fashion ratio in decimal form
-    $('.fashion-ratio-3').height(entryHeight -1);
-  }
   function fashionRatios() {
     fashionRatio0();
     fashionRatio1();
     fashionRatio2();
-    fashionRatio3();
   }
-
-  // call functions
-  fashionRatios();
-  
-  //resize event
-  $(window).resize(function(){
+  fashionRatios(); // call functions
+  $(window).resize(function(){//resize event
     fashionRatios();
   });
-
 });
