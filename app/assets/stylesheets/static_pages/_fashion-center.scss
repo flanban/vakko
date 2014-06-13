@@ -35,6 +35,9 @@ html.fashion_center {
   //not really a quote, but I'm using the class anywqay
   .quote {
     padding:0 44px;
+    @media(max-width: $breakpoint-a) {
+      padding:0px;
+    }
     h4 {
       @include grid-headline;
       color:#434343;
@@ -51,6 +54,9 @@ html.fashion_center {
       margin:auto;
       font-size:12px;
       margin-bottom:30px;
+      @media(max-width: $breakpoint-a) {
+        padding:0 30px;
+      }
     }
   }
 }
