@@ -27,7 +27,7 @@ ul.entries {
         width:25%;
       }
     }
-    @media(max-width: $breakpoint-b) {
+    @media(max-width: $breakpoint-d) {
       .women, .men {
         height:100%;
         width:100%;
@@ -57,7 +57,7 @@ ul.entries {
       .rollover {
         opacity:1;
       }
-      @media(min-width: $breakpoint-b1) {
+      @media(min-width: $breakpoint-d1) {
         //the additional -> .women & .men classes are to include the slider
         > a img, .grid-image {
           opacity:.2;
@@ -89,7 +89,8 @@ ul.entries {
       top:0;
       left:0;
       text-align:center;
-      @media(min-width: $breakpoint-b1) {
+      opacity:1;
+      @media(min-width: $breakpoint-d1) {
         opacity:0;
       }
       -webkit-transition: opacity 0.3s ease;
@@ -104,7 +105,7 @@ ul.entries {
         position:relative;
         margin-top:-30px;
         color:#fff;
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           background-color:rgba(0,0,0,.8);
           width:90%;
           max-width:420px;
@@ -167,7 +168,7 @@ ul.entries {
     transition: all 0.3s ease;
 
     //all slides
-    @media(max-width: $breakpoint-b) {
+    @media(max-width: $breakpoint-d) {
       a > img {
         display:none;
       }
@@ -176,7 +177,7 @@ ul.entries {
     &#wedding {
       background-color:#f3e1d1;
       //swap images for s all screen devices
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-wedding-mobile@2x.jpg', image);
         .slide-title {
           background-color:rgba(243,225,209,.6);
@@ -185,7 +186,7 @@ ul.entries {
     }
     &#home {
       background-color:#191919;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-home-mobile@2x.jpg', image) ;
         .slide-title {
           background-color:rgba(25,25,25,.8);
@@ -194,7 +195,7 @@ ul.entries {
     }
     &#cruise {
       background-color:#025078;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-cruise-mobile@2x.jpg', image);
         .slide-title {
           background-color:rgba(2,80,120,.8);
@@ -205,7 +206,7 @@ ul.entries {
       background-color:#d89e8f;
       float:right;
       
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-perfume-mobile@2x.jpg', image) ;
         .slide-title {
           background-color:rgba(240,211,203,.8);
@@ -215,7 +216,7 @@ ul.entries {
     &#espace-by-sky {
       background-color:#1c1614;
       
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-espace-mobile@2x.jpg', image) ;
         .slide-title {
           background-color:rgba(50,30,40,.8);
@@ -225,7 +226,7 @@ ul.entries {
     &#chocolate {
       background-color:#1c1614;
       clear:left;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-chocolate-mobile@2x.jpg', image) ;
         .slide-title {
           background-color:rgba(53,34,19,.8);
@@ -234,7 +235,7 @@ ul.entries {
     }
     &#library {
       background-color:#1c1614;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-library-mobile@2x.jpg', image) ;
         .slide-title {
           background-color:rgba(109,69,25,.8);
@@ -243,7 +244,7 @@ ul.entries {
     }
     &#heritage {
       background-color:#34271c;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-heritage-mobile@2x.jpg', image);
         .slide-title {
           background-color:rgba(52,39,28,.8);
@@ -252,7 +253,7 @@ ul.entries {
     }
     &#fashion-center {
       background-color:#2e5d87;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-fashion-mobile@2x.jpg', image) ;
         .slide-title {
           background-color:rgba(46,93,135,.8);
