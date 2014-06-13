@@ -13,7 +13,6 @@
       > a > img, > img {
         @media(max-width: $breakpoint-b) {
           width:100%;
-          height:200px;
           opacity:1;
         }
       }

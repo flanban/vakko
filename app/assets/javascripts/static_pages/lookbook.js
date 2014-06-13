@@ -31,11 +31,6 @@ $(document).ready(function(){
     fadeinLoadedSlide: true,
     addActiveClass: true,
     arrowsNavAutoHide: false,
-    deeplinking: {
-      enabled: true,
-      change: true,
-      prefix: '-'
-    },
     controlsInside: true
   });
   var sliderInstance = lookbookSlider.data('royalSlider');
