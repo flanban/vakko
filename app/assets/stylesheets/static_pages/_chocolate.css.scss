@@ -10,7 +10,7 @@
       width:100%;
       position:relative;
       display:block;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         display:none;
       }
     }
@@ -20,7 +20,7 @@
       h2 {
         font-size:$seventh-position;
         color:#653e31;
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           font-size:30px;
         }
       }
@@ -32,7 +32,7 @@
     
   }
   #module-top {
-    @media(max-width: $breakpoint-b) {
+    @media(max-width: $breakpoint-d) {
       background:asset_url('chocolate-top-bg-mobile.jpg', image);
       background-size:cover;
     }
@@ -41,7 +41,7 @@
       position:absolute;
       top:50%;
       width:60%;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         text-align:left;
         padding-left:15px;
       }
@@ -52,7 +52,7 @@
     .chocolate-slider-b.chocolate-arrows {
       height:708px;
       width:100%;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         height:620px;
       }
       .rsArrow {
@@ -62,7 +62,7 @@
         display: block;
         cursor: pointer;
         z-index: 21;
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           visibility:hidden;
         }
         .rsSlideCount {
@@ -82,11 +82,9 @@
           left: 50%;
           margin-top:-16px; 
           margin-left: -16px;
-
           position: absolute; 
           cursor: pointer;  
           background: asset_url('rs-default.png', image);
-
           border-radius: 2px;
         }
         &.rsArrowDisabled {
@@ -113,7 +111,7 @@
           text-align:center;
           padding:0 5%;
           > img {
-            @media(max-width: $breakpoint-b) {
+            @media(max-width: $breakpoint-d) {
               width: 130%;
               margin-left: -5%;
             }
@@ -125,7 +123,7 @@
             letter-spacing:1px;
             margin-bottom:10px;
             color:#625a5b;
-            @media(max-width: $breakpoint-b) {
+            @media(max-width: $breakpoint-d) {
               margin-top:50px;
             }
           }
@@ -185,38 +183,38 @@
         line-height:1.9;
         padding-top:16px;
         color:#f4eae5;
-        @media(min-width: $breakpoint-b1) {
-          font-weight:200;
-        }
         text-align:center;
         position:relative;
-        @media(min-width: $breakpoint-b1) {
+        @media(min-width: $breakpoint-d1) {
+          font-weight:200;
           width:600px;
           margin-left:-320px;
           left:50%;
           font-size:20px;
         }
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           width:100%;
           font-size:14px;
+          margin-left:0px;
+          left:0;
         }
       }
       //just the first one
       > p:nth-of-type(1) {
-        @media(min-width: $breakpoint-b1) {
+        @media(min-width: $breakpoint-d1) {
           padding-top:100px;
         }
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           padding:0 15px;
           padding-top:50px;
         }
       }
       //just the second one
       > p:nth-of-type(2) {
-        @media(min-width: $breakpoint-b1) {
+        @media(min-width: $breakpoint-d1) {
           padding-bottom:100px;
         }
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           padding-bottom:52px;
         }
       }
@@ -235,7 +233,7 @@
             }
           }
         }
-        @media(min-width: $breakpoint-b1) {
+        @media(min-width: $breakpoint-d1) {
           display:none;
         }
       }
@@ -243,7 +241,7 @@
       width:100%;
       padding:0 5%;
       position:relative;
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         background: asset_url('chocolate-noise.gif', image);
       }
       #choco-btm-bg {
@@ -251,7 +249,7 @@
         bottom:-260px;
         width:112%;
         margin-left:-6%;
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           position: absolute;
           bottom: -130px;
           width: 192%;
@@ -265,7 +263,10 @@
         max-width:1120px;
         margin:auto;
         color:#d2c1bd;
-        @media(max-width: $breakpoint-b) {
+        @media(min-width: $breakpoint-d1) {
+          min-width:820px;
+        }
+        @media(max-width: $breakpoint-d) {
           display:none;
         }
         span {
@@ -302,11 +303,11 @@
         width:100%;
         max-width:1120px;
         margin:auto;
-        @media(min-width: $breakpoint-b1) {
+        @media(min-width: $breakpoint-d1) {
           height:580px;
           min-width:820px;
         }
-        @media(max-width: $breakpoint-b) {
+        @media(max-width: $breakpoint-d) {
           height:720px;
         }
         @media(max-width: $breakpoint-a) {
@@ -315,10 +316,10 @@
         li {
           padding-top:70px;
           position:relative;
-          @media(min-width: $breakpoint-b1) {
+          @media(min-width: $breakpoint-d1) {
             height:100%;
           }
-          @media(max-width: $breakpoint-b) {
+          @media(max-width: $breakpoint-d) {
             .image-holder {
               top:40px;
             }
@@ -328,20 +329,20 @@
           }
           .image-holder {
             width:50%;
-            @media(max-width: $breakpoint-b) {
+            @media(max-width: $breakpoint-d) {
               width: 70%;
               margin: auto;
               height: initial;
             }
             &.image-holder-right {
-              @media(min-width: $breakpoint-b1) {
+              @media(min-width: $breakpoint-d1) {
                 position:absolute;
                 right:0;
               }
             }
           }
           .text-holder {
-            @media(min-width: $breakpoint-b1) {
+            @media(min-width: $breakpoint-d1) {
               min-height:420px;
               width:50%;
               position:absolute;
@@ -349,7 +350,7 @@
               left:auto;
               right:0px;
             }
-            @media(max-width: $breakpoint-b) {
+            @media(max-width: $breakpoint-d) {
               position:relative;
               width:80%;
               margin:auto;
@@ -364,7 +365,7 @@
               text-align:center;
               position:relative;
               margin:auto;
-              @media(min-width: $breakpoint-b1) {
+              @media(min-width: $breakpoint-d1) {
                 position:absolute;
                 left:50%;
                 margin-left:-200px;
@@ -381,7 +382,7 @@
                 @include body-copy;
                 color:#8e6552;
                 font-size:16px;
-                @media(max-width: $breakpoint-b) {
+                @media(max-width: $breakpoint-d) {
                   margin-bottom:20px;
                 }
                 
@@ -406,12 +407,12 @@
             color:#000;
             margin:auto;
             display:block;
-            @media(max-width: $breakpoint-b) {
+            @media(max-width: $breakpoint-d) {
               margin-top:60px;
               position:relative;
               display:block;
             }
-            @media(min-width: $breakpoint-b1) {
+            @media(min-width: $breakpoint-d1) {
               position:absolute;
               bottom:50px;
               left:50%;

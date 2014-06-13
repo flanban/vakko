@@ -1,13 +1,14 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
 body.heritage #content-area {
+      height:100%;
   @media(min-width: $breakpoint-b1) {
-    height:100%;
+
     overflow:hidden;
   }
   @media(max-width: $breakpoint-b) {
     background:#fff;
-  }  
+  }
 }
 #heritage-page {
   height:100%;
@@ -16,7 +17,7 @@ body.heritage #content-area {
   }
   .heritage-caption {
     background-color:#fff;
-    @media(min-width: $breakpoint-b1) {
+    @media(min-width: $breakpoint-e1) {
       width:800px;
       height:136px;
       position:absolute;
@@ -26,13 +27,14 @@ body.heritage #content-area {
       z-index:22;
       padding:30px;
     }
-    @media(max-width: $breakpoint-b) {
+    @media(max-width: $breakpoint-e) {
       width:100%;
       left:0;
       top:0;
       margin-left:0;
       position:relative;
       padding:24px;
+      top: -140px;
     }
     .date, .caption {
       display:inline-block;
@@ -56,11 +58,20 @@ body.heritage #content-area {
     .caption {
       @include body-copy;
       position:relative;
+      left:0px;
       @media(max-width: $breakpoint-b) {
         text-align:center;
+        margin:auto;
+        display:block;
+        max-width:520px;
       }
       @media(min-width: $breakpoint-b1) {
         left:250px;
+      }
+      @media(min-width: $breakpoint-b1) {
+        width:55%;
+      }
+      @media(min-width: $breakpoint-e1) {
         width:470px;
       }
     }
@@ -121,7 +132,7 @@ body.heritage #content-area {
     text-align:center;
     overflow:scroll;
     background-color:#231f20;
-    @media(max-width: $breakpoint-b) {
+    @media(max-width: $breakpoint-e) {
       display:none;
     }
     span {

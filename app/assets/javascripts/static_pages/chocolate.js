@@ -5,14 +5,14 @@ $(document).ready(function(){
     $('.chocolate-slider-b .rsNav.rsBullets').css('top', bulletPosition);
   }
   function setSliderAHeight() {
-    if($(window).width()<768){
+    if($(window).width()<1024){
       var bulletHeight = 45;
       var sliderHeight = $('#art-of-tasting').outerHeight() + bulletHeight;
       $('.chocolate-slider-a > ul').outerHeight(sliderHeight);
     }
   }
   function setSliderBHeight() {
-    if($(window).width()<768){
+    if($(window).width()<1024){
       var sliderHeight = $('.chocolate-slider-b li:first-child').outerHeight();
       $('.chocolate-slider-b').outerHeight(sliderHeight);
     }
