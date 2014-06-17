@@ -46,7 +46,7 @@ ul.entries {
       width:50%;
     }
     &.aspect-ratio-3 {
-      @media(max-width: $breakpoint-b) {
+      @media(max-width: $breakpoint-d) {
         display:none;
       }
     }
