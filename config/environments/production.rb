@@ -26,6 +26,7 @@ Vakko::Application.configure do
   config.assets.precompile += %w( static_pages/index.js )
   config.assets.precompile += %w( static_pages/chocolate.js )
   config.assets.precompile += %w( static_pages/fashion.js )
+  config.assets.precompile += %w( static_pages/snap.svg-min.js )
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
