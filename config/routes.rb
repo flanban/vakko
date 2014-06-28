@@ -82,6 +82,10 @@ Vakko::Application.routes.draw do
 
   match '/perfume' => 'StaticPages#perfume'
 
+  match '/mens-perfume' => 'StaticPages#mens_perfume', :as => 'mens_perfume'
+
+  match '/womens-perfume' => 'StaticPages#womens_perfume', :as => 'womens_perfume'
+
   match '/chocolate' => 'StaticPages#chocolate'
 
   match '/library' => 'StaticPages#library'

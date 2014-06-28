@@ -33,6 +33,12 @@ class StaticPagesController < ApplicationController
   def perfume
   end
 
+  def mens_perfume
+  end
+  
+  def womens_perfume
+  end
+
   def chocolate
   end
   
