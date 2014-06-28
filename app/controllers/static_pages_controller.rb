@@ -12,10 +12,10 @@ class StaticPagesController < ApplicationController
   def collection_grid
   end
 
-  def womens_collection
+  def collection_woman
   end
   
-  def mens_collection
+  def collection_men
   end
 
   def lookbook_b
@@ -25,6 +25,18 @@ class StaticPagesController < ApplicationController
   end
 
   def cruise
+  end
+
+  def scarves
+  end
+
+  def bags
+  end
+
+  def creative_industries_library
+  end
+
+  def production_center
   end
 
   def espace_by_sky

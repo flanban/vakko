@@ -17,7 +17,4 @@
 //= require shared/primary-menu
 //= require static_pages/lookbook_subnav
 //= require static_pages/lookbook_subnav
-//= require modernizr.custom.js
-//= require svgicons-config.js
-//= require svgicons.js
-//= require snap.svg-min.js
+

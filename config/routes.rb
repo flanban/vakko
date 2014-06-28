@@ -70,9 +70,9 @@ Vakko::Application.routes.draw do
   
   match '/lookbook_b' => 'StaticPages#lookbook_b', :as => 'lookbook_b'
 
-  match '/womens-collection' => 'StaticPages#womens_collection', :as => 'womens_collection'
+  match '/collection-woman' => 'StaticPages#collection_woman', :as => 'collection_woman'
 
-  match '/mens-collection' => 'StaticPages#mens_collection', :as => 'mens_collection'
+  match '/collection-men' => 'StaticPages#collection_men', :as => 'collection_men'
 
   match '/wedding' => 'StaticPages#wedding'
 
@@ -81,6 +81,14 @@ Vakko::Application.routes.draw do
   match '/espace_by_sky' => 'StaticPages#espace_by_sky'
 
   match '/perfume' => 'StaticPages#perfume'
+
+  match '/scarves' => 'StaticPages#scarves', :as => 'scarves'
+
+  match '/production-center' => 'StaticPages#production_center', :as => 'production_center'
+
+  match '/creative-industries-library' => 'StaticPages#creative_industries_library', :as => 'creative_industries_library'
+
+  match '/bags' => 'StaticPages#bags', :as => 'bags'
 
   match '/mens-perfume' => 'StaticPages#mens_perfume', :as => 'mens_perfume'
 

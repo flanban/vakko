@@ -1,0 +1,149 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
+
+ul.entries {
+  width:100%;
+   > li {
+    width:100%;
+    float:left;
+    position:relative;
+    background-size:cover;
+    background-repeat:no-repeat;
+    &.quarter-width {
+      @media(min-width: $breakpoint-d1) {
+        width:25%;
+      }
+    }
+    // set the sliders width here
+    @media(min-width: $breakpoint-d1) {
+      width:50%;
+    }
+    &.aspect-ratio-3 {
+      @media(max-width: $breakpoint-d) {
+        display:none;
+      }
+    }
+    &:first-child {
+      width:100%;
+    }
+    &:hover {
+      .rollover {
+        opacity:1;
+      }
+      @media(min-width: $breakpoint-d1) {
+        //the additional -> .women & .men classes are to include the slider
+        > a img, .grid-image {
+          opacity:.2;
+        }
+        .light-fade {
+          opacity:.4;
+        }
+      }
+    }
+    a > img, > img {
+      width:100%;
+      display:block;
+      height:auto;
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      @media(max-width: $breakpoint-b) {
+        height:100%;
+        width:auto;
+        opacity:1;
+      }
+    }
+    .rollover {
+      height:100%;
+      width:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      text-align:center;
+      opacity:1;
+      @media(min-width: $breakpoint-d1) {
+        opacity:0;
+      }
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      
+      .slide-title {
+        height:56px;
+        top:50%;
+        position:relative;
+        margin-top:-30px;
+        color:#fff;
+        @media(max-width: $breakpoint-d) {
+          background-color:rgba(0,0,0,.8);
+          width:90%;
+          max-width:420px;
+          margin:0 auto;
+          margin-top:-50px;
+          padding:28px 0;
+          height:95px;
+        }
+        h2 a {
+          @include grid-headline;
+        }
+        h6 {
+          @include grid-subheadline;
+        }
+        &.big-title h2 a {
+          font-size:$seventh-position;
+          margin-bottom:20px;
+          @media(max-width: $breakpoint-b) {
+           font-size:24px;
+          }
+        }
+        &.dark {
+          color:#3d3d3d;
+          a {
+            color:#3d3d3d;
+          }
+        }
+      }
+      .buttons {
+        position:absolute;
+        bottom:36px;
+        left:50%;
+        margin-left:-75px;
+        @media(max-width: $breakpoint-b) {
+          display:none;
+        }
+        a {
+          display:inline-block;
+          margin-right:6px;
+          &:hover {
+            img {
+              opacity:.9;
+            }
+          }
+          img {
+            opacity:.3;
+            -webkit-transition: opacity 0.5s ease;
+            -moz-transition: opacity 0.5s ease;
+            -o-transition: opacity 0.5s ease;
+            -ms-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease;
+          }
+        }
+      }
+    }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    //all slides
+    @media(max-width: $breakpoint-d) {
+      a > img {
+        display:none;
+      }
+    }
+  }
+}

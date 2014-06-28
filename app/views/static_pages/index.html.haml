@@ -26,60 +26,48 @@
       .slide-title.dark
         %h2=link_to 'vakko wedding', wedding_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-shop.png'), '#'
-        =link_to image_tag('button-play.png'), '#'
-        =link_to image_tag('button-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#home.aspect-ratio-2
     =link_to image_tag('home-home.jpg', :class => 'grid-image  desktop-image'), home_path
     .rollover
       .slide-title
         %h2=link_to 'vakko home', home_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#cruise.aspect-ratio-2
     =link_to image_tag('home-cruise.jpg', :class => 'grid-image'), cruise_path
     .rollover
       .slide-title
         %h2=link_to 'vakko cruise', cruise_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#perfume.aspect-ratio-1
     =link_to image_tag('home-perfume.jpg', :class => 'grid-image'), perfume_path
     .rollover
       .slide-title
         %h2=link_to 'vakko perfume', perfume_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#espace-by-sky.aspect-ratio-2
     =link_to image_tag('home-espace.jpg', :class => 'grid-image'), espace_by_sky_path
     .rollover
       .slide-title
         %h2=link_to 'vakko espace', espace_by_sky_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#chocolate.aspect-ratio-2
     =link_to image_tag('home-chocolate.jpg', :class => 'grid-image'), chocolate_path
     .rollover
       .slide-title
         %h2=link_to 'vakko chocolate', chocolate_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#quote.aspect-ratio-2.white-bg
     .quote
       =image_tag('quote-mark.png')
@@ -93,20 +81,16 @@
       .slide-title
         %h2=link_to 'vakko library', library_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#heritage.aspect-ratio-1
     =link_to image_tag('home-heritage.jpg', :class => 'grid-image'), heritage_path
     .rollover
       .slide-title
         %h2=link_to 'vakko heritage', heritage_path
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#fashion-center.aspect-ratio-1
     =link_to image_tag('home-fashion-center.jpg', :class => 'grid-image'), heritage_path
     .rollover
@@ -117,10 +101,8 @@
               Vakko
             fashion center
         %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), '#'
-        =link_to image_tag('button-white-play.png'), '#'
-        =link_to image_tag('button-white-info.png'), '#'
+      =render "shared/buttons-type-a"
+
   %li#vakkorama.aspect-ratio-3
     =link_to image_tag('home-vakkorama-color.jpg'), 'http://www.vakkorama.com.tr'
     =link_to image_tag('home-vakkorama-bw.jpg'), 'http://www.vakkorama.com.tr'
