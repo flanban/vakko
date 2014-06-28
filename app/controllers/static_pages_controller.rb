@@ -38,6 +38,9 @@ class StaticPagesController < ApplicationController
   
   def womens_perfume
   end
+  
+  def made_to_measure
+  end
 
   def chocolate
   end
