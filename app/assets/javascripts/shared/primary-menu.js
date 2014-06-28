@@ -1,7 +1,7 @@
 $(function() {
-  $('#mobile-nav-toggle').click(function(e) {
+  $('#mobile-nav-toggle > img').click(function(e) {
     e.preventDefault();
     $('#nav-items').slideToggle();
-    $('html').toggleClass('mobile-nav-open');
+    $(document).toggleClass('mobile-nav-open');
   });
 });
