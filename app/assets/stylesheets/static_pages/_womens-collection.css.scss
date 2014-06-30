@@ -23,7 +23,7 @@
         }
       }
       &:nth-child(3) {
-        background-color:#222;
+        background-color:#d58074;
         @media(max-width: $breakpoint-b) {
           background-image: asset_url('womens_collection_3@2x.jpg', image);
           .slide-title {
@@ -32,7 +32,7 @@
         }
       }
       &:nth-child(4) {
-        background-color:#222;
+        background-color:#172f79;
         @media(max-width: $breakpoint-b) {
           background-image: asset_url('womens_collection_4@2x.jpg', image);
           .slide-title {
@@ -59,7 +59,7 @@
         }
       }
       &:nth-child(7) {
-        background-color:#222;
+        background-color:#272314;
         @media(max-width: $breakpoint-b) {
           background-image: asset_url('womens_collection_7@2x.jpg', image);
           .slide-title {
