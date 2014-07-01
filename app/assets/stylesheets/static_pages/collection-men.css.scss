@@ -1,0 +1,63 @@
+@import "mixins/typography";
+@import "mixins/breakpoints";
+
+#mens-collection {
+  ul {
+    > li {
+      &:nth-child(1) {
+        background-color:#122543;
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('mens_collection_1-mobile.jpg', image);
+          .slide-title {
+            background-color:rgba(18,37,67,.6);
+          }
+        }
+      }
+      &:nth-child(2) {
+        background-color:#191717;
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('mens_collection_2-mobile.jpg', image);
+          .slide-title {
+            background-color:rgba(25,25,25,.6);
+          }
+        }
+      }
+      &:nth-child(3) {
+        background-color:#882020;
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('mens_collection_3-mobile.jpg', image);
+          .slide-title {
+            background-color:rgba(116,32,32,.6);
+          }
+        }
+      }
+      &:nth-child(4) {
+        background-color:#172f79;
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('mens_collection_4-mobile.jpg', image);
+          .slide-title {
+            background-color:rgba(74,56,80,.6);
+          }
+        }
+      }
+      &:nth-child(5) {
+        background-color:rgba(58,99,165,1);
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('mens_collection_5-mobile.jpg', image);
+          .slide-title {
+            background-color:rgba(58,99,165,.6);
+          }
+        }
+      }
+      &:nth-child(6) {
+        background-color:rgba(18,61,71,1);
+        @media(max-width: $breakpoint-b) {
+          background-image: asset_url('mens_collection_6-mobile.jpg', image);
+          .slide-title {
+            background-color:rgba(18,61,71,.6);
+          }
+        }
+      }
+    }
+  }
+}
