@@ -3,11 +3,13 @@ $(function() {
   // grid functionality
   $('body').on('click', '.button-show-grid', function (e) {
     e.preventDefault();
+    $('#content-area').addClass('grid-open')
     $('.collection-grid').removeClass('hidden')
     $('.collection-grid').css('opacity', '1')
   })
   $('body').on('click', '.collection-grid > a', function (e) {
 //    e.preventDefault();
+    $('#content-area').removeClass('grid-open')
     $('.collection-grid').css('opacity', '0');
     setTimeout(function(){
       $( '.collection-grid' ).addClass( "hidden" )}, 700);

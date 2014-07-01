@@ -4,6 +4,10 @@
 body.collection #content-area, body.espace_by_sky #content-area, body.cruise #content-area, body.home #content-area, body.scarves #content-area, body.production_center #content-area, body.creative_industries_library #content-area, body.espace_by_sky #content-area {
   overflow:hidden;
   height:100%;
+  &.grid-open {
+    overflow:initial;
+    height:auto;
+  }
 }
 
 .lookbook-a { 
