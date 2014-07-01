@@ -1,7 +1,7 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
 
-body.collection #content-area, body.espace_by_sky #content-area, body.cruise #content-area, body.home #content-area, body.scarves #content-area, body.production_center #content-area, body.creative_industries_library #content-area {
+body.collection #content-area, body.espace_by_sky #content-area, body.cruise #content-area, body.home #content-area, body.scarves #content-area, body.production_center #content-area, body.creative_industries_library #content-area, body.espace_by_sky #content-area {
   overflow:hidden;
   height:100%;
 }
@@ -192,6 +192,15 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
   background:#212121;
   width:100%;
   height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:99999;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
   a {
     //this is all a little weird to avoid gaps with inline-block. 
     width:33.333%;

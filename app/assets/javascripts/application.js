@@ -16,5 +16,4 @@
 //= require shared/page-grid
 //= require shared/primary-menu
 //= require static_pages/lookbook_subnav
-//= require static_pages/lookbook-a
 

@@ -1,5 +1,5 @@
 - content_for :page_js do
-  = javascript_include_tag 'static_pages/lookbook'
+  = javascript_include_tag 'static_pages/lookbook-a'
   = javascript_include_tag 'static_pages/lookbook_subnav'
 
 
@@ -14,7 +14,7 @@
     %h2 Espace
     %h6 spring/summer 2014
     %p The Vakko Woman 2014 Spring/Summer Collection
-  .lookbook-slider.rsDefault
+  .lookbook-slider.lookbook-slider-a.rsDefault
     .rsContent
       =image_tag('espace_1.jpg', :class => 'rsImg')
       .slide-title
@@ -46,3 +46,12 @@
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
+        
+  // GRID VIEW MARKUP
+  .collection-grid.translucent.hidden
+    =link_to image_tag('espace_1-mobile.jpg'), '/espace_by_sky#-1'
+    =link_to image_tag('espace_2-mobile.jpg'), '/espace_by_sky#-2'
+    =link_to image_tag('espace_3-mobile.jpg'), '/espace_by_sky#-3'
+    =link_to image_tag('espace_4-mobile.jpg'), '/espace_by_sky#-4'
+    =link_to image_tag('espace_5-mobile.jpg'), '/espace_by_sky#-5'
+    =link_to image_tag('espace_6-mobile.jpg'), '/espace_by_sky#-6'
