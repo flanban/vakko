@@ -2,7 +2,7 @@
 @import "mixins/breakpoints";
 
 body.lookbook_b #content-area, body.wedding #content-area {
-  height:85%;
+  height:90%;
   @media(max-width: $breakpoint-b) {
     overflow:hidden;
   }
@@ -171,7 +171,7 @@ body.lookbook_b #content-area, body.wedding #content-area {
       bottom:-100%;
       width:100%;
     }
-    &#couture-menu
+    &#lower-content-menu
       .text {
         position:absolute;
         right:70px;

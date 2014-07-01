@@ -1,6 +1,6 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
-.designer-right {
+.lower-content-right {
   width:65%;
   position:absolute;
   left:35%;
@@ -15,7 +15,7 @@
     background:#fff;
     z-index:3;
   }
-  .designer-slider {
+  .lower-content-slider {
     width:80%;
     height:100%;
     position:relative;
@@ -25,7 +25,7 @@
       left:0;
     }
     img {
-      &.couture-image {
+      &.lower-content-image {
         width:85%;
         margin-left:10%;
         margin-top:5%;
@@ -38,7 +38,7 @@
           margin-top:0;
         }
       }
-      &#couture-frame {
+      &#lower-content-frame {
         position:absolute;
         z-index:1;
         width:100%;
@@ -53,7 +53,7 @@
   height:100%;
 
 }
-.designer-left {
+.lower-content-left {
   height:100%;
   position:relative;
   width:35%;

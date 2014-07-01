@@ -9,7 +9,7 @@ $(document).ready(function(){
   });
   // handle specific designer links
 
-  $(document).delegate(".designer-left","click",function(e){
+  $(document).delegate(".lower-content-left","click",function(e){
     $('.lookbook-b.bottom').removeClass('view-individual-designer-active')
    });
   
@@ -68,7 +68,7 @@ $(function(){
  
   function setSlides() {
     if($(window).width()<768 && $('#firsties').length == 0){
-        sliderInstanceB.appendSlide('<div id="firsties" class="rsContent couture-slide-mobile"><img src="assets/couture-0.jpg" class=".rsImg"/></div>', 0);
+        sliderInstanceB.appendSlide('<div id="firsties" class="rsContent lower-content-slide-mobile"><img src="assets/couture-0.jpg" class=".rsImg"/></div>', 0);
         updCount();
     } else if ($(window).width()>=768 && $('#firsties').length > 0) {
         sliderInstanceB.removeSlide(0);
