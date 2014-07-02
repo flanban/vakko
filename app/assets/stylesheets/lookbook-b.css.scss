@@ -187,6 +187,15 @@ body.lookbook_b #content-area, body.wedding #content-area {
 
 .lookbook-b.lookbook-b-slider {
   height:100%;
+  .lookbook-b-slide {
+    height:100%;
+    width:100%;
+    img {
+      @media(max-width: $breakpoint-b) {
+        display:none;
+      }
+    }
+  }
   .rsArrow.rsArrowDisabled {
     .rsArrowIcn { 
       opacity:.4;

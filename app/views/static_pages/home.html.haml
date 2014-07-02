@@ -1,12 +1,12 @@
 - content_for :page_js do
-  = javascript_include_tag 'static_pages/lookbook'
+  = javascript_include_tag 'static_pages/lookbook-a'
   = javascript_include_tag 'static_pages/lookbook_subnav'
 
 
-#home-page.lookbook-a
+#home-interior-page.lookbook-a
   .buttons
     .triangle-bg
-    =link_to image_tag('button-grid.png'), collection_grid_path
+    =link_to image_tag('button-grid.png'), collection_grid_path, :class => 'button-show-grid'
     =link_to image_tag('button-shop.png'), '#'
     =link_to image_tag('button-info.png'), '#', :class => 'button-show-info'
   .info-slideout
@@ -14,35 +14,105 @@
     %h2 vakko woman
     %h6 spring/summer 2014
     %p The Vakko Woman 2014 Spring/Summer Collection
-  .lookbook-slider.rsDefault
-    .rsContent
-      =image_tag('womens-collection-1.jpg', :class => 'rsImg')
-      .slide-title
-        %h2 spring summer 2014
-        %h6 lookbook
-      .info-slideout
-        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
-        %h2 vakko woman
-    .rsContent
-      =image_tag('womens-collection-2.jpg', :class => 'rsImg')
-
-    .rsContent
-      =image_tag('womens-collection-3.jpg', :class => 'rsImg')
-      .info-slideout
-        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
-        %h2 vakko woman
-    .rsContent
-      =image_tag('womens-collection-4.jpg', :class => 'rsImg')
-      .info-slideout
-        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
-        %h2 vakko woman
-    .rsContent
-      =image_tag('womens-collection-5.jpg', :class => 'rsImg')
-      .info-slideout
-        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
-        %h2 vakko woman
-    .rsContent
-      =image_tag('womens-collection-6.jpg', :class => 'rsImg')
-      .info-slideout
-        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
-        %h2 vakko woman
+  .lookbook-slider.lookbook-slider-a.rsDefault
+    #image-1.rsContent
+      .slide-img-wrap
+        =image_tag('home_1.jpg', :class => 'rsImg')
+        .slide-title
+          %h2 Vakko home
+          %h6 lorem ipsum
+    #image-2.rsContent
+      .slide-img-wrap
+        =image_tag('home_2.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-3.rsContent
+      .slide-img-wrap
+        =image_tag('home_3.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-4.rsContent
+      .slide-img-wrap
+        =image_tag('home_4.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-5.rsContent
+      .slide-img-wrap
+        =image_tag('home_5.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-6.rsContent
+      .slide-img-wrap
+        =image_tag('home_6.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-7.rsContent
+      .slide-img-wrap
+        =image_tag('home_7.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-8.rsContent
+      .slide-img-wrap
+        =image_tag('home_8.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-9.rsContent
+      .slide-img-wrap
+        =image_tag('home_9.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-10.rsContent
+      .slide-img-wrap
+        =image_tag('home_10.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-11.rsContent
+      .slide-img-wrap
+        =image_tag('home_11.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-12.rsContent
+      .slide-img-wrap
+        =image_tag('home_12.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-13.rsContent
+      .slide-img-wrap
+        =image_tag('home_13.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+    #image-14.rsContent
+      .slide-img-wrap
+        =image_tag('home_14.jpg', :class => 'rsImg')
+        .info-slideout
+          =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+          %h2 vakko woman
+            
+            
+  .collection-grid.translucent.hidden
+    =link_to image_tag('home_1-mobile.jpg'), '/home#-1'
+    =link_to image_tag('home_2-mobile.jpg'), '/home#-2'
+    =link_to image_tag('home_3-mobile.jpg'), '/home#-3'
+    =link_to image_tag('home_4-mobile.jpg'), '/home#-4'
+    =link_to image_tag('home_5-mobile.jpg'), '/home#-5'
+    =link_to image_tag('home_6-mobile.jpg'), '/home#-6'
+    =link_to image_tag('home_1-mobile.jpg'), '/home#-7'
+    =link_to image_tag('home_2-mobile.jpg'), '/home#-8'
+    =link_to image_tag('home_3-mobile.jpg'), '/home#-9'
+    =link_to image_tag('home_4-mobile.jpg'), '/home#-10'
+    =link_to image_tag('home_5-mobile.jpg'), '/home#-11'
+    =link_to image_tag('home_6-mobile.jpg'), '/home#-12'
+    =link_to image_tag('home_1-mobile.jpg'), '/home#-13'
+    =link_to image_tag('home_2-mobile.jpg'), '/home#-14'

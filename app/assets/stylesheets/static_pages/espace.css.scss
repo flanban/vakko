@@ -2,42 +2,33 @@
 
 #espace_page {
   @media(max-width: $breakpoint-b) {
-    .slide-img-wrap {
-      img {
-        display:none;
-      }
-    }
     .rsSlide {
-      .slide-img-wrap {
-        background-size:cover;
-        height:100%;
-      }
-      &:nth-child(1) {
+      #image-1 {
         .slide-img-wrap {
           background-image: asset_url('espace_1-mobile.jpg', image);
         }
       }
-      &:nth-child(2) {
+      #image-2 {
         .slide-img-wrap {
           background-image: asset_url('espace_2-mobile.jpg', image);
         }
       }
-      &:nth-child(3) {
+      #image-3 {
         .slide-img-wrap {
           background-image: asset_url('espace_3-mobile.jpg', image);
         }
       }
-      &:nth-child(4) {
+      #image-4 {
         .slide-img-wrap {
           background-image: asset_url('espace_4-mobile.jpg', image);
         }
       }
-      &:nth-child(5) {
+      #image-5 {
         .slide-img-wrap {
           background-image: asset_url('espace_5-mobile.jpg', image);
         }
       }
-      &:nth-child(6) {
+      #image-6 {
         .slide-img-wrap {
           background-image: asset_url('espace_6-mobile.jpg', image);
         }
