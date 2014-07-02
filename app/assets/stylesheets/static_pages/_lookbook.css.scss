@@ -133,8 +133,10 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
      }
      .rsSlide {
        .slide-img-wrap {
-         background-size:cover;
+         background-size:contain;
+         background-repeat:no-repeat;
          height:100%;
+         background-position:center;;
        }
       }
     }

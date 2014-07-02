@@ -24,6 +24,9 @@ class StaticPagesController < ApplicationController
   def handkerchiefs
   end
 
+  def made_to_measure
+  end
+
   def lookbook_b
   end
 
@@ -55,9 +58,6 @@ class StaticPagesController < ApplicationController
   end
   
   def womens_perfume
-  end
-  
-  def made_to_measure
   end
 
   def chocolate

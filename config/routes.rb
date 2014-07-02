@@ -76,8 +76,9 @@ Vakko::Application.routes.draw do
 
   match '/handkerchiefs' => 'StaticPages#handkerchiefs', :as => 'handkerchiefs'
 
-  match '/collection-men' => 'StaticPages#collection_men', :as => 'collection_men'
+  match '/made-to-measure' => 'StaticPages#made_to_measure', :as => 'made_to_measure'
 
+  match '/collection-men' => 'StaticPages#collection_men', :as => 'collection_men'
 
   match '/wedding' => 'StaticPages#wedding'
 
@@ -98,8 +99,6 @@ Vakko::Application.routes.draw do
   match '/mens-perfume' => 'StaticPages#mens_perfume', :as => 'mens_perfume'
 
   match '/womens-perfume' => 'StaticPages#womens_perfume', :as => 'womens_perfume'
-
-  match '/made-to-measure' => 'StaticPages#made_to_measure', :as => 'made_to_measure'
 
   match '/chocolate' => 'StaticPages#chocolate'
 
