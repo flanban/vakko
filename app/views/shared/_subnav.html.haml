@@ -1,25 +1,22 @@
 #subnav-menu
   =image_tag('marker.png', :id => 'marker')
   %ul
-    %li=link_to 'Women', collection_woman_path, :class => 'black-type'
-    %li=link_to 'spring/summer 2014', collection_path, :class => 'black-type'
-    %li=link_to 'scarves', "#"
+    %li=link_to "lookbook '14", collection_path, :class => ''
     %li=link_to 'shoes', '#'
     %li=link_to 'bags', '#'
-    %li=link_to 'ACCESORIEs', '#'
     %li=link_to 'perfume', womens_perfume_path
+    %li=link_to 'scarves', "#"
     %li=link_to 'couture', '/lookbook_b'
+    %li=link_to 'monogram', '#'
+    
 
   %span.menu-divider.mobile-visible
 
   %ul
-    %li=link_to ' Men', collection_men_path, :class => 'black-type'
-    %li=link_to 'spring/summer 2014', '#', :class => 'black-type'
-    %li=link_to 'Shirt', '#'
-    %li=link_to 'Ties', '#'
-    %li=link_to 'ACCESORIEs', '#'
+    %li=link_to "lookbook '14", collection_men_path, :class => ''
+    %li=link_to 'Shirt & Ties', shirts_and_ties_path
+    %li=link_to 'handkerchiefs', handkerchiefs_path
     %li=link_to 'perfume', mens_perfume_path
-    %li=link_to 'executive', '#'
-    %li=link_to 'gift line', '#'
     %li=link_to 'made to measure', made_to_measure_path
+    %li=link_to 'shoes', made_to_measure_path
 

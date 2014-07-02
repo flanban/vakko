@@ -6,7 +6,7 @@ $(function() {
   });
   
   $('body').on('click', '.collection > a', function (e) {
-    e.preventDefault()
+  //  e.preventDefault()
   })
   
 });

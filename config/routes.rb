@@ -72,7 +72,12 @@ Vakko::Application.routes.draw do
 
   match '/collection-woman' => 'StaticPages#collection_woman', :as => 'collection_woman'
 
+  match '/shirts-and-ties' => 'StaticPages#shirts_and_ties', :as => 'shirts_and_ties'
+
+  match '/handkerchiefs' => 'StaticPages#handkerchiefs', :as => 'handkerchiefs'
+
   match '/collection-men' => 'StaticPages#collection_men', :as => 'collection_men'
+
 
   match '/wedding' => 'StaticPages#wedding'
 
