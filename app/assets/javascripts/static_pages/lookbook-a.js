@@ -1,20 +1,5 @@
 $(function() {
 
-  function setLookbookAHeight() {
-    var viewportHeight = $(window).innerHeight()
-    var menuHeight = $('#primary-menu').height()
-    if($(window).width()<=768){
-      $('.lookbook-slider-a').height(viewportHeight - menuHeight);
-      $('body').css('overflow','hidden');
-    } else {
-      $('.lookbook-slider-a').css('height','100%');
-    }
-  }
-  setLookbookAHeight()
-  $(window).resize(function(){
-    setLookbookAHeight()
-  });
-
   // grid functionality
   $('body').on('click', '.button-show-grid', function (e) {
     e.preventDefault();

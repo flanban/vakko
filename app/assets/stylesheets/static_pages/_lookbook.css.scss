@@ -128,7 +128,7 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
     @media(max-width: $breakpoint-b) {
      .slide-img-wrap {
        img {
-         display:none;
+        // display:none;
        }
      }
      .rsSlide {
