@@ -1,16 +1,16 @@
 $(document).ready(function(){
   // view designers button
-  $('#button-view-designers').click(function() {
-    $('.lookbook-b.bottom').toggleClass('view-designers-active')
+  $('#view-lower-content').click(function() {
+    $('.lookbook-b.bottom').toggleClass('view-lower-content-active')
   });
   // handle specific designer links
   $('.menu ul li').click(function() {
-    $('.lookbook-b.bottom').addClass('view-individual-designer-active')
+    $('.lookbook-b.bottom').addClass('view-specific-lower-content-active')
   });
   // handle specific designer links
 
-  $(document).delegate(".lower-content-left","click",function(e){
-    $('.lookbook-b.bottom').removeClass('view-individual-designer-active')
+  $(document).delegate(".back-button","click",function(e){
+    $('.lookbook-b.bottom').removeClass('view-specific-lower-content-active')
    });
   
   
