@@ -46,7 +46,6 @@ $(document).ready(function(){
     usePreloader: false,
     slidesSpacing:0,
     fadeinLoadedSlide: true,
-    addActiveClass: true,
     arrowsNavAutoHide: false,
     controlsInside: true,
     deeplinking: {
@@ -63,6 +62,4 @@ $(document).ready(function(){
   }
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
   updCount();
-  
-
 });
