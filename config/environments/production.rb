@@ -22,7 +22,6 @@ Vakko::Application.configure do
   config.assets.precompile += %w( static_pages/lookbook.js )
   config.assets.precompile += %w( static_pages/lookbook_b.js )
   config.assets.precompile += %w( static_pages/lookbook-a.js )
-  config.assets.precompile += %w( static_pages/lookbook_subnav.js )
   config.assets.precompile += %w( static_pages/heritage.js )
   config.assets.precompile += %w( static_pages/index.js )
   config.assets.precompile += %w( static_pages/chocolate.js )
