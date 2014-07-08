@@ -1,12 +1,13 @@
 $(function() {
-  $('#mobile-nav-toggle > img').click(function(e) {
-    e.preventDefault();
-    $('#nav-items').slideToggle();
-    $(document).toggleClass('mobile-nav-open');
-  });
+ 
   
   $('body').on('click', '.collection > a', function (e) {
   //  e.preventDefault()
+  })
+  
+  $('body').on('click', '#mobile-nav-toggle > img', function (e) {
+    e.preventDefault();
+   $('html').toggleClass('mobile-nav-open');
   })
   
 });
