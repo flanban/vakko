@@ -78,6 +78,12 @@ class StaticPagesController < ApplicationController
   def womens_shoes
   end
   
+  def monogram
+  end
+  
+  def couture
+  end
+  
   def templates
   end
 end

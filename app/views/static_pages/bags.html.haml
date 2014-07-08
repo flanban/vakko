@@ -1,0 +1,51 @@
+- content_for :page_js do
+  = javascript_include_tag 'static_pages/lookbook_b'
+
+.triangle-bg
+#bags.lookbook-b-slider.lookbook-b.rsDefault
+
+  #image-1.lookbook-b-slide
+    =image_tag('wedding_1.jpg', :class => 'rsImg')
+
+  #image-2.lookbook-b-slide
+    =image_tag('wedding_2.jpg', :class => 'rsImg')
+
+  #image-3.lookbook-b-slide
+    =image_tag('wedding_3.jpg', :class => 'rsImg')
+
+  #image-4.lookbook-b-slide
+    =image_tag('wedding_4.jpg', :class => 'rsImg')
+
+  #image-5.lookbook-b-slide
+    =image_tag('wedding_5.jpg', :class => 'rsImg')
+
+  #image-6.lookbook-b-slide
+    =image_tag('wedding_6.jpg', :class => 'rsImg')
+
+  #image-7.lookbook-b-slide
+    =image_tag('wedding_7.jpg', :class => 'rsImg')
+
+  #image-8.lookbook-b-slide
+    =image_tag('wedding_8.jpg', :class => 'rsImg')
+
+
+.lookbook-b.bottom.clearfix
+  #view-lower-content
+    =image_tag('back-button.gif', :class => 'back-button', :id => 'lower-content-back')
+    %p view designers
+  #lower-content-menu.image-holder
+    .text
+      %h6 vakko couture
+      %p Vakko Couture brings the world’s most distinctive brands with their most exlusive collections to Vakko. Drapes, laces, low-cuts, sparkling embroideries... This season’s creations with backgrounds of jewellry colors and metallic tones include surpirisng innovations.
+    =image_tag('couture-bottom-1.jpg', :class => 'rsImg')
+  .menu
+    %ul
+      %li=link_to 'BADGLEY MISHCKA COLLECTION', { :controller => "couture", :action => "badgley_mishcka" }, :remote => true
+      %li=link_to 'elie saab', { :controller => "couture", :action => "elie_saab" }, :remote => true
+      %li=link_to 'gabriela cadena', { :controller => "couture", :action => "gabriela_cadena" }, :remote => true
+      %li=link_to 'georges hobeika', { :controller => "couture", :action => "georges_hobeika" }, :remote => true
+      %li=link_to 'jay ahr', { :controller => "couture", :action => "jay_ahr" }, :remote => true
+      %li=link_to 'jenny packham', { :controller => "couture", :action => "jenny_packham" }, :remote => true
+      %li=link_to 'kaufmanfranco', { :controller => "couture", :action => "kaufmanfranco" }, :remote => true
+      %li=link_to 'leonard', { :controller => "couture", :action => "leonard" }, :remote => true
+

@@ -13,17 +13,17 @@
   women
   =image_tag('marker.png', :id => 'marker')
   %ul
-    %li=link_to "lookbook '14", collection_path, :class => ''
-    %li=link_to 'shoes', '#'
-    %li=link_to 'bags', '#'
+    %li=link_to "lookbook '14", collection_path
+    %li=link_to 'shoes', womens_shoes_path
+    %li=link_to 'bags', bags_path
     %li=link_to 'perfume', womens_perfume_path
-    %li=link_to 'scarves', "#"
-    %li=link_to 'couture', '/lookbook_b'
-    %li=link_to 'monogram', '#'
+    %li=link_to 'scarves', scarves_path
+    %li=link_to 'couture', couture_path
+    %li=link_to 'monogram', monogram_path
     
 #subnav-menu-headquarters.subnav-menu
   headquarters
   =image_tag('marker.png', :id => 'marker')
   %ul
-    %li=link_to 'couture', '/lookbook_b'
-    %li=link_to 'monogram', '#'
+    %li=link_to 'fashion center', fashion_center_path
+    %li=link_to 'production center', production_center_path
