@@ -84,6 +84,12 @@ class StaticPagesController < ApplicationController
   def couture
   end
   
+  def group
+  end
+  
+  def corporate_book
+  end
+  
   def templates
   end
 end

@@ -38,7 +38,10 @@ function pickAndShowNav() {
   }
 }
 function hideNav() {
-  $('.subnav-menu').fadeTo(100,0)
+
+  $( '.subnav-active' ).fadeTo( 100 , 0, function() {
+    
+  });
 }
 
 $(function() {
@@ -64,11 +67,6 @@ $(function() {
         $('.subnav-active').stop(true, true).fadeTo(200, 1);
 
       }, function() {
-        //hideNav();
-        
-    /*    setTimeout(function(){
-          hideNav();
-          //alert(1)
-        }, 100); */
+        hideNav();
     });
 });

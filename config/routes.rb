@@ -94,6 +94,10 @@ Vakko::Application.routes.draw do
 
   match '/couture' => 'StaticPages#couture', :as => 'couture'
 
+  match '/group' => 'StaticPages#group', :as => 'group'
+
+  match '/corporate-book' => 'StaticPages#corporate_book', :as => 'corporate_book'
+
   match '/monogram' => 'StaticPages#monogram', :as => 'monogram'
 
   match '/scarves' => 'StaticPages#scarves', :as => 'scarves'

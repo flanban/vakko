@@ -1,8 +1,8 @@
 $(function() {
  
   
-  $('body').on('click', '.collection > a', function (e) {
-  //  e.preventDefault()
+  $('body').on('click', ' .headquarters-nav', function (e) {
+    e.preventDefault()
   })
   
   $('body').on('click', '#mobile-nav-toggle > img', function (e) {
