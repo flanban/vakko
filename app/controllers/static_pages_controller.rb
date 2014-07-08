@@ -72,16 +72,10 @@ class StaticPagesController < ApplicationController
   def fashion_center
   end
   
-  def vakkorama
+  def mens_shoes
   end
   
-  def v2k
-  end
-  
-  def wcollection
-  end
-  
-  def power_fm
+  def womens_shoes
   end
   
   def templates
