@@ -271,6 +271,10 @@ lookbook-gallery-bg.jpg: lookbook-gallery-bg-d4afa243d6f87cd039672e0a417154db.jp
 lookbook-gallery-bg/index.jpg: lookbook-gallery-bg-d4afa243d6f87cd039672e0a417154db.jpg
 lower-content-frame.png: lower-content-frame-fce784f30bcf2222bb957899a50fc144.png
 lower-content-frame/index.png: lower-content-frame-fce784f30bcf2222bb957899a50fc144.png
+made-to-measure-bg-mobile.jpg: made-to-measure-bg-mobile-1923bbe145384db42021cfd73f533e2a.jpg
+made-to-measure-bg-mobile/index.jpg: made-to-measure-bg-mobile-1923bbe145384db42021cfd73f533e2a.jpg
+made-to-measure-bg.jpg: made-to-measure-bg-08fe02293c9dbc762d15c86996eaa357.jpg
+made-to-measure-bg/index.jpg: made-to-measure-bg-08fe02293c9dbc762d15c86996eaa357.jpg
 marker.png: marker-bb01d2056d9fbfee6ac612c1b47218fa.png
 marker/index.png: marker-bb01d2056d9fbfee6ac612c1b47218fa.png
 mens-shoes-bg-mobile.jpg: mens-shoes-bg-mobile-92ccdb102ec5f7983ec7252bb5273f0e.jpg
@@ -397,7 +401,7 @@ static_pages/lookbook.js: static_pages/lookbook-1b13569e9620782f423d4cd3ce931750
 static_pages/lookbook/index.js: static_pages/lookbook-1b13569e9620782f423d4cd3ce931750.js
 static_pages/lookbook_b.js: static_pages/lookbook_b-a6574038228ed6784377b814dfc0991e.js
 static_pages/lookbook_b/index.js: static_pages/lookbook_b-a6574038228ed6784377b814dfc0991e.js
-application.css: application-caa8147a0b35549a162ce5fe1c8bed80.css
-application/index.css: application-caa8147a0b35549a162ce5fe1c8bed80.css
+application.css: application-69a9d48416bcef7b2f5ab89cf2bcf2bb.css
+application/index.css: application-69a9d48416bcef7b2f5ab89cf2bcf2bb.css
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map

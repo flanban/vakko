@@ -9,7 +9,7 @@
           =link_to image_tag('mens_collection_1.jpg', :class => 'rsImg grid-image light-fade'),'#'
           .rollover
             .slide-title.big-title
-              %h2=link_to 'spring / summer 2014', collection_path
+              %h2=link_to 'spring / summer 2014', collection_men_path
               %h6 explore
         .rsContent
           =link_to image_tag('home-collection-1.jpg', :class => 'rsImg grid-image light-fade'),'#'
@@ -17,7 +17,7 @@
       =link_to image_tag('mens_collection_2.jpg', :class => 'rsImg grid-image desktop-image light-fade'), '#'
       .rollover
         .slide-title
-          %h2=link_to 'made to measure', '#'
+          %h2=link_to 'made to measure', made_to_measure_path
           %h6 explore
         =render "shared/buttons-type-a"
 
@@ -25,27 +25,27 @@
       =link_to image_tag('mens_collection_3.jpg', :class => 'rsImg grid-image desktop-image'), '#'
       .rollover
         .slide-title
-          %h2=link_to 'vakko handkerchiefs', '#'
+          %h2=link_to 'vakko handkerchief', handkerchiefs_path
           %h6 explore
         =render "shared/buttons-type-a"
     %li.aspect-ratio-1.right
       =link_to image_tag('mens_collection_4.jpg', :class => 'rsImg grid-image desktop-image'), '#'
       .rollover
         .slide-title
-          %h2=link_to 'vakko perfume', '#'
+          %h2=link_to 'vakko perfume', mens_perfume_path
           %h6 explore
         =render "shared/buttons-type-a"
     %li.aspect-ratio-1
       =link_to image_tag('mens_collection_5.jpg', :class => 'rsImg grid-image desktop-image light-fade'), '#'
       .rollover
         .slide-title
-          %h2=link_to 'vakko shirts & ties', '#'
+          %h2=link_to 'vakko shirts & ties', shirts_and_ties_path
           %h6 explore
         =render "shared/buttons-type-a"
     %li.aspect-ratio-2
       =link_to image_tag('mens_collection_6.jpg', :class => 'rsImg grid-image desktop-image'), '#'
       .rollover
         .slide-title
-          %h2=link_to 'vakko shoes', '#'
+          %h2=link_to 'vakko shoes', mens_shoes_path
           %h6 explore
         =render "shared/buttons-type-a"
