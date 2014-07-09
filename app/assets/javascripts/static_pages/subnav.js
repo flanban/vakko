@@ -2,31 +2,31 @@ function showMensNav() {
  // $('#subnav-menu-mens').stop(true).css('visibility','visible');
  $('.subnav-menu').removeClass('subnav-active')
  $('#subnav-menu-mens').addClass('subnav-active')
- $('#subnav-menu-mens').stop(true).fadeTo(100, 1);
+ $('#subnav-menu-mens').stop(true).fadeTo(200, 1);
 }
 function showWomensNav() {
   //$('#subnav-menu-womens').stop(true).css('visibility','visible')
   $('.subnav-menu').removeClass('subnav-active')
   $('#subnav-menu-womens').addClass('subnav-active')
-  $('#subnav-menu-womens').stop(true).fadeTo(100, 1);
+  $('#subnav-menu-womens').stop(true).fadeTo(200, 1);
 }
 function showHeadquartersNav() {
   //$('#subnav-menu-headquarters').stop(true).css('visibility','visible');
   $('.subnav-menu').removeClass('subnav-active')
   $('#subnav-menu-headquarters').addClass('subnav-active')
-  $('#subnav-menu-headquarters').stop(true).fadeTo(100, 1);
+  $('#subnav-menu-headquarters').stop(true).fadeTo(200, 1);
 }
 function hideMensNav() {
  // $('#subnav-menu-mens').stop(true).css('visibility','visible');
- $('#subnav-menu-mens').stop(true).fadeTo(100, 0);
+ $('#subnav-menu-mens').stop(true).fadeTo(200, 0);
 }
 function hideWomensNav() {
   //$('#subnav-menu-womens').stop(true).css('visibility','visible')
-  $('#subnav-menu-womens').stop(true).fadeTo(100, 0);
+  $('#subnav-menu-womens').stop(true).fadeTo(200, 0);
 }
 function hideHeadquartersNav() {
   //$('#subnav-menu-headquarters').stop(true).css('visibility','visible');
-  $('#subnav-menu-headquarters').stop(true).fadeTo(100, 0);
+  $('#subnav-menu-headquarters').stop(true).fadeTo(200, 0);
 }
 function pickAndShowNav() {
   if ($(this).hasClass('mens-nav')) {
@@ -39,7 +39,7 @@ function pickAndShowNav() {
 }
 function hideNav() {
 
-  $( '.subnav-active' ).fadeTo( 100 , 0, function() {
+  $( '.subnav-active' ).fadeTo( 200 , 0, function() {
     //$('.subnav-menu').css('z-index', '0')
   });
 }
