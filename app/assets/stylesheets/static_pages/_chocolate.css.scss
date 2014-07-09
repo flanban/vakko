@@ -54,6 +54,7 @@
       width:100%;
       @media(max-width: $breakpoint-d) {
         height:620px;
+        min-height:585px;
       }
       .rsArrow {
         height: 100%;
@@ -241,6 +242,7 @@
       width:100%;
       padding:0 5%;
       position:relative;
+      min-height:760px;
       @media(max-width: $breakpoint-d) {
         background: asset_url('chocolate-noise.gif', image);
       }
