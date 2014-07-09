@@ -8,7 +8,7 @@ $(function() {
 
   $('body').on('click', '#mobile-nav-toggle > img', function (e) {
     e.preventDefault();
-   $(this).toggleClass('mobile-nav-open');
+   $('html').toggleClass('mobile-nav-open');
   })
   
 });
