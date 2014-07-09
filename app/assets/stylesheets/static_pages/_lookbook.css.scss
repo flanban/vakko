@@ -97,9 +97,9 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
      -o-transition: margin 0.5s ease;
      -ms-transition: margin 0.5s ease;
      transition: margin 0.5s ease;
-     @media(max-width: $breakpoint-d) {
+     @media(max-width: $breakpoint-b) {
       width:100%;
-      margin-right:-100%;
+//      margin-right:-100%;
      }
      .button-close {
        position:absolute;

@@ -15,18 +15,27 @@ $(function() {
       $( '.collection-grid' ).addClass( "hidden" )}, 700);
   })
   
-  
+  //hide slideout
   $('.button-close').click(function(e) {
     e.preventDefault();
-    infoWidth = $('.info-slideout').outerWidth()
-    $('.info-slideout').css('margin-right', -infoWidth);
+    infoWidth = $('.info-slideout').outerWidth();
     $('html').removeClass('slide-info-open');
+    $('.info-slideout').css('margin-right', -infoWidth);
   });
+
+  //show slideout
   $('.button-show-info').click(function(e) {
     e.preventDefault();
     $('.info-slideout').css('margin-right', 0);
     $('html').addClass('slide-info-open');
   });
+
+  //keep margin correct
+  $(window).resize(function(){
+    infoWidth = $('.info-slideout').outerWidth();
+    $('.info-slideout').css('margin-right', -infoWidth);
+  });
+
 });
 
 $(document).ready(function(){
