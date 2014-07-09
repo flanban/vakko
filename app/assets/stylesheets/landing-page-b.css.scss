@@ -13,13 +13,13 @@ body.mens_perfume #content-area, body.womens_perfume #content-area, body.shirts_
   background-repeat:no-repeat;
   height:100%;
   position:relative;
-  @media(max-width: $breakpoint-a) {
-    background-image:none;
+  @media(max-width: $breakpoint-d) {
+    background-image:none!important;
     background-color:#fff;
   }
   > img {
     display:none;
-    @media(max-width: $breakpoint-a) {
+    @media(max-width: $breakpoint-d) {
       width:100%;
       display:block;
     }
@@ -30,7 +30,7 @@ body.mens_perfume #content-area, body.womens_perfume #content-area, body.shirts_
     height:100%;
     position:relative;
     min-width:440px;
-    @media(max-width: $breakpoint-a) {
+    @media(max-width: $breakpoint-d) {
       height:auto;
       width: 100%;
       background: #fff;
@@ -46,7 +46,7 @@ body.mens_perfume #content-area, body.womens_perfume #content-area, body.shirts_
       margin-left:-190px;
       position:absolute;
       margin-top:-90px;
-      @media(max-width: $breakpoint-a) {
+      @media(max-width: $breakpoint-d) {
         top:10px;
         margin-top:25px;
         position:relative;
