@@ -451,7 +451,7 @@ static_pages/lookbook.js: static_pages/lookbook-1b13569e9620782f423d4cd3ce931750
 static_pages/lookbook/index.js: static_pages/lookbook-1b13569e9620782f423d4cd3ce931750.js
 static_pages/lookbook_b.js: static_pages/lookbook_b-7e6993ad4dd8886074a253406eb1b4ec.js
 static_pages/lookbook_b/index.js: static_pages/lookbook_b-7e6993ad4dd8886074a253406eb1b4ec.js
-application.css: application-67c618a0c548d301f37a5162fcc03a93.css
-application/index.css: application-67c618a0c548d301f37a5162fcc03a93.css
+application.css: application-70e8e706008fd857655b5a8d7cfea080.css
+application/index.css: application-70e8e706008fd857655b5a8d7cfea080.css
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
