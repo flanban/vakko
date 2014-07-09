@@ -1,7 +1,7 @@
 @import "mixins/typography";
 @import "mixins/breakpoints";
 
-body.lookbook_b #content-area, body.couture #content-area, body.wedding #content-area, body.bags #content-area {
+body.lookbook_b #content-area, body.couture #content-area, body.wedding #content-area, body.bags #content-area, body.womens_shoes #content-area {
   height:90%;
   @media(max-width: $breakpoint-b) {
     overflow:hidden;

@@ -1,5 +1,5 @@
 - content_for :page_js do
-  = javascript_include_tag 'static_pages/lookbook'
+  = javascript_include_tag 'static_pages/lookbook-a'
 
 
 #scarves.lookbook-a
@@ -13,9 +13,9 @@
     %h2 vakko woman
     %h6 spring/summer 2014
     %p The Vakko Woman 2014 Spring/Summer Collection
-  .lookbook-slider.rsDefault
+  .lookbook-slider.lookbook-slider-a.rsDefault
     .rsContent
-      =image_tag('womens-collection-1.jpg', :class => 'rsImg')
+      =image_tag('scarves-1.jpg', :class => 'rsImg')
       .slide-title
         %h2 spring summer 2014
         %h6 lookbook
@@ -23,25 +23,20 @@
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-2.jpg', :class => 'rsImg')
+      =image_tag('scarves-2.jpg', :class => 'rsImg')
 
     .rsContent
-      =image_tag('womens-collection-3.jpg', :class => 'rsImg')
+      =image_tag('scarves-3.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-4.jpg', :class => 'rsImg')
+      =image_tag('scarves-4.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-5.jpg', :class => 'rsImg')
-      .info-slideout
-        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
-        %h2 vakko woman
-    .rsContent
-      =image_tag('womens-collection-6.jpg', :class => 'rsImg')
+      =image_tag('scarves-5.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman

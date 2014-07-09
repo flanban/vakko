@@ -1,8 +1,8 @@
 - content_for :page_js do
-  = javascript_include_tag 'static_pages/lookbook'
+  = javascript_include_tag 'static_pages/lookbook-a'
 
 
-#production-center.lookbook-a
+#production.lookbook-a
   .buttons
     .triangle-bg
     =link_to image_tag('button-grid.png'), collection_grid_path
@@ -13,9 +13,9 @@
     %h2 vakko woman
     %h6 spring/summer 2014
     %p The Vakko Woman 2014 Spring/Summer Collection
-  .lookbook-slider.rsDefault
+  .lookbook-slider.lookbook-slider-a.rsDefault
     .rsContent
-      =image_tag('womens-collection-1.jpg', :class => 'rsImg')
+      =image_tag('production-1.jpg', :class => 'rsImg')
       .slide-title
         %h2 spring summer 2014
         %h6 lookbook
@@ -23,25 +23,39 @@
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-2.jpg', :class => 'rsImg')
+      =image_tag('production-2.jpg', :class => 'rsImg')
 
     .rsContent
-      =image_tag('womens-collection-3.jpg', :class => 'rsImg')
+      =image_tag('production-3.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-4.jpg', :class => 'rsImg')
+      =image_tag('production-4.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-5.jpg', :class => 'rsImg')
+      =image_tag('production-5.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
     .rsContent
-      =image_tag('womens-collection-6.jpg', :class => 'rsImg')
+      =image_tag('production-6.jpg', :class => 'rsImg')
+
+    .rsContent
+      =image_tag('production-7.jpg', :class => 'rsImg')
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
+    .rsContent
+      =image_tag('production-8.jpg', :class => 'rsImg')
+      .info-slideout
+        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+        %h2 vakko woman
+    .rsContent
+      =image_tag('production-9.jpg', :class => 'rsImg')
+      .info-slideout
+        =link_to image_tag('button-close.png', :class => 'button-close'), '#'
+        %h2 vakko woman
+    
