@@ -69,6 +69,7 @@ $(function(){
   function setSlides() {
     if($(window).width()<768 && $('#firsties').length == 0){
         sliderInstanceB.appendSlide('<div id="firsties" class="rsContent lower-content-slide-mobile"><img src="assets/couture-0.jpg" class=".rsImg"/></div>', 0);
+        sliderInstanceB.goTo(0);
         updCount();
     } else if ($(window).width()>=768 && $('#firsties').length > 0) {
         sliderInstanceB.removeSlide(0);
