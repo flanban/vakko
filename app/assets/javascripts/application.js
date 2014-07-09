@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require shared/stop-fouc
 //= require vendor/jquery.royalslider.min.js
 //= require shared/page-grid
 //= require shared/primary-menu
