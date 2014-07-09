@@ -24,9 +24,7 @@ $(document).ready(function(){
   }
 
   setSliderHeights();
-  $(window).resize(function(){
-    setSliderHeights()
-  });
+
 
   //sliders
   var firstChocolateSlider = $('.chocolate-slider-a > ul').royalSlider({

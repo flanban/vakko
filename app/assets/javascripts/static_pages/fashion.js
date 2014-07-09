@@ -29,9 +29,7 @@ $(function() {
     fashionRatio2();
   }
   fashionRatios(); // call functions
-  $(window).resize(function(){//resize event
-    fashionRatios();
-  });
+
   window.onorientationchange = function(){
       var orientation = window.orientation;
       // Look at the value of window.orientation:
