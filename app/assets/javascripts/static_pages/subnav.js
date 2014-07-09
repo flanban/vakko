@@ -40,7 +40,7 @@ function pickAndShowNav() {
 function hideNav() {
 
   $( '.subnav-active' ).fadeTo( 100 , 0, function() {
-   // $('.subnav-menu').css('display', 'none')
+    //$('.subnav-menu').css('z-index', '0')
   });
 }
 
