@@ -20,13 +20,16 @@
           .slide-title
             %h2=link_to 'vakko collection', collection_woman_path
             %h6 women
+            
   %li#wedding.aspect-ratio-1
     =link_to image_tag('home-wedding.jpg', :class => 'grid-image desktop-image light-fade'), wedding_path
     .rollover
       .slide-title.dark
         %h2=link_to 'vakko wedding', wedding_path
         %h6 explore
-      =render "shared/buttons-type-a-dark"
+      .buttons
+        =link_to image_tag('button-shop.png'), 'http://shop.vakko.com/wedding'
+        =link_to image_tag('button-info.png'), wedding_path
 
   %li#home.aspect-ratio-2
     =link_to image_tag('home-home.jpg', :class => 'grid-image  desktop-image'), home_path
@@ -34,7 +37,9 @@
       .slide-title
         %h2=link_to 'vakko home', home_path
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/home'
+        =link_to image_tag('button-white-info.png'), home_path
 
   %li#cruise.aspect-ratio-2
     =link_to image_tag('home-cruise.jpg', :class => 'grid-image'), cruise_path
@@ -42,15 +47,19 @@
       .slide-title
         %h2=link_to 'vakko cruise', cruise_path
         %h6 explore
-      =render "shared/buttons-type-a"
-
+      .buttons
+        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/cruise'
+        =link_to image_tag('button-white-info.png'), cruise_path
+        
   %li#perfume.aspect-ratio-1
     =link_to image_tag('home-perfume.jpg', :class => 'grid-image'), perfume_path
     .rollover
       .slide-title
         %h2=link_to 'vakko perfume', perfume_path
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/perfume'
+        =link_to image_tag('button-white-info.png'), perfume_path
 
   %li#espace-by-sky.aspect-ratio-2
     =link_to image_tag('home-espace.jpg', :class => 'grid-image'), espace_by_sky_path
@@ -58,7 +67,9 @@
       .slide-title
         %h2=link_to 'vakko espace', espace_by_sky_path
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/espace'
+        =link_to image_tag('button-white-info.png'), espace_by_sky_path
 
   %li#chocolate.aspect-ratio-2
     =link_to image_tag('home-chocolate.jpg', :class => 'grid-image'), chocolate_path
@@ -66,7 +77,9 @@
       .slide-title
         %h2=link_to 'vakko chocolate', chocolate_path
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/chocolate'
+        =link_to image_tag('button-white-info.png'), chocolate_path
 
   %li#quote.aspect-ratio-2.white-bg
     .quote
@@ -76,12 +89,15 @@
       %h6
         Vitali hakko // 2000
   %li#library.aspect-ratio-2
-    =link_to image_tag('home-library.jpg', :class => 'grid-image'), library_path
+    =link_to image_tag('home-library.jpg', :class => 'grid-image'), creative_industries_library_path
     .rollover
       .slide-title
-        %h2=link_to 'vakko library', library_path
+        %h2=link_to 'vakko library', creative_industries_library_path
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-play.png'), '#'
+        =link_to image_tag('button-white-info.png'), creative_industries_library_path
+
 
   %li#heritage.aspect-ratio-1
     =link_to image_tag('home-heritage.jpg', :class => 'grid-image'), heritage_path
@@ -89,7 +105,9 @@
       .slide-title
         %h2=link_to 'vakko heritage', heritage_path
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-play.png'), '#'
+        =link_to image_tag('button-white-info.png'), heritage_path
 
   %li#fashion-center.aspect-ratio-1
     =link_to image_tag('home-fashion-center.jpg', :class => 'grid-image'), heritage_path
@@ -101,7 +119,9 @@
               Vakko
             fashion center
         %h6 explore
-      =render "shared/buttons-type-a"
+      .buttons
+        =link_to image_tag('button-white-play.png'), '#'
+        =link_to image_tag('button-white-info.png'), fashion_center_path
 
   %li#vakkorama.aspect-ratio-3
     =link_to image_tag('home-vakkorama-color.jpg'), 'http://www.vakkorama.com.tr'

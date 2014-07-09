@@ -21,7 +21,10 @@
         .slide-title.dark
           %h2=link_to 'vakko perfume', perfume_path
           %h6 explore
-        =render "shared/buttons-type-a-dark"
+        .buttons
+          =link_to image_tag('button-shop.png'), 'http://shop.vakko.com/womens-perfume'
+          //=link_to image_tag('button-play.png'), '#'
+          =link_to image_tag('button-info.png'), womens_perfume_path
 
     %li.aspect-ratio-4.quarter-width
       =link_to image_tag('womens_collection_3.jpg', :class => 'rsImg grid-image desktop-image'), '#'
@@ -29,7 +32,10 @@
         .slide-title
           %h2=link_to 'vakko shoes', womens_shoes_path
           %h6 explore
-        =render "shared/buttons-type-a"
+        .buttons
+          =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/womens-shoes'
+          //=link_to image_tag('button-white-play.png'), '#'
+          =link_to image_tag('button-white-info.png'), womens_shoes_path
 
     %li.aspect-ratio-4.quarter-width.right
       =link_to image_tag('womens_collection_4.jpg', :class => 'rsImg grid-image desktop-image'), '#'
@@ -37,7 +43,10 @@
         .slide-title
           %h2=link_to 'vakko bags', bags_path
           %h6 explore
-        =render "shared/buttons-type-a"
+        .buttons
+          =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/bags'
+          //=link_to image_tag('button-white-play.png'), '#'
+          =link_to image_tag('button-white-info.png'), bags_path
 
     %li.aspect-ratio-1.right
       =link_to image_tag('womens_collection_5.jpg', :class => 'rsImg grid-image desktop-image light-fade'), '#'
@@ -45,7 +54,10 @@
         .slide-title
           %h2=link_to 'vakko scarves', scarves_path
           %h6 explore
-        =render "shared/buttons-type-a"
+        .buttons
+          =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/scarves'
+          //=link_to image_tag('button-white-play.png'), '#'
+          =link_to image_tag('button-white-info.png'), scarves_path
 
     %li.aspect-ratio-1
       =link_to image_tag('womens_collection_6.jpg', :class => 'rsImg grid-image desktop-image light-fade'), '#'
@@ -53,7 +65,10 @@
         .slide-title
           %h2=link_to 'vakko couture', couture_path
           %h6 explore
-        =render "shared/buttons-type-a"
+        .buttons
+          =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/couture'
+          //=link_to image_tag('button-white-play.png'), '#'
+          =link_to image_tag('button-white-info.png'), couture_path
 
     %li.aspect-ratio-2
       =link_to image_tag('womens_collection_7.jpg', :class => 'rsImg grid-image desktop-image'), '#'
@@ -61,4 +76,7 @@
         .slide-title
           %h2=link_to 'vakko monogram', monogram_path
           %h6 explore
-        =render "shared/buttons-type-a"
+        .buttons
+          =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/monogram'
+          //=link_to image_tag('button-white-play.png'), '#'
+          =link_to image_tag('button-white-info.png'), monogram_path
