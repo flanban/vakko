@@ -14,7 +14,7 @@
       try{Typekit.load();}catch(e){}
     = csrf_meta_tags
   %body{:class => "#{controller_name} #{action_name}"}
-    //=image_tag('preloader.gif', :id => 'initial-preloader', :class => 'translucent')
+    =image_tag('preloader.gif', :id => 'initial-preloader', :class => 'translucent')
     = render "shared/primary_menu"
     
     #content-area.translucent
