@@ -103,6 +103,7 @@ $(function() {
     setAspectRatios();
     setSliderHeights();
     fashionRatios();
+    setBottomSectionRatio();
     console.log('doggif');
   });
   $(window).resize(function(){

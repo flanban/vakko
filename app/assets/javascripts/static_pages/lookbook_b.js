@@ -34,7 +34,6 @@ $(document).ready(function(){
   setBottomSectionRatio();
   
   $(window).resize(function(){
-    setBottomSectionRatio();
   //  setMobilePageHeight();
   });
 });
