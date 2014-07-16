@@ -104,7 +104,7 @@ $(function() {
     setSliderHeights();
     fashionRatios();
     setBottomSectionRatio();
-    console.log('doggif');
+    
   });
   $(window).resize(function(){
    // setAspectRatios();

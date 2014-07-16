@@ -325,8 +325,8 @@ perfume-vde-bg-mobile.jpg: perfume-vde-bg-mobile-b42dda53144eb4e6537b87588edb204
 perfume-vde-bg-mobile/index.jpg: perfume-vde-bg-mobile-b42dda53144eb4e6537b87588edb204d.jpg
 perfume-vde-bg.jpg: perfume-vde-bg-bf1476689de6845635e4132caace0bda.jpg
 perfume-vde-bg/index.jpg: perfume-vde-bg-bf1476689de6845635e4132caace0bda.jpg
-preloader.gif: preloader-19b05b2deb332b7bb008dbf198ca4a93.gif
-preloader/index.gif: preloader-19b05b2deb332b7bb008dbf198ca4a93.gif
+preloader.gif: preloader-cc3164b4c158f9220f6a7cfe37ac56da.gif
+preloader/index.gif: preloader-cc3164b4c158f9220f6a7cfe37ac56da.gif
 production-1.jpg: production-1-528ed735908fe7855999318bc1b5613a.jpg
 production-1/index.jpg: production-1-528ed735908fe7855999318bc1b5613a.jpg
 production-2.jpg: production-2-be305c9debed744df773cd2eccbb5806.jpg
@@ -373,6 +373,8 @@ shoes-fpo.jpg: shoes-fpo-687a027cca2d9f72291919656bd97abb.jpg
 shoes-fpo/index.jpg: shoes-fpo-687a027cca2d9f72291919656bd97abb.jpg
 toggle-menu.png: toggle-menu-a452d1c830c9e351e5b3edaf4615a786.png
 toggle-menu/index.png: toggle-menu-a452d1c830c9e351e5b3edaf4615a786.png
+up-arrow.png: up-arrow-54e7b32104dfa6ef48e4a685203f613d.png
+up-arrow/index.png: up-arrow-54e7b32104dfa6ef48e4a685203f613d.png
 wedding_1.jpg: wedding_1-bcc8aac12ec92407d2e46488a1f3c5c2.jpg
 wedding_1/index.jpg: wedding_1-bcc8aac12ec92407d2e46488a1f3c5c2.jpg
 wedding_2.jpg: wedding_2-7ab7249fe19198a4374d6ef4e0deabc7.jpg
@@ -435,8 +437,8 @@ womens_collection_7.jpg: womens_collection_7-ececacf0fab42595eba027376d3bf2b8.jp
 womens_collection_7/index.jpg: womens_collection_7-ececacf0fab42595eba027376d3bf2b8.jpg
 womens_collection_7@2x.jpg: womens_collection_7@2x-59bfb9b1ac6942151fc169c2dcdeb1d4.jpg
 womens_collection_7@2x/index.jpg: womens_collection_7@2x-59bfb9b1ac6942151fc169c2dcdeb1d4.jpg
-application.js: application-a761e3d503a5d870ea1d15f9423ee6a4.js
-application/index.js: application-a761e3d503a5d870ea1d15f9423ee6a4.js
+application.js: application-d988eb3ae114e14a67304dfa22a17863.js
+application/index.js: application-d988eb3ae114e14a67304dfa22a17863.js
 static_pages/chocolate.js: static_pages/chocolate-da36db8f538c855e49cae2fefc84f479.js
 static_pages/chocolate/index.js: static_pages/chocolate-da36db8f538c855e49cae2fefc84f479.js
 static_pages/fashion.js: static_pages/fashion-ab0fbec57b77ef06d6ab9d3267451b43.js
