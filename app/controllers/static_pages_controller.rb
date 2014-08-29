@@ -17,6 +17,9 @@ class StaticPagesController < ApplicationController
   
   def collection_men
   end
+  
+  def lookbook_men
+  end
 
   def shirts_and_ties
   end

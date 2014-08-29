@@ -1,3 +1,39 @@
 #made-to-measure-page {
   background-image:asset_url('made-to-measure-bg.jpg', image);
+  span {
+    font-size:15px;
+  }
+  .land-page-b-text {
+    width:490px;
+    left:110%;
+    top:35%;
+  }
+  h5 {
+    color:#fff;
+  }
+  p {
+    color:#dfdfdf;
+    span {
+      color:#ffffff;
+      font-weight:400;
+      font-size:15px;
+      line-height:1;
+      &.first-span {
+        margin-top:48px;
+        display:inline-block;
+      }
+    }
+  }
+  .shop-button {
+    color: #fff;
+    border: 1px solid #fff;
+    height: 45px;
+    width: 220px;
+    padding: 15px;
+    display: block;
+    margin: auto;
+    &:hover {
+      background:rgba(255,255,255,.4);
+    }
+  }
 }
