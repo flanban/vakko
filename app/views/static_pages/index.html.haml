@@ -51,6 +51,17 @@
         =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/cruise'
         =link_to image_tag('button-white-info.png'), cruise_path
 
+  %li.perfume.aspect-ratio-2.right
+    =link_to image_tag('home-perfume.jpg', :class => 'grid-image'), perfume_path
+    .rollover
+      .slide-title
+        %h2=link_to 'vakko perfume', perfume_path
+        %h6 women
+      .buttons
+        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/perfume'
+        =link_to image_tag('button-white-info.png'), perfume_path
+
+
   %li#espace-by-sky.aspect-ratio-2
     =link_to image_tag('home-espace.jpg', :class => 'grid-image'), espace_by_sky_path
     .rollover
@@ -60,18 +71,6 @@
       .buttons
         =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/espace'
         =link_to image_tag('button-white-info.png'), espace_by_sky_path
-
-  %li.perfume.aspect-ratio-2
-    =link_to image_tag('home-perfume.jpg', :class => 'grid-image'), perfume_path
-    .rollover
-      .slide-title
-        %h2=link_to 'vakko perfume', perfume_path
-        %h6 explore
-      .buttons
-        =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/perfume'
-        =link_to image_tag('button-white-info.png'), perfume_path
-
-
 
   %li#chocolate.aspect-ratio-2
     =link_to image_tag('home-chocolate.jpg', :class => 'grid-image'), chocolate_path
@@ -91,7 +90,7 @@
     .rollover
       .slide-title
         %h2=link_to 'vakko perfume', perfume_path
-        %h6 explore
+        %h6 men
       .buttons
         =link_to image_tag('button-white-shop.png'), 'http://shop.vakko.com/perfume'
         =link_to image_tag('button-white-info.png'), perfume_path
