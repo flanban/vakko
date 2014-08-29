@@ -11,6 +11,7 @@ gem 'haml-rails', '>= 0.3.4'
 gem 'html2haml'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'thin'
+gem 'newrelic_rpm'
 
 # Gems used only for assets and not required
 # in production environments by default.
