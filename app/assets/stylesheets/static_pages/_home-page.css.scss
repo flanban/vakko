@@ -51,7 +51,7 @@ body.index {
       background-color:#d89e8f;
       float:left;
       &.perfume-men {
-        background-color:#8FC1D8;
+        background-color:#252D64;
       }
       @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-perfume-mobile@2x.jpg', image) ;
