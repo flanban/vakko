@@ -21,7 +21,7 @@ $(function() {
   }
   function setAspectRatio1() {
     entryWidth = $('.aspect-ratio-1').width();
-    entryHeight = Math.round($('.aspect-ratio-1').width() / .86);//that weird number is the img's aspect ratio in decimal form
+    entryHeight = Math.round($('.aspect-ratio-1').width() / .855);//that weird number is the img's aspect ratio in decimal form
     entryHeightMobile = Math.round($('.aspect-ratio-1').width() / 1);//that weird number is the img's aspect ratio in decimal form
     if($(window).width()<=768){
       $('.aspect-ratio-1').height(entryHeightMobile);
