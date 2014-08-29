@@ -10,6 +10,12 @@ function showWomensNav() {
   $('#subnav-menu-womens').addClass('subnav-active')
   $('#subnav-menu-womens').stop(true).fadeTo(200, 1);
 }
+function showPerfumeNav() {
+  //$('#subnav-menu-headquarters').stop(true).css('visibility','visible');
+  $('.subnav-menu').removeClass('subnav-active')
+  $('#subnav-menu-perfume').addClass('subnav-active')
+  $('#subnav-menu-perfume').stop(true).fadeTo(200, 1);
+}
 function showHeadquartersNav() {
   //$('#subnav-menu-headquarters').stop(true).css('visibility','visible');
   $('.subnav-menu').removeClass('subnav-active')
@@ -35,6 +41,8 @@ function pickAndShowNav() {
     showWomensNav()
   } else if ($(this).hasClass('headquarters-nav')) {
     showHeadquartersNav()
+  } else if ($(this).hasClass('perfume-nav')) {
+    showPerfumeNav()
   }
 }
 function hideNav() {

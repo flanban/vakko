@@ -20,8 +20,13 @@
     %li=link_to 'monogram', monogram_path
     
 #subnav-menu-headquarters.subnav-menu
-  headquarters
   =image_tag('marker.png', :id => 'marker')
   %ul
     %li=link_to 'fashion center', fashion_center_path
     %li=link_to 'production center', production_center_path
+
+#subnav-menu-perfume.subnav-menu
+  =image_tag('marker.png', :id => 'marker')
+  %ul
+    %li=link_to 'Vakko Katia', '#'
+    %li=link_to 'V de Vakko', '#'

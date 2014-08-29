@@ -45,9 +45,10 @@ body.index {
         }
       }
     }
-    &#perfume {
+    &.perfume {
+      overflow:hidden;
       background-color:#d89e8f;
-      float:right;
+      float:left;
       
       @media(max-width: $breakpoint-d) {
         background-image: asset_url('home-perfume-mobile@2x.jpg', image) ;
