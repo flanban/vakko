@@ -14,6 +14,9 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
   width:100%; 
   height:100%;
   // Buttons. don't forget to delete the other button stuff
+  .rsImage {
+    opacity:.5!important;
+  }
   .buttons {
      position:absolute;
      top:17px;
