@@ -7,7 +7,7 @@
       &:nth-child(1) {
         background-color:#cc6715;
         @media(max-width: $breakpoint-b) {
-          background-image: asset_url('womens_collection_1@2x.jpg', image);
+          background-image: asset_url('homepage_hero-women-2-mobile.jpg', image);
           .slide-title {
             background-color:rgba(204,103,21,.8);
           }

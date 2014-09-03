@@ -7,19 +7,20 @@
 
 %ul.entries.primary-grid
   %li#collections
-    .primary-slider.rsDefault.aspect-ratio-0
-      .men
-        =link_to image_tag('mens_collection_1.jpg', :class => 'rsImg, grid-image'),'#'
-        .rollover
-          .slide-title
-            %h2=link_to 'vakko collection', collection_men_path
-            %h6 men
+    .home-slider.rsDefault.aspect-ratio-0
       .women
         =link_to image_tag('homepage_hero-women-2.jpg', :class => 'rsImg grid-image'),'#'
         .rollover
           .slide-title
             %h2=link_to 'vakko collection', collection_woman_path
             %h6 women
+      .men
+        =link_to image_tag('mens_collection_1.jpg', :class => 'rsImg, grid-image'),'#'
+        .rollover
+          .slide-title
+            %h2=link_to 'vakko collection', collection_men_path
+            %h6 men
+
             
   %li#wedding.aspect-ratio-1
     =link_to image_tag('home-wedding.jpg', :class => 'grid-image desktop-image light-fade'), wedding_path

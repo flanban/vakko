@@ -15,7 +15,7 @@
     %p The Vakko Woman 2014 Spring/Summer Collection
   .lookbook-slider.lookbook-slider-a.rsDefault
     .rsContent
-      =image_tag('production-1.jpg', :class => 'rsImg')
+      =image_tag('production-1.jpg', :class => 'rsImg first-slide')
       .slide-title
         %h2 production center
         %h6 explore
@@ -58,4 +58,11 @@
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
-    
+  // GRID VIEW MARKUP
+  .collection-grid.translucent.hidden
+    =link_to image_tag('production_center_1-mobile.jpg'), '/production-center#-1'
+    =link_to image_tag('production_center_2-mobile.jpg'), '/production-center#-2'
+    =link_to image_tag('production_center_3-mobile.jpg'), '/production-center#-3'
+    =link_to image_tag('production_center_4-mobile.jpg'), '/production-center#-4'
+    =link_to image_tag('production_center_5-mobile.jpg'), '/production-center#-5'
+    =link_to image_tag('production_center_6-mobile.jpg'), '/production-center#-6'

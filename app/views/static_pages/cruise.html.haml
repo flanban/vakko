@@ -15,7 +15,7 @@
     %p The Vakko Woman 2014 Spring/Summer Collection
   .lookbook-slider.lookbook-slider-a.rsDefault
     .rsContent
-      =image_tag('cruise_1.jpg', :class => 'rsImg')
+      =image_tag('cruise_1.jpg', :class => 'rsImg first-slide')
       .slide-title
         %h2 vakko cruise
         %h6 lorem ipsum
@@ -23,3 +23,11 @@
       =image_tag('cruise_2.jpg', :class => 'rsImg')
   .collection-grid.translucent.hidden
    
+  // GRID VIEW MARKUP
+  .collection-grid.translucent.hidden
+    =link_to image_tag('cruise_1-mobile.jpg'), '/cruise#-1'
+    =link_to image_tag('cruise_2-mobile.jpg'), '/cruise#-2'
+    =link_to image_tag('cruise_3-mobile.jpg'), '/cruise#-3'
+    =link_to image_tag('cruise_4-mobile.jpg'), '/cruise#-4'
+    =link_to image_tag('cruise_5-mobile.jpg'), '/cruise#-5'
+    =link_to image_tag('cruise_6-mobile.jpg'), '/cruise#-6'

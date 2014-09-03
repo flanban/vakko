@@ -4,6 +4,7 @@
 body.collection #content-area, body.espace_by_sky #content-area, body.cruise #content-area, body.home #content-area, body.scarves #content-area, body.production_center #content-area, body.creative_industries_library #content-area, body.espace_by_sky #content-area, body.lookbook_men #content-area {
   overflow:hidden;
   height:100%;
+  background:#000;
   &.grid-open {
     overflow:initial;
     height:auto;
@@ -13,10 +14,14 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
 .lookbook-a { 
   width:100%; 
   height:100%;
-  // Buttons. don't forget to delete the other button stuff
-  .rsImage {
-    opacity:.5!important;
+  &.primary-slider .rsBullets .rsBullet span {
+    display:none!important;
   }
+  .first-slide {
+    opacity:.5;
+  }
+
+
   .buttons {
      position:absolute;
      top:17px;
@@ -205,11 +210,11 @@ body.collection #content-area, body.espace_by_sky #content-area, body.cruise #co
       h2 {
         @include grid-headline;
         font-size:$seventh-position;
-        color:#5a5550;
+        color:#b4b4b4;
       }
       h6 {
         @include grid-subheadline;
-        color:#5a5550;
+        color:#b4b4b4;
       }
     }
   }

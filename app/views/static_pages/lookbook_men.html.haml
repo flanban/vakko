@@ -6,7 +6,6 @@
   .buttons
     .triangle-bg
     =link_to image_tag('button-grid.png'), '#', :class => 'button-show-grid'
-    =link_to image_tag('button-shop.png'), '#'
     =link_to image_tag('button-info.png'), '#', :class => 'button-show-info'
   .info-slideout
     =link_to image_tag('button-close.png', :class => 'button-close'), '#'
@@ -45,3 +44,12 @@
       .info-slideout
         =link_to image_tag('button-close.png', :class => 'button-close'), '#'
         %h2 vakko woman
+        
+  // GRID VIEW MARKUP
+  .collection-grid.translucent.hidden
+    =link_to image_tag('lookbook_men_1-mobile.jpg'), '/lookbook-men#-1'
+    =link_to image_tag('lookbook_men_2-mobile.jpg'), '/lookbook-men#-2'
+    =link_to image_tag('lookbook_men_3-mobile.jpg'), '/lookbook-men#-3'
+    =link_to image_tag('lookbook_men_4-mobile.jpg'), '/lookbook-men#-4'
+    =link_to image_tag('lookbook_men_5-mobile.jpg'), '/lookbook-men#-5'
+    =link_to image_tag('lookbook_men_6-mobile.jpg'), '/lookbook-men#-6'
