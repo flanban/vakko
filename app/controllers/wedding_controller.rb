@@ -3,7 +3,9 @@ class WeddingController < ApplicationController
   layout proc {|controller| controller.request.xhr? ? false: "application" }
 
 
-  def vera_wang
+  def vera_wang_2014
+  end
+  def vera_wang_2015
   end
   def monique_lhuillier
   end

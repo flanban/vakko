@@ -79,6 +79,7 @@ body.lookbook_b #content-area, body.couture #content-area, body.wedding #content
   position:relative;
   width:35%;
   padding:20px 20px 20px 80px;
+  z-index:99;
   @media(max-width: $breakpoint-b) {
     width:100%;
     left:0;

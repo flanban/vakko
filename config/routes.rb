@@ -32,7 +32,8 @@ Vakko::Application.routes.draw do
   get "couture/theia"
   get "couture/badgley_mishcka"
   
-  get "wedding/vera_wang"
+  get "wedding/vera_wang_2014"
+  get "wedding/vera_wang_2015"
   get "wedding/monique_lhuillier"
   get "wedding/oscar_de_la_renta"
   get "wedding/zuhair_murad"
