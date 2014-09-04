@@ -1,7 +1,23 @@
 - content_for :designer_name do
-  o jour
+  o'jour
 
 - content_for :designer_images do
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('o_jour-1.jpg', :class => 'lower-content-image')
 
-
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('o_jour-2.jpg', :class => 'lower-content-image')
+  
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('o_jour-3.jpg', :class => 'lower-content-image')
+    
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('o_jour-4.jpg', :class => 'lower-content-image')  
+       
 = render "shared/designer_page"
+    
+      	
