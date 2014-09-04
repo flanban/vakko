@@ -1,0 +1,31 @@
+- content_for :designer_name do
+  coccinelle
+
+- content_for :designer_images do
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('coccinelle-1.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('coccinelle-2.jpg', :class => 'lower-content-image')
+  
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('coccinelle-3.jpg', :class => 'lower-content-image')
+  
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('coccinelle-4.jpg', :class => 'lower-content-image')    
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('coccinelle-5.jpg', :class => 'lower-content-image')
+  
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('coccinelle-6.jpg', :class => 'lower-content-image')
+    
+= render "shared/designer_page"    
+     	

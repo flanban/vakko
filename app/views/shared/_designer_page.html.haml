@@ -1,0 +1,15 @@
+.lower-content-left
+  .slide-title
+    .triangle-bg
+    %h2= yield(:designer_name)
+    =image_tag('back-button.gif', :class => 'back-button')
+
+    .rsArrow.rsArrowLeft.rsArrowDisabled.left
+      .rsArrowIcn
+    .slideCount.left 1/4
+    .rsArrow.rsArrowRight.left
+      .rsArrowIcn
+
+.lower-content-right
+  .lower-content-slider
+    = yield(:designer_images)
