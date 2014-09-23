@@ -1,2 +1,21 @@
-%h1 Couture#gh_by_georges_hobeika
-%p Find me in app/views/couture/gh_by_georges_hobeika.html.haml
+- content_for :designer_name do
+  gh by georges hobeika
+
+- content_for :designer_images do
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('gh-hobeika-1.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('gh-hobeika-2.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('gh-hobeika-3.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('gh-hobeika-4.jpg', :class => 'lower-content-image')    
+
+= render "shared/designer_page"

@@ -1,2 +1,21 @@
-%h1 Couture#alice_by_temperley
-%p Find me in app/views/couture/alice_by_temperley.html.haml
+- content_for :designer_name do
+  alice  by temperley
+
+- content_for :designer_images do
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('temperley-1.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('temperley-2.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('temperley-3.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('temperley-4.jpg', :class => 'lower-content-image')    
+
+= render "shared/designer_page"

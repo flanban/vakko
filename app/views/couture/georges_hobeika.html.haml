@@ -1,8 +1,21 @@
-.lower-content-left
-  .slide-title
-    %h4 georges hobeika
-    
-.lower-content-right
-  .lower-content-slider
-    .rsContent
-      =image_tag('georges-hobeika-1.jpg')
+- content_for :designer_name do
+  georges hobeika
+
+- content_for :designer_images do
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('hobeika-1.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('hobeika-2.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('hobeika-3.jpg', :class => 'lower-content-image')
+
+  .rsContent
+    =image_tag('lower-content-frame.png', :id => 'lower-content-frame')
+    =image_tag('hobeika-4.jpg', :class => 'lower-content-image')    
+
+= render "shared/designer_page"
