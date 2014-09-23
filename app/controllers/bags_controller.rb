@@ -6,6 +6,8 @@ class BagsController < ApplicationController
   end
   def anya_hindmarch
   end
+  def baraboux
+  end
   def balmain
   end
   def brian_atwood

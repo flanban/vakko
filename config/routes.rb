@@ -59,6 +59,7 @@ Vakko::Application.routes.draw do
 
   get 'bags/alberto_moretti'
   get 'bags/anya_hindmarch'
+  get 'bags/baraboux'
   get 'bags/balmain'
   get 'bags/brian_atwood'
   get 'bags/casadei'
